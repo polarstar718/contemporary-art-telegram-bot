@@ -1,0 +1,18 @@
+services:
+  - type: worker
+    name: contemporary-art-telegram-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    autoDeploy: true
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: DELIVERY_HOUR
+        value: "8"
+      - key: DELIVERY_MINUTE
+        value: "0"
+      - key: TIMEZONE
+        value: "Asia/Seoul"
