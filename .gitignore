@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+data/history.json
+data/subscribers.json
+push_to_github.py
