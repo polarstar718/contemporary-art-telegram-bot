@@ -5,9 +5,14 @@ Delivers world-class contemporary artists every weekday at 08:00 AM KST.
 """
 
 import asyncio
+import io
 import json
 import logging
+import os
 import sys
+import httpx
+import requests
+from PIL import Image
 
 # Ensure UTF-8 console output on Windows
 if sys.platform == "win32":
@@ -100,6 +105,8 @@ class SubscriberManager:
         try:
             with open(self.filepath, "w", encoding="utf-8") as f:
                 json.dump(list(self.subscribers), f, ensure_ascii=False, indent=2)
+            # Sync to GitHub Actions variable asynchronously in thread
+            sync_subscribers_to_github(list(self.subscribers))
         except Exception as e:
             logger.error(f"Failed to save subscribers: {e}")
 
@@ -123,12 +130,73 @@ class SubscriberManager:
         return set(self.subscribers)
 
 
+# GitHub Actions subscriber sync helper
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
+GITHUB_REPO = os.getenv("GITHUB_REPO", "polarstar718/contemporary-art-telegram-bot").strip()
+
+def _sync_github_worker(subs: list[str]) -> None:
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return
+    try:
+        val = ",".join(subs)
+        headers = {
+            "Authorization": f"Bearer {GITHUB_TOKEN}",
+            "Accept": "application/vnd.github.v3+json",
+            "X-GitHub-Api-Version": "2022-11-28"
+        }
+        url = f"https://api.github.com/repos/{GITHUB_REPO}/actions/variables/TELEGRAM_SUBSCRIBER_CHAT_IDS"
+        r = requests.patch(url, headers=headers, json={"value": val}, timeout=8)
+        if r.status_code == 404:
+            create_url = f"https://api.github.com/repos/{GITHUB_REPO}/actions/variables"
+            requests.post(create_url, headers=headers, json={"name": "TELEGRAM_SUBSCRIBER_CHAT_IDS", "value": val}, timeout=8)
+        logger.info(f"Synchronized {len(subs)} subscribers to GitHub Actions cloud variable.")
+    except Exception as e:
+        logger.warning(f"Failed to sync subscribers to GitHub: {e}")
+
+def sync_subscribers_to_github(subs: list[str]) -> None:
+    import threading
+    threading.Thread(target=_sync_github_worker, args=(subs,), daemon=True).start()
+
+
 subscriber_mgr = SubscriberManager(SUBSCRIBERS_FILE)
 
 
 # ---------------------------------------------------------------------------
 # Message Sending Helper Functions
 # ---------------------------------------------------------------------------
+
+# HTTP Client with Wikimedia-compliant User-Agent for fetching images smoothly
+HTTP_CLIENT = httpx.AsyncClient(
+    headers={"User-Agent": "ContemporaryArtBot/1.0 (https://github.com/polarstar718/contemporary-art-telegram-bot; polarstar718@artbot.org)"},
+    timeout=15.0,
+    follow_redirects=True
+)
+
+
+def optimize_image_bytes(raw_bytes: bytes, max_size: int = 1280) -> bytes:
+    """Resizes high-res images to max 1280px JPEG for lightning fast Telegram delivery."""
+    try:
+        with Image.open(io.BytesIO(raw_bytes)) as im:
+            im = im.convert("RGB")
+            im.thumbnail((max_size, max_size), Image.Resampling.LANCZOS)
+            out_io = io.BytesIO()
+            im.save(out_io, format="JPEG", quality=85, optimize=True)
+            return out_io.getvalue()
+    except Exception:
+        return raw_bytes
+
+
+async def fetch_artwork_bytes(url: str) -> bytes | None:
+    try:
+        r = await HTTP_CLIENT.get(url)
+        if r.status_code == 200 and len(r.content) > 500:
+            return optimize_image_bytes(r.content)
+        else:
+            logger.warning(f"Download returned {r.status_code} for {url}")
+    except Exception as e:
+        logger.warning(f"Failed to fetch image {url}: {e}")
+    return None
+
 
 async def send_artist_package(
     bot,
@@ -161,24 +229,25 @@ async def send_artist_package(
         media_group = []
         for idx, artwork in enumerate(batch, start=start_idx):
             caption = curator.format_artwork_caption(artist, artwork, idx)
-            media_group.append(
-                InputMediaPhoto(
-                    media=artwork["image_url"],
-                    caption=caption,
-                    parse_mode=ParseMode.HTML,
+            img_bytes = await fetch_artwork_bytes(artwork["image_url"])
+            if img_bytes:
+                media_group.append(
+                    InputMediaPhoto(
+                        media=io.BytesIO(img_bytes),
+                        caption=caption,
+                        parse_mode=ParseMode.HTML,
+                    )
                 )
-            )
 
-        try:
-            await bot.send_media_group(chat_id=chat_id, media=media_group)
-        except Exception as e:
-            logger.warning(
-                f"send_media_group failed with direct URLs: {e}. Sending fallback descriptions."
-            )
-            # Fallback text if network/Telegram image URL fetch times out
+        if media_group:
+            try:
+                await bot.send_media_group(chat_id=chat_id, media=media_group)
+            except Exception as e:
+                logger.warning(f"send_media_group error: {e}")
+        else:
+            # Fallback text if images are unavailable
             fallback_text = (
-                f"⚠️ <b>[도록 텍스트 안내]</b> 텔레그램 서버의 외부 이미지 로딩 지연으로 "
-                f"대표작 {len(batch)}점의 도록 목록을 텍스트로 먼저 안내해 드립니다:\n\n"
+                f"📝 <b>[대표작 {len(batch)}점 도록 안내]</b>\n\n"
             )
             for idx, artwork in enumerate(batch, start=start_idx):
                 fallback_text += f"{curator.format_artwork_caption(artist, artwork, idx)}\n\n"
@@ -430,18 +499,22 @@ async def more_artworks_callback(update: Update, context: ContextTypes.DEFAULT_T
     media_group = []
     for idx, artwork in enumerate(batch, start=start_idx):
         caption = curator.format_artwork_caption(artist, artwork, idx)
-        media_group.append(
-            InputMediaPhoto(
-                media=artwork["image_url"],
-                caption=caption,
-                parse_mode=ParseMode.HTML,
+        img_bytes = await fetch_artwork_bytes(artwork["image_url"])
+        if img_bytes:
+            media_group.append(
+                InputMediaPhoto(
+                    media=io.BytesIO(img_bytes),
+                    caption=caption,
+                    parse_mode=ParseMode.HTML,
+                )
             )
-        )
 
-    try:
-        await context.bot.send_media_group(chat_id=chat_id, media=media_group)
-    except Exception as e:
-        logger.warning(f"Callback send_media_group failed: {e}. Sending fallback text.")
+    if media_group:
+        try:
+            await context.bot.send_media_group(chat_id=chat_id, media=media_group)
+        except Exception as e:
+            logger.warning(f"Callback send_media_group failed: {e}")
+    else:
         fallback_text = (
             f"🖼️ <b>[{artist['name_kr']} - 추가 작품 목록 ({start_idx}~{start_idx+len(batch)-1}번)]</b>\n\n"
         )
