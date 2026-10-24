@@ -41,6 +41,10 @@ class ArtCurator:
         with open(HISTORY_FILE, "w", encoding="utf-8") as f:
             json.dump(self.history, f, ensure_ascii=False, indent=2)
 
+    def reload(self) -> None:
+        self.artists = self._load_artists()
+        self.history = self._load_history()
+
     def get_current_date_str(self) -> str:
         return datetime.now(self.tz).strftime("%Y-%m-%d")
 
@@ -59,6 +63,7 @@ class ArtCurator:
         If already assigned for today's date, returns that artist.
         Otherwise, selects the next unsent artist in sequence, prioritizing the weekly genre balance.
         """
+        self.reload()
         today_str = self.get_current_date_str()
 
         # Check if already sent today
@@ -110,15 +115,18 @@ class ArtCurator:
 
     def get_random_artist(self) -> Dict[str, Any]:
         """Returns a random artist from the entire catalog."""
+        self.reload()
         return random.choice(self.artists)
 
     def get_artist_by_id(self, artist_id: str) -> Optional[Dict[str, Any]]:
+        self.reload()
         for a in self.artists:
             if a["id"] == artist_id:
                 return a
         return None
 
     def get_all_artists_summary(self) -> List[Dict[str, Any]]:
+        self.reload()
         sent_ids = {entry.get("artist_id") for entry in self.history}
         summaries = []
         for idx, a in enumerate(self.artists, 1):
