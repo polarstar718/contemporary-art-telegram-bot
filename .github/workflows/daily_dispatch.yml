@@ -1,0 +1,30 @@
+name: Daily Contemporary Art Dispatch
+
+on:
+  schedule:
+    # 23:00 UTC Sunday to Thursday = 08:00 AM KST Monday to Friday
+    - cron: '0 23 * * 0-4'
+  workflow_dispatch:
+
+jobs:
+  send-art:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests pytz
+
+      - name: Run Daily Art Dispatch
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || vars.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || vars.TELEGRAM_CHAT_ID }}
+        run: |
+          python dispatch_today.py
