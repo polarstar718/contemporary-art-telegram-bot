@@ -1,0 +1,2697 @@
+[
+  {
+    "id": "olafur-eliasson",
+    "name_kr": "올라퍼 엘리아슨",
+    "name_en": "Olafur Eliasson",
+    "nationality": "덴마크 / 아이슬란드 (Denmark / Iceland)",
+    "birth_year": 1967,
+    "category": "설치미술 / 빛과 공간 예술 (Installation & Spatial Art)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "2003년 제50회 베니스 비엔날레 (Venice Biennale) 덴마크관 대표 작가",
+      "2003년 테이트 모던 터빈홀 유니레버 시리즈 'The Weather Project' 전시",
+      "2014년 울프상 (Wolf Prize in Arts) 예술 부문 수상",
+      "2016년 세계경제포럼(다보스 포럼) 크리스탈 어워드 수상"
+    ],
+    "philosophy": "올라퍼 엘리아슨은 관람객이 단순히 작품을 '보는' 데 그치지 않고, 빛·안개·물·온도 등 자연의 원초적 요소를 몸 전체로 느끼며 스스로의 지각 방식을 깨닫게 만드는 현대미술가입니다. 그는 '관람객이 작품을 완성한다'는 참여적 철학을 고수하며, 미술관의 닫힌 공간을 넘어 기후 변화와 생태 위기를 도시 광장과 일상 속에서 직접 체감하도록 이끄는 사회적 실천가이기도 합니다.",
+    "style_features": "자연의 물리적 현상(태양광, 무지개, 물안개, 이끼, 빙하 얼음)을 거울, 프리즘, 특수 조명 등 과학적 장치와 결합하여 비물질적인 빛과 공간을 만질 듯 생생한 감각적 체험으로 전환합니다. 건축, 기하학, 환경 과학을 융합한 대규모 장소특정적(Site-specific) 설치가 독보적입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/studioolafureliasson",
+      "official_website": "https://olafureliasson.net"
+    },
+    "galleries": [
+      "Tanya Bonakdar Gallery (뉴욕)",
+      "neugerriemschneider (베를린)",
+      "PKM Gallery (서울)"
+    ],
+    "sources": [
+      "Studio Olafur Eliasson Archive",
+      "Tate Modern Collection",
+      "Guggenheim Museum Bilbao",
+      "ARoS Aarhus Kunstmuseum"
+    ],
+    "artworks": [
+      {
+        "title_kr": "날씨 프로젝트",
+        "title_en": "The Weather Project",
+        "year": 2003,
+        "medium_kr": "단파장 전구, 거울박, 안개 생성 장치 (테이트 모던 터빈홀 설치)",
+        "medium_en": "Monofrequency lights, projection foil, haze machines, mirror foil",
+        "gallery_or_location": "Tate Modern (런던)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/2010-10-03-quadriga-by-RalfR-091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "테이트 모던의 거대한 터빈홀 천장을 거울로 덮고 인공 태양과 안개를 뿜어내어 200만 명의 관람객을 바닥에 눕게 만든 현대미술사의 기념비적 설치작품."
+      },
+      {
+        "title_kr": "당신의 무지개 파노라마",
+        "title_en": "Your Rainbow Panorama",
+        "year": 2011,
+        "medium_kr": "채색 유리 및 곡면 유리, 강철 원형 통로 (지름 52m)",
+        "medium_en": "Tinted and curved glass, steel, 150m circular walkway",
+        "gallery_or_location": "ARoS Aarhus Art Museum (덴마크 오르후스)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/2010-10-03-quadriga-by-RalfR-121.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "미술관 옥상에 360도 원형 무지개 유리 산책로를 조성하여 도시 전체를 빛의 스펙트럼 속에서 걷는 경험을 선사합니다."
+      },
+      {
+        "title_kr": "얼음 시계",
+        "title_en": "Ice Watch",
+        "year": 2014,
+        "medium_kr": "그린란드 피오르드에서 채취한 거대한 빙하 덩어리 12개",
+        "medium_en": "12 large blocks of free-floating glacial ice from Greenland",
+        "gallery_or_location": "Tate Modern & Place du Panthéon (파리/런던 광장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/2010-10-03-quadriga-by-RalfR-122.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "도심 광장에 녹아내리는 실제 북극 빙하를 시계 문자판처럼 배치하여 기후 위기를 오감으로 직접 만지고 느끼게 한 공공 프로젝트."
+      },
+      {
+        "title_kr": "뷰티 (아름다움)",
+        "title_en": "Beauty",
+        "year": 1993,
+        "medium_kr": "스포트라이트, 물 분사기, 노즐, 어두운 암실 설치",
+        "medium_en": "Spotlight, water nozzles, hose, darkening foil",
+        "gallery_or_location": "Museum of Contemporary Art, Los Angeles",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Berlin%2C_Tiergarten%2C_Reichpietschufer%2C_GTZ-Haus%2C_Windspiegelwand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "어두운 방 천장에서 뿜어져 나오는 미세한 물안개에 한 줄기 빛을 투사하여, 관람객이 서 있는 각도에 따라 오직 그 사람만의 무지개가 피어납니다."
+      },
+      {
+        "title_kr": "베르사유 인공 폭포",
+        "title_en": "Waterfall at Versailles",
+        "year": 2016,
+        "medium_kr": "비계 타워, 펌프 수로, 대운하 호수 수직 설치 (높이 40m)",
+        "medium_en": "Scaffolding tower, water pump, cascade system",
+        "gallery_or_location": "Palace of Versailles (베르사유 궁전 대운하)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Berlin-Buch-Leuchtturm-Olafur-Eliasson-Robert-R%C3%B6ssle-Str.10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "베르사유 궁전 대운하 한가운데에 40미터 높이의 거대한 물폭포를 공중에 띄워 인공과 자연, 권력과 지각의 경계를 질문합니다."
+      },
+      {
+        "title_kr": "당신의 불확실한 그림자 (색채)",
+        "title_en": "Your Uncertain Shadow (Colour)",
+        "year": 2010,
+        "medium_kr": "HMI 램프, 색상 필터(녹색, 주황색, 파란색, 마젠타)",
+        "medium_en": "HMI lamps, colour filters, white projection screen",
+        "gallery_or_location": "Tate Modern Collection (런던)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Berlin-Buch-Leuchtt%C3%BCrme-II-Olafur-Eliasson-Robert-R%C3%B6ssle-Str.10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "흰 벽면을 향해 걸어가는 관람객의 움직임에 따라 여러 색채의 그림자가 겹쳐지며, 관람객 자신이 빛과 그림자의 안무가가 됩니다."
+      },
+      {
+        "title_kr": "녹색 강",
+        "title_en": "Green River",
+        "year": 1998,
+        "medium_kr": "무독성 우라닌 염료, 강물 (공공 장소특정적 프로젝트)",
+        "medium_en": "Uranine water-soluble dye, natural river current",
+        "gallery_or_location": "Bremen, Stockholm, Los Angeles, Tokyo, Venice",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Berlin-Buch-Leuchtt%C3%BCrme-Olafur-Eliasson-Robert-R%C3%B6ssle-Str.10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "도심을 흐르는 강물에 천연 형광 염료를 풀어 도시인들에게 매일 무심코 지나치던 강물의 흐름과 속도를 시각적으로 일깨운 대규모 개입 프로젝트."
+      },
+      {
+        "title_kr": "자갈강 바닥",
+        "title_en": "Riverbed",
+        "year": 2014,
+        "medium_kr": "아이슬란드 현무암 자갈, 바위, 실제 흐르는 물, 미술관 바닥 전면 설치",
+        "medium_en": "Icelandic stones, gravel, water, museum floor transformation",
+        "gallery_or_location": "Louisiana Museum of Modern Art (덴마크 루이지애나 미술관)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Bloomberg_London_lobby_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "미술관의 하얀 화이트큐브 바닥 전체를 거대한 야생 강바닥과 돌무더기로 덮어버려, 실내와 대자연의 경계를 완전히 허문 압도적인 공간 설치."
+      },
+      {
+        "title_kr": "당신의 원형 캠퍼스",
+        "title_en": "Fjordenhus (Fjord House)",
+        "year": 2018,
+        "medium_kr": "벽돌, 콘크리트, 유리, 물 위의 건축적 조각",
+        "medium_en": "Architectural sculpture, brick, glazed tile, water",
+        "gallery_or_location": "Vejle Fjord (덴마크 바일레 피오르드)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Bloomberg_London_lobby_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "물 위에 떠 있는 듯한 조각적 건축물로, 조수 간만의 차와 바람, 햇빛이 건물 내부로 유입되어 유기적으로 호흡합니다."
+      },
+      {
+        "title_kr": "빛의 눈 (접촉)",
+        "title_en": "Contact",
+        "year": 2014,
+        "medium_kr": "만곡 거울벽, 어두운 암실, 원형 단파장 광선 띠",
+        "medium_en": "Curved mirror wall, mono-frequency light beam",
+        "gallery_or_location": "Fondation Louis Vuitton (파리 루이비통 재단 미술관)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Bloomberg_London_lobby_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "우주적 지평선처럼 어둠 속에 단 하나의 노란빛 지평선 라인을 그어 넣어, 관람객이 광활한 우주 공간에 홀로 마주선 듯한 감각을 유발합니다."
+      },
+      {
+        "title_kr": "이끼 벽",
+        "title_en": "Moss Wall",
+        "year": 1994,
+        "medium_kr": "순록 이끼(Reindeer moss), 와이어, 목재 벽체",
+        "medium_en": "Reindeer moss, wire, wood",
+        "gallery_or_location": "Louisiana Museum / Private Collections",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/B%C3%BChnenfenster_-_Olafur_Eliasson_Munich_5013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "북유럽 툰드라 지대의 천연 순록 이끼로 미술관 벽면 전체를 덮어, 특유의 흙냄새와 습도로 후각과 촉각을 일깨우는 살아 숨쉬는 생태 벽면."
+      },
+      {
+        "title_kr": "현실 프로젝터",
+        "title_en": "Reality Projector",
+        "year": 2018,
+        "medium_kr": "컬러 젤 필터 빔, 영사기, 천장 목재 빔 그림자 투사",
+        "medium_en": "HD projectors, theatrical color gel filters, architectural beam shadows",
+        "gallery_or_location": "Marciano Art Foundation (로스앤젤레스)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Cold_Wind_Sphere_-_Olafur_Eliasson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "옛 극장의 거대한 천장 트러스를 관통하는 역동적인 원색 빛의 프리즘을 쏘아 올려, 공간 자체가 3차원 영화가 되는 환상적인 미디어 공간 설치."
+      }
+    ]
+  },
+  {
+    "id": "do-ho-suh",
+    "name_kr": "서도호",
+    "name_en": "Do Ho Suh",
+    "nationality": "대한민국 (South Korea)",
+    "birth_year": 1962,
+    "category": "공간 예술 / 반투명 패브릭 건축 설치 (Spatial & Architectural Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "2001년 제49회 베니스 비엔날레 (Venice Biennale) 한국관 대표 작가",
+      "2003년 에르메스 재단 미술상 (Hermès Foundation Missulsang) 수상",
+      "2010년 제12회 베니스 비엔날레 국제 건축전 초청 작가",
+      "2017년 호암상 (Ho-Am Prize) 예술상 수상"
+    ],
+    "philosophy": "서도호는 '집'이라는 물리적 공간과 그 속에 깃든 기억, 이주와 유목의 정체성을 탐구하는 세계적인 공간 설치미술가입니다. 그는 서울의 전통 한옥에서부터 미국 뉴욕의 브루클린 아파트, 영국 런던의 연립주택에 이르기까지 자신이 살았던 실제 집들을 반투명한 은은한 색상의 반투명 견사(실크/나일론)로 1:1 크기로 정밀하게 바느질하여 재현합니다. 그에게 집은 고정된 부동산이 아니라 가방 속에 접어 넣어 어디든 들고 다닐 수 있는 '입을 수 있는 공간'이자 이동하는 기억입니다.",
+    "style_features": "반투명한 파스텔톤 천을 정교하게 손바느질하여 문손잡이, 콘센트, 라디에이터까지 실제와 똑같이 제작한 '천 건축'이 대표적입니다. 물리적 견고함을 탈각시킨 유령 같은 공간 속을 관람객이 직접 걸어 통과하며, 개인의 공간과 타자의 공간이 겹치는 시적 경험을 제공합니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/dohosuhstudio",
+      "official_website": "https://lehmannmaupin.com/artists/do-ho-suh"
+    },
+    "galleries": [
+      "Lehmann Maupin (뉴욕, 서울, 런던)",
+      "Victoria Miro (런던)",
+      "STPI (싱가포르)"
+    ],
+    "sources": [
+      "National Museum of Modern and Contemporary Art, Korea (MMCA)",
+      "Tate Collection",
+      "Smithsonian American Art Museum",
+      "Museum of Fine Arts, Houston"
+    ],
+    "artworks": [
+      {
+        "title_kr": "집 속의 집 속의 집 속의 집",
+        "title_en": "Home Within Home Within Home Within Home Within Home",
+        "year": 2013,
+        "medium_kr": "반투명 반사 폴리에스터 섬유, 금속 프레임 (대형 1:1 스케일 건축 설치)",
+        "medium_en": "Translucent polyester fabric, stainless steel armature",
+        "gallery_or_location": "MMCA 국립현대미술관 서울관 서울박스",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Do_Ho_Suh_and_Eitaro_Ogawa_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "작가가 유학 시절 살았던 로드아일랜드의 3층 양옥집 안에 서울 성북동의 전통 한옥을 1:1 크기로 겹쳐 넣어 두 문화와 시공간의 조우를 시각화한 걸작."
+      },
+      {
+        "title_kr": "별똥별",
+        "title_en": "Fallen Star",
+        "year": 2012,
+        "medium_kr": "목재, 지붕 기와, 가구, 소품, 7층 대학 건물 옥상 캔틸레버 설치",
+        "medium_en": "Permanent structural installation, 7th floor Jacobs Hall rooftop",
+        "gallery_or_location": "UC San Diego Stuart Collection (캘리포니아)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Do_Ho_Suh_and_Eitaro_Ogawa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "대학 공학관 7층 옥상 모서리에 마치 하늘에서 떨어진 듯 비스듬히 위태롭게 박혀 있는 작은 미국식 오두막집. 낯선 곳에 불시착한 이방인의 심리적 충격을 은유합니다."
+      },
+      {
+        "title_kr": "바닥",
+        "title_en": "Floor",
+        "year": 1997,
+        "medium_kr": "투명 PVC 수지 미니어처 인물 군상 18만 개, 두꺼운 유리판 판석",
+        "medium_en": "Glass plates, phenolic resin figures (approx. 180,000 miniatures)",
+        "gallery_or_location": "Venice Biennale 2001 / MMCA 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Do_Ho_Suh-_5756-sm_%285133449116%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "관람객이 밟고 지나가는 두꺼운 유리 바닥 아래에서 수십만 명의 작은 사람들이 일제히 손을 치켜들고 바닥을 떠받치고 있는 충격적인 설치."
+      },
+      {
+        "title_kr": "카르마 (업보)",
+        "title_en": "Karma",
+        "year": 2003,
+        "medium_kr": "스테인리스 스틸, 우레탄 페인트 거대 조형 (높이 7m 이상)",
+        "medium_en": "Cast stainless steel, polyurethane paint",
+        "gallery_or_location": "Albright-Knox Art Gallery & 하이트진로 빌딩",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Do_Ho_Suh-_5758-sm_%285133450348%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "앞사람의 어깨 위에 올라탄 수많은 인물들이 바로 앞사람의 두 눈을 손으로 가리며 끝없이 하늘 위로 휘어져 솟구치는 인간의 굴레와 역사의 연결고리."
+      },
+      {
+        "title_kr": "어떤 이 / 누군가",
+        "title_en": "Some/One",
+        "year": 2001,
+        "medium_kr": "수만 개의 군용 인식표(Dog tags), 강철 갑옷 형상, 섬유, 거울 바닥",
+        "medium_en": "Stainless steel military dog tags, steel structure, mirrored floor",
+        "gallery_or_location": "Smithsonian American Art Museum (워싱턴 D.C.)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Do_Ho_Suh-_5759-sm_%285133451420%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "수만 명 군인들의 고유 번호가 적힌 군번줄이 물고기 비늘처럼 촘촘히 엮여 거대한 황제의 갑옷을 이루지만, 안쪽은 텅 비어 있는 개인과 국가의 서사."
+      },
+      {
+        "title_kr": "서울 홈 / L.A. 홈",
+        "title_en": "Seoul Home / L.A. Home",
+        "year": 1999,
+        "medium_kr": "연녹색 실크 명주, 천장 와이어 서스펜션 (1:1 실물 크기)",
+        "medium_en": "Silk fabric, suspension wires",
+        "gallery_or_location": "Museum of Contemporary Art, Los Angeles",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Do_Ho_Suh-_5760-sm_%285132850575%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "서울의 성북동 한옥을 은은한 연녹색 비단으로 한 땀 한 땀 바느질하여 접어서 여행용 캐리어에 담아 태평양 건너 미국 미술관 공중에 띄워 올린 작가의 초기 대표작."
+      },
+      {
+        "title_kr": "완벽한 집: 런던 브리지",
+        "title_en": "Bridging Home, London",
+        "year": 2018,
+        "medium_kr": "전통 목조 한옥 외벽, 기와, 알루미늄 구조체, 육교 상부 설치",
+        "medium_en": "Bamboo, steel, western red cedar, pedestrian footbridge",
+        "gallery_or_location": "Wormwood Street Footbridge (런던 도심 육교)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Do-ho_Suh_Details.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "런던 금융가의 번잡한 차도 위 육교에 한국의 전통 기와집을 비스듬히 안착시켜 회색빛 도심 풍경 속에서 디아스포라의 시선을 환기합니다."
+      },
+      {
+        "title_kr": "공공 인물들",
+        "title_en": "Public Figures",
+        "year": 1998,
+        "medium_kr": "청동, 유리 섬유 수지 좌대 (수백 명의 소인 군상 받침대)",
+        "medium_en": "Bronze, fiberglass, stone pedestal",
+        "gallery_or_location": "Brooklyn Museum Collection (뉴욕)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Do-Ho_Suh%27s_%27New_York_Apartment%27_%28detail%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "위대한 영웅의 동상이 서 있어야 할 육중한 조각 좌대 위에 동상은 없고, 대신 바닥에서 수백 명의 평범한 익명의 대중들이 온 힘으로 좌대를 받치고 있는 역발상의 기념비."
+      },
+      {
+        "title_kr": "러빙 / 러빙 (문지르기)",
+        "title_en": "Rubbing/Loving Project",
+        "year": 2016,
+        "medium_kr": "전신 종이 프로타주, 흑연 연필, 3층 아파트 실내 전면",
+        "medium_en": "Graphite pencil and paper rubbing of full interior",
+        "gallery_or_location": "Victoria Miro & Smithsonian",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Do-Ho_Suh%27s_%27New_York_Apartment%27.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "철거를 앞둔 뉴욕 첼시 아파트 실내의 모든 벽과 손잡이, 스위치를 종이로 덮고 흑연으로 수개월간 문질러 떠낸 시간과 촉각의 기록."
+      },
+      {
+        "title_kr": "네트워크",
+        "title_en": "Net-Work",
+        "year": 2010,
+        "medium_kr": "금색 및 은색 크롬 도금 소형 인물 인형들로 짠 초대형 그물",
+        "medium_en": "Gold and silver plated plastic figures, fishing net structure",
+        "gallery_or_location": "Setouchi Triennale (세토우치 트리엔날레, 일본)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Fallen_Star_by_Do_Ho_Suh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "바닷가 백사장에 펼쳐진 거대한 어망. 자세히 들여다보면 그물의 모든 그물코가 손과 발을 맞잡은 인간 군상들로 촘촘히 엮여 파도와 바람에 흔들립니다."
+      }
+    ]
+  },
+  {
+    "id": "yayoi-kusama",
+    "name_kr": "쿠사마 야요이",
+    "name_en": "Yayoi Kusama",
+    "nationality": "일본 (Japan)",
+    "birth_year": 1929,
+    "category": "몰입형 공간 설치 / 인피니티 미러 룸 (Immersive Spatial Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1993년 제45회 베니스 비엔날레 (Venice Biennale) 일본관 단독 대표 작가",
+      "2006년 세계 최고 권위 예술상 '프리미엄 임페리알레(Praemium Imperiale)' 수상",
+      "2016년 미국 타임지(TIME) 선정 '세계에서 가장 영향력 있는 100인'",
+      "세계 경매 시장에서 가장 비싼 가격에 거래되는 현존 여성 미술가"
+    ],
+    "philosophy": "쿠사마 야요이는 어린 시절부터 겪었던 환각과 강박증, 끝없는 공포를 '물방울무늬(Polka Dots)'와 '거울 공간'이라는 자기 치유적 예술 언어로 승화시킨 현대미술의 살아있는 전설입니다. 그녀에게 물방울은 태양, 달, 지구, 그리고 우주 속에서 점 하나에 불과한 인간 존재의 상징입니다. 그녀는 공간 전체를 점과 거울로 무한 복제함으로써 자아를 소멸(Self-Obliteration)시키고, 영원한 우주의 일부로 편입되는 초월적 해방감을 관람객에게 선사합니다.",
+    "style_features": "거울과 LED 조명, 반사 수면으로 사방이 끝없이 증식하는 '무한 거울 방(Infinity Mirrored Room)', 원색의 강렬한 노란 호박, 그리고 증식하는 유기적 형태의 조각들이 특징입니다. 관람객을 완전히 압도하는 360도 몰입형 공간 경험의 원조입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/yayoikusama_",
+      "official_website": "https://yayoi-kusama.jp"
+    },
+    "galleries": [
+      "David Zwirner (뉴욕, 런던, 파리, 홍콩)",
+      "Ota Fine Arts (도쿄, 싱가포르, 상하이)",
+      "Victoria Miro (런던)"
+    ],
+    "sources": [
+      "Yayoi Kusama Museum (도쿄)",
+      "Tate Modern Collection",
+      "The Broad Museum (로스앤젤레스)",
+      "Hirshhorn Museum (스미소니언)"
+    ],
+    "artworks": [
+      {
+        "title_kr": "무한 거울의 방 - 수백만 광년 떨어진 영혼들",
+        "title_en": "Infinity Mirrored Room - The Souls of Millions of Light Years Away",
+        "year": 2013,
+        "medium_kr": "거울판, 목재, 아크릴, 수면 풀, LED 조명 시스템",
+        "medium_en": "Mirrored glass, wood, acrylic, water, LED lights system",
+        "gallery_or_location": "The Broad (로스앤젤레스)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/20130918Yayoi_Kusama1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "사방이 거울로 둘러싸인 작은 방에 발을 들이는 순간 수억 개의 반짝이는 별빛이 심연까지 끝없이 펼쳐지며 우주 한가운데 홀로 떠 있는 착각을 줍니다."
+      },
+      {
+        "title_kr": "노란 호박",
+        "title_en": "Yellow Pumpkin",
+        "year": 1994,
+        "medium_kr": "강화 플라스틱(FRP), 우레탄 도료 (높이 2m의 거대 조각)",
+        "medium_en": "Fiberglass reinforced plastic, urethane paint",
+        "gallery_or_location": "Benesse Art Site Naoshima (일본 나오시마 해안 부두)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/20130918Yayoi_Kusama1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "잔잔한 세토내해 바다로 뻗은 선착장 끝에 홀로 서 있는 검은 점박이 노란 호박. 고난과 외로움을 묵묵히 버텨내는 예술가의 자화상이자 치유의 상징."
+      },
+      {
+        "title_kr": "나르시스 가든 (수선화 정원)",
+        "title_en": "Narcissus Garden",
+        "year": 1966,
+        "medium_kr": "미러 볼 1,500개의 스테인리스 스틸 구체 바닥 설치",
+        "medium_en": "1,500 mirrored stainless steel spheres",
+        "gallery_or_location": "1966 베니스 비엔날레 최초 퍼포먼스 / MoMA PS1",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/20130918Yayoi_Kusama2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "1966년 베니스 비엔날레 잔디밭에 1,500개의 은색 미러볼을 깔아놓고 개당 2달러에 판매하며 미술 시장의 상업주의와 관람객의 나르시시즘을 통렬히 풍자한 전설의 작품."
+      },
+      {
+        "title_kr": "수면 위의 반딧불이",
+        "title_en": "Fireflies on the Water",
+        "year": 2002,
+        "medium_kr": "거울, 플렉시글라스, 물 웅덩이 풀, 150개의 작은 색색 전구",
+        "medium_en": "Mirrors, plexiglass, pool of water, 150 hanging lights",
+        "gallery_or_location": "Whitney Museum of American Art (뉴욕 휘트니 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/20130918Yayoi_Kusama3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "발아래 찰랑이는 물과 머리 위로 매달린 150개의 작은 불빛이 거울에 반사되어 깊고 신비로운 밤 호숫가의 반딧불이 숲을 연출합니다."
+      },
+      {
+        "title_kr": "도트 강박 (점이 부르는 소리)",
+        "title_en": "Dots Obsession - Love Transformed into Dots",
+        "year": 2007,
+        "medium_kr": "노란색 바탕에 검은 점이 찍힌 초대형 공기주입식 비닐 풍선 군집",
+        "medium_en": "Inflatable vinyl sculptures, yellow background, black polka dots",
+        "gallery_or_location": "Tate Modern & Gropius Bau",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2015%E5%B9%B4%E7%A7%8B_%E6%9D%BE%E6%9C%AC%E3%81%AE%E6%97%85_%2821309541794%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "전시장 전체를 가득 메운 거대한 노란 풍선들 사이를 관람객이 헤치고 지나가며 점들의 무한한 에너지 속에 빨려 들어가는 체험을 선사합니다."
+      },
+      {
+        "title_kr": "영원의 소멸 그 이후",
+        "title_en": "Aftermath of Obliteration of Eternity",
+        "year": 2009,
+        "medium_kr": "목재, 거울, 알루미늄, LED 등불 조명, 타이머 스위치",
+        "medium_en": "Wood, mirror, aluminum, LED lanterns, acrylic",
+        "gallery_or_location": "Museum of Fine Arts, Houston (휴스턴 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/City_Gallery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "일본의 전통 등불 띄우기 축제인 '토로 나가시'에서 영감을 받아, 사방의 등불이 서서히 밝아졌다 다시 어둠 속으로 완전히 꺼져가는 생명의 순환을 표현한 방."
+      },
+      {
+        "title_kr": "튤립에 대한 나의 모든 사랑",
+        "title_en": "With All My Love for the Tulips, I Pray Forever",
+        "year": 2011,
+        "medium_kr": "벽면, 천장, 바닥, 거대 튤립 조각 전체에 도포된 빨간 점 스티커",
+        "medium_en": "Fiberglass reinforced plastic, acrylic paint, dot environment",
+        "gallery_or_location": "The National Museum of Art, Osaka",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Enjambre_de_Luci%C3%A9rnagas_cartel_Yayoi_Kusama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "완벽하게 하얀 공간 속에 빨간 점들이 벽과 바닥, 거대한 튤립 조각까지 삼켜버리며 물체와 배경의 구분이 사라지는 시각적 착시 공간."
+      },
+      {
+        "title_kr": "슬픔의 샹들리에",
+        "title_en": "Chandelier of Grief",
+        "year": 2016,
+        "medium_kr": "육각형 거울 룸, 회전 기어, 크리스털 샹들리에, LED",
+        "medium_en": "Hexagonal mirror room, rotating crystal chandelier",
+        "gallery_or_location": "Tate Modern Collection (런던 테이트 모던)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Enjambre_de_Luci%C3%A9rnagas_creaci%C3%B3n_de_Yayoi_Kusama_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "육각형 거울 방 한가운데에 고풍스러운 샹들리에가 끊임없이 회전하며 반사되어, 화려한 광채 이면에 숨겨진 비애와 상실감을 비춥니다."
+      },
+      {
+        "title_kr": "무한 그물망 (인피니티 네트)",
+        "title_en": "Infinity Nets",
+        "year": 1959,
+        "medium_kr": "캔버스에 오일 페인팅 (대형 추상 연작)",
+        "medium_en": "Oil on canvas, monochromatic net patterns",
+        "gallery_or_location": "Museum of Modern Art (MoMA 뉴욕 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Enjambre_de_Luci%C3%A9rnagas_creaci%C3%B3n_de_Yayoi_Kusama_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "작가가 뉴욕에 도착한 직후 식음을 전폐하고 며칠 밤을 새우며 캔버스 가득 붓끝으로 작은 아치형 그물을 끝없이 그려나간 전설적인 흑백 추상 회화."
+      },
+      {
+        "title_kr": "남근의 들판 (무한 거울 방의 시초)",
+        "title_en": "Phalli's Field (Floor Show)",
+        "year": 1965,
+        "medium_kr": "사면 거울 방, 빨간 물방울무늬 패브릭 봉제 조각 수천 개",
+        "medium_en": "Mirrored room, stuffed cotton fabric, polka dots",
+        "gallery_or_location": "Castellane Gallery New York 최초 전시",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Enjambre_de_Luci%C3%A9rnagas_creaci%C3%B3n_de_Yayoi_Kusama_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "거울을 이용해 공간을 무한대로 확장한 미술사 최초의 '인피니티 미러 룸'. 붉은 점이 박힌 봉제 솜 인형들이 거울 속에서 무한 증식합니다."
+      }
+    ]
+  },
+  {
+    "id": "arthur-jafa",
+    "name_kr": "아서 자파",
+    "name_en": "Arthur Jafa",
+    "nationality": "미국 (USA)",
+    "birth_year": 1960,
+    "category": "미디어아트 / 영상 몽타주 및 조각 설치 (Video & Media Art Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "2019년 제58회 베니스 비엔날레 (Venice Biennale) 최고 영예 '황금사자상 (Golden Lion)' 수상",
+      "스탠리 큐브릭의 '아이즈 와이드 셧' 촬영 등 영화 촬영감독 출신 현대미술 거장",
+      "휘트니 비엔날레 (Whitney Biennial) 참가 작가",
+      "런던 서펜타인 갤러리 (Serpentine Galleries) 개인전"
+    ],
+    "philosophy": "아서 자파는 흑인 음악(블루스, 재즈, 가스펠, 힙합)이 지닌 폭발적인 감정의 울림과 에너지를 시각 예술 영상으로 구현하고자 하는 미디어 아티스트입니다. 그는 유튜브, 역사적 아카이브, 뉴스 보도, 뮤직비디오, SNS 클립에서 수집한 방대한 이미지들을 강렬한 비트와 리듬에 맞춰 교차 편집(몽타주)함으로써, 미국 흑인 역사가 겪어온 깊은 트라우마와 비극, 그리고 그 속에서 피어난 숭고한 아름다움과 생명력을 직시하게 만듭니다. 2019년 베니스 비엔날레에서 전 세계 비평가들의 극찬을 받으며 최고상인 황금사자상을 거머쥐었습니다.",
+    "style_features": "카니예 웨스트, 밥 딜런 등의 음악을 배경으로 유튜브 저화질 클립부터 영화적 고화질 클립을 롤러코스터처럼 교차시키는 '영상 파운드 푸티지(Found footage) 몽타주', 그리고 대형 트랙터 타이어에 쇠사슬을 감은 거대한 조각 설치 등 시각적 중압감이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/sunriseslavery",
+      "official_website": "https://www.gladstonegallery.com/artist/arthur-jafa"
+    },
+    "galleries": [
+      "Gladstone Gallery (뉴욕, 브뤼셀, 서울)",
+      "Luma Arles (프랑스)",
+      "Gavin Brown's enterprise"
+    ],
+    "sources": [
+      "Venice Biennale Archives 2019",
+      "Whitney Museum of American Art",
+      "Metropolitan Museum of Art",
+      "Serpentine Galleries London"
+    ],
+    "artworks": [
+      {
+        "title_kr": "사랑이 메시지이고, 메시지는 죽음이다",
+        "title_en": "Love Is The Message, The Message Is Death",
+        "year": 2016,
+        "medium_kr": "단채널 비디오 설치, 음악: 카니예 웨스트 'Ultralight Beam' (7분 25초)",
+        "medium_en": "Single-channel video installation with sound, 7 min 25 sec",
+        "gallery_or_location": "Metropolitan Museum of Art & Smithsonian 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Arthur_Jafa_%282019%2C_Prague%29_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "카니예 웨스트의 성스러운 가스펠 힙합 비트에 맞춰 경찰 폭력의 비극과 흑인 문화의 눈부신 환희를 7분 동안 숨 쉴 틈 없이 교차 편집하여 21세기 최고의 비디오 아트 걸작으로 꼽힙니다."
+      },
+      {
+        "title_kr": "화이트 앨범 (베니스 황금사자상 수상작)",
+        "title_en": "The White Album",
+        "year": 2018,
+        "medium_kr": "단채널 디지털 비디오 설치, 유색 조명 공간 (40분)",
+        "medium_en": "Single-channel video installation, colored gallery lighting, 40 min",
+        "gallery_or_location": "2019 Venice Biennale Arsenale / Gladstone Gallery",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Arthur_Jafa_%282019%2C_Prague%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "백인 우월주의자들의 인터넷 브이로그와 가족, 친구들의 얼굴 클로즈업을 병치하여 인종주의와 백인성의 심리적 실체를 해부한 베니스 비엔날레 황금사자상 수상작."
+      },
+      {
+        "title_kr": "빅 스트레인저 (거대한 이방인)",
+        "title_en": "Big Stranger",
+        "year": 2019,
+        "medium_kr": "거대 몬스터 트럭 타이어, 체인, 강철 구조체 조각",
+        "medium_en": "Monster truck tire, steel chains, industrial armature",
+        "gallery_or_location": "2019 Venice Biennale Central Pavilion (지하 파빌리온)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Arthur_Jafa_%282019%2C_Prague%29_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "전시장 벽면을 가득 채운 초대형 타이어에 쇠사슬을 묶어 산업 문명의 폭력성과 압도적인 육체적 무게감을 공간에 투영한 조각."
+      },
+      {
+        "title_kr": "킹덤컴이 오리라",
+        "title_en": "akingdoncomethas",
+        "year": 2018,
+        "medium_kr": "디지털 비디오 설치, 미국 흑인 교회의 설교와 찬양 몽타주 (105분)",
+        "medium_en": "Digital video installation with sound, 105 min",
+        "gallery_or_location": "Serpentine Galleries (런던 서펜타인 갤러리)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Arthur_Jafa_%282019%2C_Prague%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "미국 전역 흑인 교회의 열광적인 방언 기도, 오르간 연주, 성령 강림의 찬양 순간들을 2시간에 걸쳐 엮어 음악이 어떻게 영혼의 피난처가 되었는지 증언합니다."
+      },
+      {
+        "title_kr": "에이펙스 (정점)",
+        "title_en": "APEX",
+        "year": 2013,
+        "medium_kr": "초고속 컷 전환 디지털 비디오, 테크노 일렉트로닉 사운드 (8분)",
+        "medium_en": "Single-channel video, techno soundtrack by Robert Hood, 8 min",
+        "gallery_or_location": "MoMA & Julia Stoschek Collection",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Arthur_Jafa_%282019%2C_Prague%29_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "1초에 서너 장씩 번쩍이며 교체되는 841장의 이미지들. 미생물부터 우주, 노예선에서 슈퍼히어로까지 인류 역사의 파편들이 테크노 비트에 맞춰 뇌리에 각인됩니다."
+      },
+      {
+        "title_kr": "몬스터",
+        "title_en": "Monster",
+        "year": 1988,
+        "medium_kr": "흑백 자화상 사진 프린트, 프레임",
+        "medium_en": "Gelatin silver print, artist self-portrait",
+        "gallery_or_location": "Whitney Museum of American Art (뉴욕 휘트니 미술관)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Arthur_Jafa_%282019%2C_Prague%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "카메라를 정면으로 노려보는 작가 자신의 얼굴. 백인 사회가 흑인 남성에게 덧씌운 '괴물'의 스테레오타입을 반사적으로 되돌려주는 초기 대표작."
+      },
+      {
+        "title_kr": "피의 영화관",
+        "title_en": "Blood Cinema",
+        "year": 2021,
+        "medium_kr": "프로젝션 영상 설치, 붉은색 필터 룸",
+        "medium_en": "Video projection, red filter ambient lighting installation",
+        "gallery_or_location": "Luma Arles (프랑스 아를 루마 재단)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Arthur_Jafa_%282019%2C_Prague%29_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "온통 핏빛으로 물든 갤러리 공간 안에서 흐르는 영상. 폭력의 역사와 생명수의 상반된 의미를 공감각적으로 마주하게 합니다."
+      },
+      {
+        "title_kr": "조나단",
+        "title_en": "Jonathan",
+        "year": 2019,
+        "medium_kr": "대형 사진 프린트, 비대칭 금속 프레임",
+        "medium_en": "C-print on metallic paper, custom frame",
+        "gallery_or_location": "Gladstone Gallery (뉴욕)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Arthur_Jafa_%282019%2C_Prague%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "미술관 벽면에 설치된 압도적인 인물 클로즈업 사진으로, 관람객의 시선과 피사체의 시선이 팽팽한 긴장감으로 교차합니다."
+      },
+      {
+        "title_kr": "나의 검은 죽음",
+        "title_en": "My Black Death",
+        "year": 2015,
+        "medium_kr": "혼합 매체 텍스트 북 및 아카이브 영상 설치",
+        "medium_en": "Mixed media notebook, text display, video loop",
+        "gallery_or_location": "Hammer Museum (로스앤젤레스)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Arthur_Jafa_%282019%2C_Prague%29_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "시각 문화에서 비가시화되었던 흑인의 죽음과 애도의 방식을 철학적 텍스트와 이미지 클립으로 엮어낸 개념적 아카이브 설치."
+      },
+      {
+        "title_kr": "피부 위의 태양",
+        "title_en": "Sun on the Skin",
+        "year": 2022,
+        "medium_kr": "멀티 채널 비디오 조각 설치",
+        "medium_en": "Multi-channel video sculptures, LED monitors",
+        "gallery_or_location": "Perez Art Museum Miami",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Arthur_Jafa_%282019%2C_Prague%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "태양빛 아래 피부의 질감과 온도를 디지털 모니터 조각들로 재현하여 시각을 촉각으로 확장한 최근작."
+      }
+    ]
+  },
+  {
+    "id": "lee-bul",
+    "name_kr": "이불",
+    "name_en": "Lee Bul",
+    "nationality": "대한민국 (South Korea)",
+    "birth_year": 1964,
+    "category": "사이보그 조각 / 유토피아 공간 설치 (Speculative Spatial Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1999년 제48회 베니스 비엔날레 (Venice Biennale) 한국관 및 본전시 특별상(Special Mention) 수상",
+      "1998년 휴고 보스상 (Hugo Boss Prize) 최종 후보",
+      "2014년 광주비엔날레 눈(Noon) 예술상 수상",
+      "2018년 런던 헤이워드 갤러리 (Hayward Gallery) 대규모 30년 회고전",
+      "2024년 뉴욕 메트로폴리탄 미술관(The Met) 정면 파사드 조각 커미션 선정"
+    ],
+    "philosophy": "이불은 가부장적 사회 구조와 서구 중심주의, 그리고 인간이 꿈꿔온 모더니즘 유토피아의 이상과 그 참혹한 파제를 파고드는 한국 현대미술의 독보적인 거장입니다. 1980년대 날생선에 스팽글을 달아 부패시키는 도발적인 퍼포먼스로 세계 미술계를 뒤흔든 그녀는, 이후 불완전한 신체를 지닌 '사이보그' 조각을 거쳐 거울, 크리스털, 금속 체인으로 20세기 유토피아 건축의 폐허를 환상적인 공간으로 재창조했습니다. 그녀의 작품은 완벽함을 추구하던 인간의 오만이 낳은 디스토피아 속에서도 여전히 꿈틀거리는 취약함과 희망을 포용합니다.",
+    "style_features": "차가운 스테인리스 스틸, 아크릴 거울판, 크리스털 비즈, 폴리우레탄 등을 결합하여 허공에 매달린 부유하는 도시, 미래주의적 비행선, 깨진 파편들의 미로를 창조합니다. 관람객이 거울 미로 안으로 걸어 들어가 자신의 분열된 상을 마주하게 만드는 공간성이 압권입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/leebulstudio",
+      "official_website": "https://lehmannmaupin.com/artists/lee-bul"
+    },
+    "galleries": [
+      "Lehmann Maupin (뉴욕, 서울, 런던)",
+      "Thaddaeus Ropac (파리, 런던, 잘츠부르크, 서울)",
+      "BB&M (서울)"
+    ],
+    "sources": [
+      "National Museum of Modern and Contemporary Art, Korea (MMCA)",
+      "Tate Collection",
+      "Hayward Gallery London",
+      "Guggenheim Museum New York"
+    ],
+    "artworks": [
+      {
+        "title_kr": "취약할 의향 (비행선 설치)",
+        "title_en": "Willing To Be Vulnerable - Velvet",
+        "year": 2015,
+        "medium_kr": "거대 은색 반사 패브릭, 알루미늄 비행선 힌덴부르크 호 형상, 거울 바닥 (길이 17m)",
+        "medium_en": "Metallic coated fabric, polyurethane, aluminum, mirrored flooring, 17m length",
+        "gallery_or_location": "2016 시드니 비엔날레 & 헤이워드 갤러리 런던",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ewha_Womans_University_Museum._Room_of_Modern_Art.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "1937년 폭발한 비운의 비행선 '힌덴부르크 호'를 은빛 풍선 조각으로 거대하게 공중에 띄우고 거울 바닥을 깔아 인류 유토피아의 찬란한 꿈과 비극적 추락을 노래한 역작."
+      },
+      {
+        "title_kr": "나의 거대 서사 (몽 그랑 레시)",
+        "title_en": "Mon grand récit: Weep pass...",
+        "year": 2005,
+        "medium_kr": "폴리우레탄, 합성수지, 인공 에폭시, LED 스크린, 유리 미니어처 고속도로",
+        "medium_en": "Polyurethane, synthetic resin, acrylic, LED screens, aluminum armature",
+        "gallery_or_location": "Mori Art Museum (도쿄 모리 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Oeuvre_de_Lee_Bul_%28Kiasma%2C_Kelsinki%29_%282755459179%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "블라디미르 타틀린의 제3인터내셔널 기념탑과 붕괴된 서울 청계고가도로를 뒤얽히게 결합하여 20세기 유토피아 거대 서사의 붕괴를 장엄하게 형상화한 풍경 조각."
+      },
+      {
+        "title_kr": "사이보그 W1 - W4",
+        "title_en": "Cyborg W1-W4",
+        "year": 1998,
+        "medium_kr": "실리콘, 폴리우레탄, 페인트 도색, 와이어 서스펜션 공중 매달림",
+        "medium_en": "Cast silicone, polyurethane, paint, steel suspension wire",
+        "gallery_or_location": "1999 Venice Biennale Special Mention / MMCA 국립현대미술관 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sin_t%C3%ADtulo%2C_Lee_Bul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "고대 그리스의 밀로의 비너스처럼 팔과 다리가 잘려 나간 하얀 사이보그 여체 조각. 기술과 이상화된 신체, 결핍과 불완전성의 긴장을 파고든 비엔날레 수상작."
+      },
+      {
+        "title_kr": "오바드 III (새벽 노래)",
+        "title_en": "Aubade III",
+        "year": 2014,
+        "medium_kr": "알루미늄 골조, 스테인리스 스틸 와이어, 크리스털, 안개 발생 장치, LED",
+        "medium_en": "Aluminum, steel structure, crystal beads, LED lights, fog generator",
+        "gallery_or_location": "Palais de Tokyo (파리 팔레 드 도쿄) & MMCA",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Untitled_%28White_Cravings%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "원자력 발전소의 냉각탑과 타틀린 탑을 연상시키는 거대한 구조물이 주기적으로 하얀 안개를 내뿜고 섬광을 터뜨리며 종말과 재생의 시공간을 조성합니다."
+      },
+      {
+        "title_kr": "태양의 도시 II (치비타스 솔리스)",
+        "title_en": "Civitas Solis II",
+        "year": 2014,
+        "medium_kr": "아크릴 거울판, 전구 조명, 폴리카보네이트, 스테인리스 스틸",
+        "medium_en": "Acrylic mirrors, light bulbs, polycarbonate, steel structure",
+        "gallery_or_location": "Hayward Gallery London & MMCA 현대차 시리즈",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Wunderkammer_%22Into_Lattice_Sun%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "바닥과 사방 벽면 전체를 각진 거울로 채우고 거꾸로 매달린 조명 글자들을 무한 반사시켜, 관람객이 걸어 들어가는 순간 현실 감각을 잃게 만드는 미로 공간."
+      },
+      {
+        "title_kr": "영원히 살기 (노래방 캡슐)",
+        "title_en": "Live Forever",
+        "year": 2001,
+        "medium_kr": "유선형 FRP 캡슐, 가죽 시트, 가라오케 시스템, 비디오 모니터",
+        "medium_en": "Fiberglass capsule, leather interior, audio karaoke system",
+        "gallery_or_location": "New Museum of Contemporary Art (뉴욕)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ewha_Womans_University_Museum._Room_of_Modern_Art.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "미래의 우주 탈출 캡슐처럼 생긴 1인용 캡슐에 관람객이 직접 들어가 문을 닫고 노래를 부를 수 있는 관객 참여형 미디어 공간 조각."
+      },
+      {
+        "title_kr": "화려한 유린",
+        "title_en": "Majestic Splendor",
+        "year": 1997,
+        "medium_kr": "실제 날생선, 화려한 스팽글, 비즈, 비닐 지퍼백 설치",
+        "medium_en": "Real fish, sequins, beads, potassium permanganate, Mylar bags",
+        "gallery_or_location": "MoMA 뉴욕 전시 (악취 이슈로 화제)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Oeuvre_de_Lee_Bul_%28Kiasma%2C_Kelsinki%29_%282755459179%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "시간이 흐르며 썩어가는 물고기의 비린내와 반짝이는 스팽글의 화려한 장식이 충돌하며 아름다움의 덧없음과 여성 신체에 대한 사회적 통념을 직격한 전설적 퍼포먼스 설치."
+      },
+      {
+        "title_kr": "부정의 길 II (비아 네가티바)",
+        "title_en": "Via Negativa II",
+        "year": 2014,
+        "medium_kr": "양면 거울 패널, 목재, 아크릴, LED 램프, 복도식 통로",
+        "medium_en": "Double-sided mirrors, wood, acrylic, LED lights structure",
+        "gallery_or_location": "Lehmann Maupin & Hayward Gallery",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sin_t%C3%ADtulo%2C_Lee_Bul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "책장으로 위장된 미로 통로를 지나면 온통 무한히 반사되는 거울 방의 중심에 도달하게 되어, 뇌 신경망의 심연 속을 걷는 듯한 지각의 충격을 줍니다."
+      },
+      {
+        "title_kr": "브루노 타우트 이후",
+        "title_en": "After Bruno Taut (Beware the sweetness of things)",
+        "year": 2007,
+        "medium_kr": "크리스털 비즈, 유리구, 스테인리스 스틸 체인, 알루미늄 뼈대",
+        "medium_en": "Crystal beads, glass, stainless steel armature, chains",
+        "gallery_or_location": "Tate Collection (런던 테이트 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Untitled_%28White_Cravings%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "독일 표현주의 건축가 브루노 타우트의 유리 파빌리온 비전을 수만 개의 투명 크리스털 비즈가 흘러내리는 샹들리에 형태의 공중 부유 조각으로 재해석."
+      },
+      {
+        "title_kr": "스케일 오브 텅 (혀의 눈금)",
+        "title_en": "Scale of Tongue",
+        "year": 2017,
+        "medium_kr": "네오프렌, 지퍼, 벨벳, 스테인리스 스틸 와이어, 거울 기둥",
+        "medium_en": "Neoprene, zippers, velvet, stainless steel, acrylic mirror",
+        "gallery_or_location": "National Gallery of Victoria (호주 멜버른)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Wunderkammer_%22Into_Lattice_Sun%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "거대한 산맥과 빙하의 단면, 그리고 인체 장기의 유기적 곡선을 직물과 지퍼로 조합하여 거대함과 섬세함이 공존하는 공간을 창조합니다."
+      }
+    ]
+  },
+  {
+    "id": "yang-hae-gue",
+    "name_kr": "양혜규",
+    "name_en": "Haegue Yang",
+    "nationality": "대한민국 / 독일 (South Korea / Germany)",
+    "birth_year": 1971,
+    "category": "다감각적 블라인드 공간 설치 / 키네틱 조각 (Multisensory Spatial Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "2009년 제53회 베니스 비엔날레 (Venice Biennale) 한국관 대표 및 본전시 동시 초청",
+      "2012년 카셀 도큐멘타 13 (dOCUMENTA 13) 초청 작가",
+      "2018년 독일 최고 권위 미술상 '볼프강 한 미술상 (Wolfgang Hahn Prize)' 아시아 여성 최초 수상",
+      "프랑크푸르트 슈테델슐레(Städelschule) 순수미술학부 정교수"
+    ],
+    "philosophy": "양혜규는 블라인드, 방울, 짚풀, 향기, 선풍기 바람 등 일상적이고 토속적인 오브제들을 전시장 안에 정밀하게 배치하여 시각뿐만 아니라 청각, 후각, 촉각을 깨우는 '다감각적 공간'을 구축하는 세계적 현대미술가입니다. 그녀에게 알루미늄 블라인드는 안과 밖, 사적인 것과 공적인 것의 경계를 부드럽게 가르고 투과시키는 시적 장치입니다. 이질적인 문화와 역사의 흔적들을 현대적인 조각 언어로 번역하며, 정주하지 않고 경계를 넘나드는 유목민적 사유를 펼쳐냅니다.",
+    "style_features": "공중에 겹겹이 걸린 베네시안 블라인드 숲 사이로 새어 나오는 빛과 그림자, 관람객이 손잡이를 잡고 직접 밀며 굴리는 소리 나는 방울 조각(Sonic Sculptures), 인공 짚풀 엮기 기법이 빚어내는 샤머니즘과 산업 문명의 기묘한 공존이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/studio_haegueyang",
+      "official_website": "https://heAttribute.net"
+    },
+    "galleries": [
+      "Kukje Gallery (서울)",
+      "Chantal Crousel (파리)",
+      "Kurimanzutto (멕시코시티/뉴욕)",
+      "Barbara Wien (베를린)"
+    ],
+    "sources": [
+      "Tate Modern Collection",
+      "Museum of Modern Art (MoMA 뉴욕)",
+      "Guggenheim Museum New York",
+      "Museum Ludwig Cologne"
+    ],
+    "artworks": [
+      {
+        "title_kr": "취약한 배열들의 연쇄 - 살림",
+        "title_en": "Series of Vulnerable Arrangements - Voice and Wind",
+        "year": 2009,
+        "medium_kr": "알루미늄 베네시안 블라인드, 무빙라이트 조명, 선풍기 바람, 향기 분사기",
+        "medium_en": "Aluminum venetian blinds, moving spotlights, fans, scent emitters",
+        "gallery_or_location": "2009 Venice Biennale 한국관 / MMCA 국립현대미술관 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Haegue_Yang_Blinds_%2841470373354%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "베니스 비엔날레 한국관의 유리 통창 사이로 부드러운 파스텔톤 블라인드들을 미로처럼 매달고 선풍기 바람과 은은한 향기를 흘려보내 공간 자체를 살아 호흡하게 만든 역작."
+      },
+      {
+        "title_kr": "솔 르윗 뒤집기",
+        "title_en": "Sol LeWitt Upside Down",
+        "year": 2015,
+        "medium_kr": "수백 개의 흰색 알루미늄 블라인드 격자, 천장 서스펜션",
+        "medium_en": "White aluminum Venetian blinds, brass hardware, steel wires",
+        "gallery_or_location": "삼성미술관 리움 & Hamburger Kunsthalle 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/HK_%E5%B0%96%E6%B2%99%E5%92%80_TST_%E4%BA%BA%E6%96%87%E8%97%9D%E8%A1%93%E8%B3%BC%E7%89%A9%E9%A4%A8_K11_MUSEA_mall_1240pm_May_2020_SS2_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "미니멀리즘의 거장 솔 르윗의 엄격한 기하학적 큐브 조각을 블라인드로 거꾸로 매달아 뒤집어놓음으로써, 단단한 서구 모더니즘의 구조를 투명하고 하늘하늘하게 탈구축한 설치."
+      },
+      {
+        "title_kr": "소리 나는 가사 (방울 조각)",
+        "title_en": "Sonic Domesticus",
+        "year": 2014,
+        "medium_kr": "수만 개의 황동 방울, 금속 뼈대, 바퀴, 손잡이 (이동형 조각)",
+        "medium_en": "Nickel-plated brass bells, steel armature, casters, handles",
+        "gallery_or_location": "Museum Ludwig Cologne (독일 쾰른 루드비히 미술관)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/HK_%E5%B0%96%E6%B2%99%E5%92%80_TST_%E4%BA%BA%E6%96%87%E8%97%9D%E8%A1%93%E8%B3%BC%E7%89%A9%E9%A4%A8_K11_MUSEA_mall_1240pm_May_2020_SS2_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "작품 표면 전체를 반짝이는 황동 방울로 덮어놓아, 관람객이나 퍼포머가 손잡이를 잡고 밀며 이동할 때마다 신비로운 방울 소리가 전시장을 공명시키는 키네틱 조각."
+      },
+      {
+        "title_kr": "중간 유형 (인공 짚풀 조각)",
+        "title_en": "The Intermediate",
+        "year": 2015,
+        "medium_kr": "인공 짚, 스틸 튜브 프레임, 인조 깃털, 민속 오브제",
+        "medium_en": "Artificial straw, powder-coated steel, plastic cords, bells",
+        "gallery_or_location": "Centre Pompidou (파리 퐁피두 센터 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/HK_%E5%B0%96%E6%B2%99%E5%92%80_TST_%E4%BA%BA%E6%96%87%E8%97%9D%E8%A1%93%E8%B3%BC%E7%89%A9%E9%A4%A8_K11_MUSEA_mall_1240pm_May_2020_SS2_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "전 세계 여러 전통 부족의 짚풀 공예와 샤머니즘 제의에서 영감을 얻은 형상을 합성수지 인공 짚풀로 엮어 전통과 현대, 자연과 인공의 중간 지대를 탐색합니다."
+      },
+      {
+        "title_kr": "창고 피스",
+        "title_en": "Storage Piece",
+        "year": 2004,
+        "medium_kr": "포장용 나무 팔레트 위에 겹겹이 묶인 미판매 작품 포장 박스들",
+        "medium_en": "Unsold artworks packed in shipping boxes on wooden pallets",
+        "gallery_or_location": "Haubrok Collection Berlin",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/HK_%E5%B0%96%E6%B2%99%E5%92%80_TST_%E4%BA%BA%E6%96%87%E8%97%9D%E8%A1%93%E8%B3%BC%E7%89%A9%E9%A4%A8_K11_MUSEA_mall_1240pm_May_2020_SS2_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "재정난으로 보관할 곳이 없던 이전 작품들을 배송 박스에 포장한 채 나무 팔레트 위에 그대로 묶어 미술관에 전시해버린 작가의 기발하고도 처절했던 자기 고백적 설치."
+      },
+      {
+        "title_kr": "의상 동차 (드레스 비클)",
+        "title_en": "Dress Vehicles",
+        "year": 2012,
+        "medium_kr": "블라인드 스크린, 금속 바퀴 프레임, 손잡이, 내부 거울 (착용형 조각)",
+        "medium_en": "Venetian blinds, aluminum chassis, mirrors, wheels",
+        "gallery_or_location": "Tate Modern The Tanks (런던 테이트 모던 탱크)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/MoMA_International_Acquisition.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "관람객이나 무용수가 조각 안으로 직접 걸어 들어가 거울을 보며 바퀴를 굴려 무대 위를 춤추듯 이동할 수 있는 신체 확장형 움직이는 조각."
+      },
+      {
+        "title_kr": "VIP용 라운지 (VIP's Union)",
+        "title_en": "VIP's Union",
+        "year": 2001,
+        "medium_kr": "도시 내 다양한 유명 인사 및 주민들에게 빌려온 각기 다른 소파와 의자들",
+        "medium_en": "Borrowed tables and chairs from local city figures and citizens",
+        "gallery_or_location": "Kunsthaus Graz & MMCA 서울관",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Museum_Ludwig_Haegue_Yang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "도시의 시장부터 학생, 청소 노동자까지 다양한 사람들의 손때가 묻은 의자들을 모아 전시장 안에 하나의 라운지를 만들어 민주적인 휴식 공간을 제공합니다."
+      },
+      {
+        "title_kr": "침묵의 침묵 (도큐멘타 13)",
+        "title_en": "Approaching: Choreography En Route",
+        "year": 2012,
+        "medium_kr": "전동 모터로 상하 움직이는 거대 블라인드 군집, 카셀 옛 기차역 설치",
+        "medium_en": "Motorized venetian blinds, automated choreography, railway hall",
+        "gallery_or_location": "dOCUMENTA 13 (독일 카셀 중앙역 옛 화물창고)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Haegue_Yang_Blinds_%2841470373354%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "카셀 도큐멘타의 옛 기차역 창고에서 모터에 의해 컴퓨터 제어로 끊임없이 올라가고 내려오며 빛과 그림자의 안무를 펼친 웅장한 블라인드 키네틱 설치."
+      },
+      {
+        "title_kr": "치명적인 사랑",
+        "title_en": "Lethal Love",
+        "year": 2008,
+        "medium_kr": "건메탈 알루미늄 블라인드, 조명 스포트라이트, 인공 향기",
+        "medium_en": "Gunmetal blinds, moving spotlights, floral scent",
+        "gallery_or_location": "Walker Art Center (미네소타 워커 아트 센터 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/HK_%E5%B0%96%E6%B2%99%E5%92%80_TST_%E4%BA%BA%E6%96%87%E8%97%9D%E8%A1%93%E8%B3%BC%E7%89%A9%E9%A4%A8_K11_MUSEA_mall_1240pm_May_2020_SS2_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "어두운 총기류 색상의 블라인드 숲 사이로 달콤한 백합 향기가 퍼져 나오며, 매혹적인 외양 속에 도사린 위험과 정치적 긴장을 환기합니다."
+      },
+      {
+        "title_kr": "유사-이교도적 현대",
+        "title_en": "Quasi-Pagan Modern",
+        "year": 2017,
+        "medium_kr": "인공 짚풀 조각, 방울, 스피커 음향 시스템",
+        "medium_en": "Straw sculptures, nickel bells, audio landscape",
+        "gallery_or_location": "Musée d'Art Moderne de Paris",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/HK_%E5%B0%96%E6%B2%99%E5%92%80_TST_%E4%BA%BA%E6%96%87%E8%97%9D%E8%A1%93%E8%B3%BC%E7%89%A9%E9%A4%A8_K11_MUSEA_mall_1240pm_May_2020_SS2_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "현대 도시의 매끈한 콘크리트 공간에 고대의 제사 의식과 샤머니즘의 에너지를 소환하여 잊혀진 원초적 영성을 일깨우는 공간."
+      }
+    ]
+  },
+  {
+    "id": "pipilotti-rist",
+    "name_kr": "피필로티 리스트",
+    "name_en": "Pipilotti Rist",
+    "nationality": "스위스 (Switzerland)",
+    "birth_year": 1962,
+    "category": "몰입형 비디오 아트 / 공간 미디어 설치 (Immersive Video & Spatial Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1997년 제47회 베니스 비엔날레 (Venice Biennale) 프레미오 2000(Premio 2000) 수상",
+      "2009년 조안 미로상 (Joan Miró Prize) 수상",
+      "2014년 취리히 페스티벌 프라이즈 (Zurich Festival Prize) 수상",
+      "뉴욕 MoMA 아트리움 전체를 장악한 비디오 설치 'Pour Your Body Out'"
+    ],
+    "philosophy": "피필로티 리스트는 관람객이 바닥에 눕거나 푹신한 쿠션에 기대어 전시장 전체를 가득 채운 황홀한 영상과 사운드 속에 온몸을 담그게 만드는 몰입형 비디오 공간 예술의 독보적인 선구자입니다. 그녀는 텔레비전과 비디오 모니터의 사각 프레임을 과감히 깨부수고, 천장, 바닥, 샹들리에 전구 숲에 영상을 투사합니다. 자연의 원초적 활력, 여성 신체의 관능과 자유, 그리고 순수한 시각적 기쁨을 긍정하며 차가운 기술을 따뜻하고 촉각적인 감각으로 변화시킵니다.",
+    "style_features": "수천 개의 크리스털 LED 전구가 매달려 맥박 치는 '픽셀 포레스트', 바닥에 누워 천장을 올려다보며 감상하는 대형 비디오 프로젝션, 극도의 클로즈업과 몽환적인 원색의 색채 왜곡이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/pipilotti_rist",
+      "official_website": "https://pipilottirist.net"
+    },
+    "galleries": [
+      "Hauser & Wirth (취리히, 런던, 뉴욕, 홍콩)",
+      "Luhring Augustine (뉴욕)"
+    ],
+    "sources": [
+      "Tate Modern Collection",
+      "Museum of Modern Art (MoMA 뉴욕)",
+      "Kunsthaus Zürich",
+      "Museum of Contemporary Art, Los Angeles"
+    ],
+    "artworks": [
+      {
+        "title_kr": "픽셀 포레스트 (픽셀 숲)",
+        "title_en": "Pixel Forest",
+        "year": 2016,
+        "medium_kr": "3,000개의 수제 매달린 LED 크리스털 조각 숲, 비디오 신호 동기화",
+        "medium_en": "3,000 hanging LED lights in resin spheres, media synchronization",
+        "gallery_or_location": "New Museum New York & Kunsthaus Zürich",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Beamer2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "3,000개의 영롱한 LED 구체가 숲처럼 매달린 어두운 방. 빛의 색상이 유기적으로 물결치며 관람객이 하나의 거대한 비디오 스크린 속 픽셀 안으로 걸어 들어간 경험을 선사합니다."
+      },
+      {
+        "title_kr": "모든 것은 끝났다 (에버 이즈 오버 올)",
+        "title_en": "Ever Is Over All",
+        "year": 1997,
+        "medium_kr": "2채널 비디오 설치, 음악 사운드트랙 (베니스 수상작)",
+        "medium_en": "Two-channel audio-video installation, slow motion",
+        "gallery_or_location": "1997 Venice Biennale Premio 2000 / MoMA 뉴욕 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Mudam_opening_24_rist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "하늘하늘한 푸른 원피스를 입은 여성이 붉은 꽃 모양의 쇠몽둥이를 들고 거리를 걸으며 길가에 주차된 자동차 유리창을 깨부수는 해방감 넘치는 슬로모션 비디오 명작."
+      },
+      {
+        "title_kr": "몸을 쏟아부어라 (7354 세제곱미터)",
+        "title_en": "Pour Your Body Out (7354 Cubic Meters)",
+        "year": 2008,
+        "medium_kr": "초대형 360도 멀티채널 프로젝션 파노라마, 거대 원형 쿠션 소파",
+        "medium_en": "Multi-channel high-definition video installation, sound, circular sofa",
+        "gallery_or_location": "MoMA Museum of Modern Art New York 2층 마론 아트리움",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Portraitfoto_Pipilotti_Rist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "뉴욕 현대미술관(MoMA)의 거대한 아트리움 4면 벽 전체를 몽환적인 분홍빛 튤립과 사과, 물속 영상으로 가득 채우고 관람객들이 누워 감상하게 만든 전설적인 설치."
+      },
+      {
+        "title_kr": "걱정은 사라질 거야",
+        "title_en": "Worry Will Vanish",
+        "year": 2014,
+        "medium_kr": "코너 벽면 프로젝션 비디오, 바닥 패브릭 매트리스와 담요",
+        "medium_en": "Audio-video installation for room corner, fitted carpet, cushions",
+        "gallery_or_location": "Hauser & Wirth London & Guggenheim Bilbao",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Beamer2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "신발을 벗고 들어가 푹신한 매트에 누워 코너 양쪽 벽으로 펼쳐지는 인체 내부와 숲속 자연의 미시적 여정을 바라보며 깊은 명상과 치유를 경험하는 공간."
+      },
+      {
+        "title_kr": "내 바다를 들이켜 (십 마이 오션)",
+        "title_en": "Sip My Ocean",
+        "year": 1996,
+        "medium_kr": "2채널 비디오, 거울 모서리 반사 프로젝션, 크리스 아이작 노래",
+        "medium_en": "Two-channel video installation, mirror corner, audio",
+        "gallery_or_location": "Louisiana Museum of Modern Art & MCA Sydney",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Mudam_opening_24_rist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "물속으로 가라앉는 티컵과 산호초, 헤엄치는 신체들이 크리스 아이작의 명곡 'Wicked Game'을 부르는 작가의 절규 섞인 노랫소리와 어우러지는 감각적 바다."
+      },
+      {
+        "title_kr": "나의 글레이드를 열어줘",
+        "title_en": "Open My Glade (Flatten)",
+        "year": 2000,
+        "medium_kr": "뉴욕 타임스스퀘어 대형 전광판 16개 동시 스크리닝",
+        "medium_en": "Single-channel video displayed on 16 electronic billboards",
+        "gallery_or_location": "Times Square New York (타임스스퀘어 공공 미술)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Portraitfoto_Pipilotti_Rist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "작가가 유리 스크린에 코와 입술, 이마를 바짝 짓누르며 마치 유리 모니터 밖으로 탈출하려는 듯한 영상으로 화려한 광고판으로 가득 찬 타임스스퀘어 광장을 뒤흔든 공공 프로젝트."
+      },
+      {
+        "title_kr": "호모 사피엔스 사피엔스",
+        "title_en": "Homo Sapiens Sapiens",
+        "year": 2005,
+        "medium_kr": "베니스 산 스타에 성당 천장 바로크 프레스코화 대체 프로젝션",
+        "medium_en": "Site-specific ceiling projection video installation, mattresses",
+        "gallery_or_location": "San Stae Church (2005 베니스 비엔날레 스위스 공식 전시)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Beamer2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "베니스의 유서 깊은 성당 바닥에 매트리스를 깔고 천장 바로크 돔에 에덴동산의 싱그러운 신체와 식물 영상을 투사해 성스러움과 관능을 일치시킨 파격작."
+      },
+      {
+        "title_kr": "4층의 온화함",
+        "title_en": "4th Floor to Mildness",
+        "year": 2016,
+        "medium_kr": "천장에 매달린 거대한 아메바 모양 스크린 4개, 침대 매트리스들",
+        "medium_en": "Four amoeba-shaped ceiling screens, beds, soundscape",
+        "gallery_or_location": "New Museum New York",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Mudam_opening_24_rist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "침대에 누워 천장에 떠 있는 유기체 스크린을 바라보면, 강물 바닥에서 수면 위를 올려다보는 듯한 물속 식물들의 나른한 춤이 펼쳐집니다."
+      },
+      {
+        "title_kr": "자비의 정원",
+        "title_en": "Mercy Garden",
+        "year": 2014,
+        "medium_kr": "초근접 접사 촬영 비디오 프로젝션, 사운드",
+        "medium_en": "Video projection, macro lens footages, sound",
+        "gallery_or_location": "Kunsthaus Zürich 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Portraitfoto_Pipilotti_Rist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "흙탕물 속을 걷는 맨발, 풀잎에 맺힌 이슬, 촉촉한 진흙의 질감을 화면 가득 확대하여 원초적 대지와 신체의 교감을 노래합니다."
+      },
+      {
+        "title_kr": "나는 많이 놓치는 소녀가 아니야",
+        "title_en": "I'm Not The Girl Who Misses Much",
+        "year": 1986,
+        "medium_kr": "단채널 비디오, 존 레넌 곡 변주 사운드 (작가의 데뷔작)",
+        "medium_en": "Single-channel video with sound, 5 min, fast motion",
+        "gallery_or_location": "Centre Pompidou & MoMA 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Beamer2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "비틀스의 가사를 고음의 익살스러운 목소리로 빠르게 재생하며 춤추는 작가의 모습을 담아 미디어 속 여성 이미지의 소비 방식을 유쾌하게 조롱한 기념비적 데뷔작."
+      }
+    ]
+  },
+  {
+    "id": "jenny-holzer",
+    "name_kr": "제니 홀저",
+    "name_en": "Jenny Holzer",
+    "nationality": "미국 (USA)",
+    "category": "텍스트 LED 공간 설치 / 공공 미디어아트 (Text LED & Public Media Art)",
+    "birth_year": 1950,
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1990년 제44회 베니스 비엔날레 (Venice Biennale) 최고 영예 '황금사자상 (Golden Lion)' 여성 최초 미국관 수상",
+      "1996년 세계경제포럼 크리스탈 어워드 수상",
+      "2002년 독일 카셀 도큐멘타 초청 작가",
+      "뉴욕 구겐하임 미술관 나선형 램프를 채운 163m LED 설치"
+    ],
+    "philosophy": "제니 홀저는 '언어(Text)' 그 자체를 미술의 가장 강력한 시각 매체이자 조각적 재료로 사용하는 개념미술과 공공미술의 거장입니다. 그녀는 권력, 폭력, 젠더, 죽음, 사랑과 같은 인간 실존의 모순을 날카로운 한 줄의 경구(Truism)로 압축하여 흐르는 LED 전광판, 대리석 벤치, 건물의 거대한 외벽에 투사합니다. 미술관의 안전한 흰 벽을 벗어나 광장과 전광판 등 일상 공간에 직격탄을 날림으로써, 언어가 어떻게 권력의 도구가 되고 동시에 이에 저항하는 무기가 될 수 있는지를 증명합니다.",
+    "style_features": "어둠 속에서 질주하듯 흐르는 다채로운 LED 전광판 띠, 관람객이 앉을 수 있도록 묘비처럼 텍스트를 음각한 대리석 벤치, 도시 랜드마크 건축물 표면에 거대하게 쏘아 올리는 빛 프로젝션이 시각적 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/jennyholzerstudio",
+      "official_website": "https://projects.jennyholzer.com"
+    },
+    "galleries": [
+      "Sprüth Magers (베를린, 런던, LA)",
+      "Cheim & Read (뉴욕)",
+      "Kukje Gallery (서울)"
+    ],
+    "sources": [
+      "Solomon R. Guggenheim Museum New York",
+      "Tate Modern Collection",
+      "National Gallery of Art Washington",
+      "MMCA 국립현대미술관"
+    ],
+    "artworks": [
+      {
+        "title_kr": "진언 시리즈 (트루이즘)",
+        "title_en": "Truisms",
+        "year": 1977,
+        "medium_kr": "인쇄 포스터, 거리 벽보 게릴라 부착, 티셔츠, 야구모자",
+        "medium_en": "Offset posters pasted anonymously across Manhattan",
+        "gallery_or_location": "New York Streets & MoMA Collection",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Art_and_Feminism_Wikipedia-Edit-A-Thon_at_SAAM_0377.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "'남용된 권력은 결코 놀라운 일이 아니다(ABUSE OF POWER COMES AS NO SURPRISE)' 등 수백 개의 도발적인 격언을 맨해튼 거리 벽에 무단 부착해 사회를 뒤흔든 전설의 시작."
+      },
+      {
+        "title_kr": "내가 원하는 것으로부터 나를 지켜줘",
+        "title_en": "Protect Me From What I Want",
+        "year": 1985,
+        "medium_kr": "뉴욕 타임스스퀘어 스펙타컬러 전광판 애니메이션 텍스트",
+        "medium_en": "Spectacolor LED electronic board, Times Square New York",
+        "gallery_or_location": "Times Square New York (공공 미술 커미션)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Art_and_Feminism_Wikipedia-Edit-A-Thon_at_SAAM_0378.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "자본주의 소비의 심장부 타임스스퀘어의 거대 광고판 한가운데 '내가 원하는 것으로부터 나를 지켜줘'라는 문장을 점멸시켜 소비 욕망의 허무함을 정조준한 기념비적 작업."
+      },
+      {
+        "title_kr": "구겐하임을 위하여 (163m 원형 LED)",
+        "title_en": "Installation for the Guggenheim Museum",
+        "year": 1989,
+        "medium_kr": "나선형 경사로 난간을 따라 설치된 163m 길이의 삼색 전동 LED 전광판",
+        "medium_en": "163-meter continuous curved LED electronic sign",
+        "gallery_or_location": "Solomon R. Guggenheim Museum (뉴욕 구겐하임 미술관)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Art_and_Feminism_Wikipedia-Edit-A-Thon_at_SAAM_0379.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "프랭크 로이드 라이트의 나선형 원형 경사로를 따라 끊임없이 텍스트가 빛의 폭포처럼 쏟아져 내리며 건축과 언어가 하나가 된 현대미술의 최고 명장면."
+      },
+      {
+        "title_kr": "베니스 비엔날레 미국관 (황금사자상)",
+        "title_en": "Venice Installation (Golden Lion 1990)",
+        "year": 1990,
+        "medium_kr": "붉은빛 및 노란빛 LED 전광판 기둥, 대리석 음각 벤치 바닥 설치",
+        "medium_en": "Vertical LED signs, engraved marble floor tiles and benches",
+        "gallery_or_location": "1990 Venice Biennale US Pavilion (황금사자상 수상작)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Art_and_Feminism_Wikipedia-Edit-A-Thon_at_SAAM_0389_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "미국관 실내 바닥 전체를 대리석 묘비처럼 조각하고 12개의 수직 LED 기둥에서 흐르는 텍스트로 채워 여성 작가 최초로 베니스 비엔날레 최고상을 품에 안은 공간."
+      },
+      {
+        "title_kr": "성욕 살인 (루스트모르트)",
+        "title_en": "Lustmord",
+        "year": 1993,
+        "medium_kr": "독일 쥐트도이체 차이퉁 매거진 표지 여성 피부에 잉크로 쓴 텍스트, 사람 뼈 테이블",
+        "medium_en": "Ink on human skin photo prints, wooden table with human bones",
+        "gallery_or_location": "Süddeutsche Zeitung Magazin & Private Collections",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/ForSAAM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "보스니아 내전 중 자행된 조직적 성폭행 학살에 분노하여, 실제 피해 여성과 가해자의 시선을 피부 위에 적어 전 세계를 경악하게 한 고발 작업."
+      },
+      {
+        "title_kr": "프로젝션 (빛 프로젝션 시리즈)",
+        "title_en": "Projections",
+        "year": 1996,
+        "medium_kr": "고출력 제논 영사기, 야간 강변, 산비탈, 유서 깊은 성벽 투사",
+        "medium_en": "High-powered xenon projections on natural and architectural surfaces",
+        "gallery_or_location": "Florence, Venice, Rio de Janeiro, Paris, DMZ",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Holzer_forthecity_Bobst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "물리적 흉터를 남기지 않고 오직 순수한 빛으로 역사적 건축물과 밤바다, 산비탈에 시인들의 시와 평화의 문장을 거대하게 새겨 넣는 야간 프로젝션."
+      },
+      {
+        "title_kr": "검열 문서 회화 (레댁션 페인팅)",
+        "title_en": "Redaction Paintings",
+        "year": 2006,
+        "medium_kr": "미국 정부 기밀 해제 문서, 유화 물감, 실크스크린 리넨",
+        "medium_en": "Oil on linen, silkscreened declassified military documents",
+        "gallery_or_location": "Whitney Museum & National Gallery of Art Washington",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jenny_Holzer_7_WTC_detail.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "이라크 전쟁 관련 기밀 해제 문서에서 검은색 매직으로 가려진 검열 부분을 대형 캔버스에 유화로 옮겨 권력의 은폐와 진실의 부재를 폭로한 회화."
+      },
+      {
+        "title_kr": "생존 시리즈 (서바이벌)",
+        "title_en": "Survival Series",
+        "year": 1983,
+        "medium_kr": "붉은색 알루미늄 판 음각, 야외 금속 표지판",
+        "medium_en": "Cast aluminum plaques, electronic LED signs",
+        "gallery_or_location": "Tate Modern Collection",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Jenny_Holzer_7_WTC.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "'삶이 잔혹할 때 죽음은 구원이 될 수 있다' 등 냉혹한 현실 속에서 살아남기 위한 개인의 생존 본능을 담아낸 텍스트 시리즈."
+      },
+      {
+        "title_kr": "당신을 위하여 (국립현대미술관 커미션)",
+        "title_en": "For You (MMCA Commission)",
+        "year": 2019,
+        "medium_kr": "로비 서울박스 거대 LED 띠 스크린, 한글/영문 텍스트 순환",
+        "medium_en": "Custom LED signage, kinetic text scrolls, Korean/English poems",
+        "gallery_or_location": "MMCA 국립현대미술관 서울관 및 과천관",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Jenny_Holzer_Projections.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "한국 국립현대미술관 벽면에 설치되어 김혜순, 한강 등 한국 문인들의 문장과 작가의 트루이즘이 한글과 영문으로 끊임없이 흘러내리는 장관."
+      },
+      {
+        "title_kr": "애도 (라멘트)",
+        "title_en": "Laments",
+        "year": 1989,
+        "medium_kr": "대리석 석관 13개, 천장 수직 LED 칼럼 13개",
+        "medium_en": "13 inscribed marble sarcophagi, 13 vertical LED sign columns",
+        "gallery_or_location": "Dia Art Foundation (뉴욕 디아 예술재단 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Jenny_Holzer_Truisms.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "에이즈 위기로 무고하게 세상을 떠난 영혼들을 위해 대리석 관 위에 비문을 새기고 천장에서 쏟아지는 빛줄기로 넋을 기리는 침묵의 성소."
+      }
+    ]
+  },
+  {
+    "id": "anish-kapoor",
+    "name_kr": "아니쉬 카푸어",
+    "name_en": "Anish Kapoor",
+    "nationality": "영국 / 인도 (UK / India)",
+    "birth_year": 1954,
+    "category": "거대 공간 조각 / 반사 설치 (Monumental Spatial Sculpture)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1990년 제44회 베니스 비엔날레 영국관 대표 작가 및 '프레미오 2000' 수상",
+      "1991년 영국 최고 권위 현대미술상 '터너상 (Turner Prize)' 수상",
+      "2013년 대영제국 기사작위(Knighthood) 서임",
+      "2014년 프리미엄 임페리알레 (Praemium Imperiale) 조각 부문 수상"
+    ],
+    "philosophy": "아니쉬 카푸어는 물질을 통해 '비물질(Non-object)'과 무한의 공간을 탐구하는 세계적인 현대 조각의 거장입니다. 그는 거울처럼 세상을 완벽하게 비추는 왜곡된 스테인리스 표면, 빛을 99.96% 흡수하여 원근감을 지워버리는 반타블랙(Vantablack), 그리고 핏빛 붉은 왁스와 거대한 대지 조각을 통해 관람객이 물리적 공간을 넘어 보이지 않는 심연을 마주하게 합니다. 그의 조각은 단순히 외부에서 감상하는 대상이 아니라, 공간 전체를 왜곡하고 관람객 자신을 조각 내부로 빨아들이는 신비로운 영적 체험을 유발합니다.",
+    "style_features": "주변 도시 풍경과 하늘을 거꾸로 뒤집어 비추는 초대형 곡면 스테인리스 스틸 거울 조각, 바닥에 뚫린 끝없는 검은 구멍, 모터로 회전하며 전시장 바닥에 거대한 소용돌이를 만들어내는 물 설치(Descension) 등 압도적인 스케일이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/dirty_corner",
+      "official_website": "https://anishkapoor.com"
+    },
+    "galleries": [
+      "Lisson Gallery (런던, 뉴욕, 상하이)",
+      "Kukje Gallery (서울)",
+      "Galleria Continua (이탈리아, 파리, 베이징)"
+    ],
+    "sources": [
+      "Tate Modern Collection",
+      "Millennium Park Foundation Chicago",
+      "Versailles Palace",
+      "Guggenheim Bilbao"
+    ],
+    "artworks": [
+      {
+        "title_kr": "구름 문 (시카고 클라우드 게이트 / 더 빈)",
+        "title_en": "Cloud Gate",
+        "year": 2006,
+        "medium_kr": "168개의 스테인리스 스틸 판을 이음매 없이 용접한 거대 곡면 조각 (무게 110톤)",
+        "medium_en": "Polished stainless steel, seamless liquid-like surface, 110 tons",
+        "gallery_or_location": "Millennium Park (미국 시카고 밀레니엄 파크 야외 광장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Anish_Kapoor_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "액체 수은 방울처럼 매끈하게 시카고의 마천루와 하늘, 그리고 아래를 걷는 사람들을 곡면으로 흡수해 비추는 21세기 세계에서 가장 유명한 공공 조각."
+      },
+      {
+        "title_kr": "하강 (거대한 소용돌이)",
+        "title_en": "Descension",
+        "year": 2014,
+        "medium_kr": "원형 수조, 모터 추진 장치, 검게 착색된 물의 끝없는 소용돌이",
+        "medium_en": "Water, black dye, circular vortex mechanism",
+        "gallery_or_location": "Brooklyn Bridge Park New York & 베르사유 궁전",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Anish_Kapoor_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "전시장 바닥 한가운데에 뚫린 깊은 구멍 속으로 칠흑같이 어두운 검은 물이 굉음을 내며 끝없이 빨려 들어가는 지구의 심연을 연출한 공간 설치."
+      },
+      {
+        "title_kr": "레비아탄 (거대한 공기주입식 괴물)",
+        "title_en": "Leviathan",
+        "year": 2011,
+        "medium_kr": "붉은색 반투명 PVC 막 구조물, 공기압 시스템 (높이 35m)",
+        "medium_en": "Inflatable PVC membrane sculpture, Monumenta Grand Palais",
+        "gallery_or_location": "Grand Palais (파리 그랑 팔레 모뉴멘타 전시)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Anish_Kapoor_4188.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "파리 그랑 팔레의 거대한 유리 돔 전체를 가득 메운 35미터 높이의 붉은 유기체 괴물. 관람객이 그 내부로 걸어 들어가 붉은 혈관 속에 갇힌 감각을 체험합니다."
+      },
+      {
+        "title_kr": "스카이 미러 (하늘 거울)",
+        "title_en": "Sky Mirror",
+        "year": 2001,
+        "medium_kr": "오목 거울 스테인리스 스틸 원반 (지름 6m 야외 설치)",
+        "medium_en": "Concave polished stainless steel mirror, diameter 6m",
+        "gallery_or_location": "Rockefeller Center New York & Nottingham Playhouse",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Anish_Kapoor_4199.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "하늘을 향해 45도 각도로 기울어진 거대한 오목 거울이 도심 한복판에 푸른 하늘과 흘러가는 구름을 통째로 끌어내려 담아냅니다."
+      },
+      {
+        "title_kr": "마르시아스",
+        "title_en": "Marsyas",
+        "year": 2002,
+        "medium_kr": "강철 링 3개, 150m 길이의 붉은 PVC 막 구조물",
+        "medium_en": "Steel rings, tensioned PVC membrane, Turbine Hall commission",
+        "gallery_or_location": "Tate Modern Turbine Hall (런던 테이트 모던 터빈홀)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Anish_Kapoor_and_Demetrio_Paparoni.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "테이트 모던의 거대한 터빈홀 전체 길이를 관통하며 뻗어 있는 붉은 나팔관 형상의 살갗 조각. 신화 속 마르시아스의 벗겨진 살갗을 공간적 스케일로 은유합니다."
+      },
+      {
+        "title_kr": "더러운 구석",
+        "title_en": "Dirty Corner",
+        "year": 2015,
+        "medium_kr": "코르텐 강철 깔때기 터널, 거대한 암석과 흙더미 더미",
+        "medium_en": "Corten steel funnel, limestone boulders, earth",
+        "gallery_or_location": "Palace of Versailles Gardens (베르사유 정원 커미션)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Anish_Kapoor_at_the_Deutsche_Guggenheim_-_Berlin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "정갈하고 엄격한 베르사유 궁전 기하학적 정원 한가운데에 60미터 길이의 녹슨 강철 나팔과 흙더미를 쏟아부어 혼돈과 원초적 에너지를 주입한 문제작."
+      },
+      {
+        "title_kr": "키 큰 나무와 눈",
+        "title_en": "Tall Tree & The Eye",
+        "year": 2009,
+        "medium_kr": "73개의 반사 스테인리스 스틸 구체들이 불규칙하게 솟은 탑 (높이 15m)",
+        "medium_en": "73 reflective stainless steel spheres anchored to a carbon fiber core",
+        "gallery_or_location": "Guggenheim Bilbao & 삼성미술관 리움 야외",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Anish_Kapoor_CACMA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "70여 개의 반짝이는 구체들이 서로의 표면을 무한히 복제하여 비추며 하늘로 솟아오른 은빛 분자 구조의 나무."
+      },
+      {
+        "title_kr": "모서리로 쏘아 붓기",
+        "title_en": "Shooting into the Corner",
+        "year": 2009,
+        "medium_kr": "공압 대포 장치, 붉은색 왁스 포탄 (실제 발사 퍼포먼스)",
+        "medium_en": "Pneumatic cannon, mixed media red wax projectiles",
+        "gallery_or_location": "Royal Academy of Arts London & MAK Vienna",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Anish_Kapoor_Descension%2C_Brooklyn%2C_Sept_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "전시장에 설치된 실제 대포가 20분마다 20kg의 붉은 왁스 덩어리를 굉음과 함께 모서리 흰 벽을 향해 발사하여 피 칠갑 같은 왁스 산을 쌓아가는 행위 조각."
+      },
+      {
+        "title_kr": "반타블랙 프로젝트",
+        "title_en": "Vantablack Sculptures",
+        "year": 2016,
+        "medium_kr": "탄소 나노튜브 코팅 기술, 빛 흡수율 99.96%의 암흑 조각",
+        "medium_en": "Carbon nanotube material coating, near-total light absorption",
+        "gallery_or_location": "Venice Biennale 2022 Gallerie dell'Accademia",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Anish_Kapoor_Exhibition_at_Pitzhanger_-_geograph.org.uk_-_6255796.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "어떤 입체 굴곡도 완전히 사라지고 마치 현실의 3차원 공간에 포토샵으로 검은 구멍을 뚫어놓은 듯한 시각적 붕괴를 일으키는 궁극의 암흑 물질 조각."
+      },
+      {
+        "title_kr": "스바얌부",
+        "title_en": "Svayambh",
+        "year": 2007,
+        "medium_kr": "수십 톤의 붉은 왁스 블록, 레일 모터, 미술관 아치 문 통과",
+        "medium_en": "Red wax, petroleum jelly, motorized track through museum arches",
+        "gallery_or_location": "Musée des Beaux-Arts de Nantes & Haus der Kunst",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Anish_Kapoor_Exhibition_at_Pitzhanger_-_geograph.org.uk_-_6255799.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "caption": "산스크리트어로 '스스로 생성된 자'를 뜻하는 제목처럼 거대한 붉은 왁스 덩어리가 미술관 문턱을 긁으며 레일을 따라 아주 천천히 전진하는 육중한 의식 조각."
+      }
+    ]
+  },
+  {
+    "id": "cecily-brown",
+    "name_kr": "세실리 브라운",
+    "name_en": "Cecily Brown",
+    "nationality": "영국 (UK)",
+    "birth_year": 1969,
+    "category": "동시대 회화 / 현대 신표현주의 대형 회화 (Contemporary Painting - 균형 선정작)",
+    "is_spatial_media": false,
+    "awards_and_biennales": [
+      "2023년 뉴욕 메트로폴리탄 미술관 (The Met) 대규모 단독 회고전 'Death and the Maid'",
+      "휘트니 비엔날레 (Whitney Biennial) 참가",
+      "동시대 현대미술 경매 시장에서 가장 영향력 있는 여성 회화 거장",
+      "루이지애나 현대미술관, 국립 카포디몬테 미술관 개인전"
+    ],
+    "philosophy": "세실리 브라운은 빌럼 데 쿠닝, 프랜시스 베이컨, 들라크루아 등 서구 고전 및 모더니즘 회화의 거장들이 지배해온 '남성적 붓질'의 역사를 여성 작가의 시선으로 전복하고 새롭게 계승한 동시대 최고의 회화 거장입니다. 그녀의 캔버스는 구상(인체, 풍경, 동물, 에로티시즘)과 추상(격렬한 붓질, 물감의 덩어리)이 한 화면 안에서 격렬하게 진동합니다. 관람객의 시선이 한곳에 머무를 틈 없이 끊임없이 살아 움직이는 유기체 같은 회화적 에너지를 분출합니다.",
+    "style_features": "눈을 뗄 수 없이 휘몰아치는 대담하고 관능적인 붓 터치, 살결과 꽃잎, 뼈와 숲이 뒤엉키는 풍부한 색채 층위, 멀리서 보면 추상화처럼 보이지만 가까이 다가설수록 숨겨진 인체와 이야기들이 드러나는 복합적인 시각적 쾌감이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/cecilybrown",
+      "official_website": "https://www.paula-cooper-gallery.com/artists/cecily-brown"
+    },
+    "galleries": [
+      "Paula Cooper Gallery (뉴욕)",
+      "Thomas Dane Gallery (런던)",
+      "Contemporary Fine Arts (베를린)"
+    ],
+    "sources": [
+      "The Metropolitan Museum of Art New York",
+      "Tate Collection London",
+      "Guggenheim Museum New York",
+      "Louisiana Museum of Modern Art"
+    ],
+    "artworks": [
+      {
+        "title_kr": "죽음과 소녀",
+        "title_en": "Death and the Maid",
+        "year": 2014,
+        "medium_kr": "리넨에 유채 (대형 캔버스)",
+        "medium_en": "Oil on linen, 226 x 249 cm",
+        "gallery_or_location": "The Metropolitan Museum of Art (메트로폴리탄 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "서양 미술사의 고전적 주제인 '죽음과 소녀'를 폭발적인 붓질과 해골의 흔적으로 재해석하여 삶의 환희와 죽음의 그림자를 동시에 포착한 대표작."
+      },
+      {
+        "title_kr": "모든 것을 가졌던 소녀",
+        "title_en": "The Girl Who Had Everything",
+        "year": 1998,
+        "medium_kr": "캔버스에 유채 (대형 신표현주의 회화)",
+        "medium_en": "Oil on canvas",
+        "gallery_or_location": "Guggenheim Museum New York 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "살구색과 장미빛 물감 층위 속에 얽힌 관능적인 신체들의 움직임을 포착하며 1990년대 후반 뉴욕 화단을 뒤흔든 초기 명작."
+      },
+      {
+        "title_kr": "어디서, 언제, 얼마나 자주, 누구와 함께",
+        "title_en": "Where, When, How Often and With Whom",
+        "year": 2017,
+        "medium_kr": "리넨에 유채 (초대형 삼형제화 패널)",
+        "medium_en": "Oil on linen, triptych, monumental panel",
+        "gallery_or_location": "Louisiana Museum of Modern Art (루이지애나 현대미술관)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "자연의 무성한 숲과 인간의 원초적 욕망이 한데 뒤엉켜 춤추는 파노라마적 대형 회화의 정수."
+      },
+      {
+        "title_kr": "블랙 페인팅 2",
+        "title_en": "Black Painting 2",
+        "year": 2012,
+        "medium_kr": "리넨에 유채",
+        "medium_en": "Oil on linen, dark palette",
+        "gallery_or_location": "Tate Collection London (런던 테이트 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "어두운 밤빛과 칠흑 같은 붓질 사이로 은밀하게 반짝이는 빛과 실루엣을 통해 회화 매체만이 가질 수 있는 깊은 심도를 증명합니다."
+      },
+      {
+        "title_kr": "사육제와 사순절",
+        "title_en": "Carnival and Lent",
+        "year": 2006,
+        "medium_kr": "캔버스에 유채 (피터 브뢰겔에 대한 오마주)",
+        "medium_en": "Oil on canvas, inspired by Pieter Bruegel",
+        "gallery_or_location": "Private Collection / Met 회고전 출품",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "플랑드르 르네상스의 대가 피터 브뢰겔의 난장과 축제의 에너지를 현대적인 추상 구상 어법으로 격렬하게 폭발시킨 역작."
+      },
+      {
+        "title_kr": "피라미드와 낙원",
+        "title_en": "Pyramids and Paradises",
+        "year": 2009,
+        "medium_kr": "리넨에 유채",
+        "medium_en": "Oil on linen",
+        "gallery_or_location": "Museum of Fine Arts, Boston",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "역사의 기념비와 에덴동산의 환상을 교차시키며 끝없이 흘러내리는 물감의 물성을 시각적 축제로 승화합니다."
+      },
+      {
+        "title_kr": "소년 문제 (보이 트러블)",
+        "title_en": "Boy Trouble",
+        "year": 1999,
+        "medium_kr": "캔버스에 유채",
+        "medium_en": "Oil on canvas",
+        "gallery_or_location": "Whitney Museum of American Art (휘트니 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "경쾌하고 유머러스하면서도 긴장감 넘치는 붓놀림으로 인간관계의 불협화음과 매혹을 포착한 캔버스."
+      },
+      {
+        "title_kr": "교외에서의 하루",
+        "title_en": "A Day in the Country",
+        "year": 2013,
+        "medium_kr": "리넨에 유채",
+        "medium_en": "Oil on linen",
+        "gallery_or_location": "Albright-Knox Art Gallery",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "인상파의 야외 풍경화 전통을 현대의 파편화된 심리적 풍경으로 재구성한 화려한 색채의 회화."
+      },
+      {
+        "title_kr": "큰 푸른 바다에게 친절하게",
+        "title_en": "Be Nice to the Big Blue Sea",
+        "year": 2012,
+        "medium_kr": "리넨에 유채 (푸른빛 대형 팔레트)",
+        "medium_en": "Oil on linen, maritime palette",
+        "gallery_or_location": "Fondazione Sandretto Re Rebaudengo",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "격랑이 일렁이는 바다의 소용돌이와 침몰선, 그리고 신화 속 인어들의 이미지가 파도처럼 부서지는 캔버스."
+      },
+      {
+        "title_kr": "대유행 (올 더 레이지)",
+        "title_en": "All the Rage",
+        "year": 2018,
+        "medium_kr": "리넨에 유채",
+        "medium_en": "Oil on linen",
+        "gallery_or_location": "Metropolitan Museum Retrospective",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cecily_Brown_Met_Exhibition.jpg/1280px-Cecily_Brown_Met_Exhibition.jpg",
+        "caption": "소용돌이치는 현대 사회의 분노와 열광, 미디어 이미지의 과잉을 회화 특유의 속도감 있는 터치로 엮어낸 근작."
+      }
+    ]
+  },
+  {
+    "id": "wolfgang-tillmans",
+    "name_kr": "볼프강 틸만스",
+    "name_en": "Wolfgang Tillmans",
+    "nationality": "독일 (Germany)",
+    "birth_year": 1968,
+    "category": "동시대 사진 & 벽면 공간 설치 (Contemporary Photography - 균형 선정작)",
+    "is_spatial_media": false,
+    "awards_and_biennales": [
+      "2000년 영국 최고 권위 현대미술상 '터너상 (Turner Prize)' 최초의 사진작가이자 비영국인 수상",
+      "2015년 사진계의 노벨상 '하셀블라드 국제사진상 (Hasselblad Award)' 수상",
+      "2022년 뉴욕 현대미술관(MoMA) 대규모 회고전 'To look without fear'",
+      "2009년 런던 테이트 브리튼, 2017년 테이트 모던 개인전"
+    ],
+    "philosophy": "볼프강 틸만스는 사진을 액자에 넣어 줄맞춰 거는 전통적인 전시 방식을 해체하고, 벽면 전체를 하나의 거대한 캔버스 삼아 테이프와 핀으로 다양한 크기의 사진들을 리듬감 있게 배치하는 공간 설치의 혁신가입니다. 그는 친구들의 솔직한 일상, 클럽 문화, 천체와 비행기 궤적, 그리고 암실에서 빛과 화학 약품만으로 만들어낸 무카메라(Cameraless) 추상 사진까지 세상의 모든 가시적 현상을 두려움 없는 열린 시선으로 기록합니다. 그에게 사진은 세계와 관계 맺고 타자를 향해 손을 내미는 연대와 사랑의 행위입니다.",
+    "style_features": "초소형 엽서 크기부터 벽 전체를 덮는 초대형 잉크젯 프린트까지 다양한 크기의 사진들을 벽면의 높낮이와 모서리를 활용해 배치하는 장소특정적 벽면 설치, 빛의 순수한 유영을 담은 추상 사진 '프라이슈비머(자유영)' 시리즈가 대표적입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/wolfgang_tillmans",
+      "official_website": "https://tillmans.co.uk"
+    },
+    "galleries": [
+      "David Zwirner (뉴욕, 런던, 파리, 홍콩)",
+      "Maureen Paley (런던)",
+      "Galerie Buchholz (쾰른, 베를린, 뉴욕)"
+    ],
+    "sources": [
+      "Museum of Modern Art (MoMA 뉴욕)",
+      "Tate Modern Collection London",
+      "Centre Pompidou Paris",
+      "Hasselblad Foundation"
+    ],
+    "artworks": [
+      {
+        "title_kr": "자유영 시리즈 (프라이슈비머)",
+        "title_en": "Freischwimmer",
+        "year": 2003,
+        "medium_kr": "카메라 없이 암실에서 빛과 감광 인화지로 제작한 대형 C-프린트",
+        "medium_en": "Cameraless darkroom C-print, light manipulation on photographic paper",
+        "gallery_or_location": "Tate Modern Collection & MoMA 뉴욕 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "카메라 렌즈를 거치지 않고 순수한 빛을 직접 인화지에 쏘아 빚어낸 녹색과 푸른빛의 유려한 물결. 사진이 추상 회화의 경지에 도달한 걸작."
+      },
+      {
+        "title_kr": "콩코드 그리드",
+        "title_en": "Concorde Grid",
+        "year": 1997,
+        "medium_kr": "56장의 C-프린트 사진 격자 설치",
+        "medium_en": "56 C-prints mounted in grid installation",
+        "gallery_or_location": "Tate Collection (런던 테이트 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "초음속 여객기 콩코드가 하늘을 가르며 날아오르는 순간들을 철조망 너머 평범한 교외의 시선으로 끈질기게 포착한 56장의 기념비적 그리드."
+      },
+      {
+        "title_kr": "나무 위에 앉은 루츠와 알렉스",
+        "title_en": "Lutz & Alex sitting in the trees",
+        "year": 1992,
+        "medium_kr": "C-프린트 (초기 대표작)",
+        "medium_en": "C-print, vintage photograph",
+        "gallery_or_location": "MoMA Museum of Modern Art New York",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "1990년대 초 베를린과 런던의 유스 컬처와 성소수자 친구들의 솔직하고 자유로운 신체를 있는 그대로 담아낸 터너상 수상의 기틀이 된 사진."
+      },
+      {
+        "title_kr": "종이 방울 (페이퍼 드롭)",
+        "title_en": "Paper Drop",
+        "year": 2008,
+        "medium_kr": "C-프린트, 둥글게 말린 인화지의 조각적 곡면 촬영",
+        "medium_en": "C-print on photographic paper",
+        "gallery_or_location": "Guggenheim Museum New York",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "인화지 자체를 물방울처럼 둥글게 말아 그 종이의 질감과 곡면의 그림자를 정밀하게 포착하여 사진 매체의 물질성을 탐구한 정물."
+      },
+      {
+        "title_kr": "방송 종료 (센데슐루스)",
+        "title_en": "Sendeschluss / End of Broadcast",
+        "year": 2014,
+        "medium_kr": "아날로그 TV 노이즈 정지 화면 초대형 프린트 패널 2점",
+        "medium_en": "Two monumental inkjet prints on aluminum dibond",
+        "gallery_or_location": "Beyeler Foundation & David Zwirner",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "아날로그 방송이 종료되었을 때 브라운관에 나타나는 지지직거리는 백색 정전기 노이즈를 거대하게 확대하여 사라진 미디어의 유령을 소환합니다."
+      },
+      {
+        "title_kr": "실버 시리즈",
+        "title_en": "Silver",
+        "year": 2006,
+        "medium_kr": "현상기 기계 롤러를 통과하며 약품 찌꺼기가 남긴 무카메라 인화물",
+        "medium_en": "Chromogenic prints produced by photographic processing machine errors",
+        "gallery_or_location": "Centre Pompidou Paris",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "사진 현상 인화기계의 오류와 은염 화학 반응이 우연히 남긴 먼지와 줄무늬 얼룩을 예술 작품으로 포용하며 사진의 기계적 한계를 초월합니다."
+      },
+      {
+        "title_kr": "건축가를 위한 책",
+        "title_en": "Book for Architects",
+        "year": 2014,
+        "medium_kr": "2채널 비디오 설치, 전 세계 37개국 건축 디테일 450장 슬라이드 쇼",
+        "medium_en": "Two-channel video installation, 450 photographs, 40 min",
+        "gallery_or_location": "2014 Venice Biennale Architecture & Met Museum",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "화려한 랜드마크 건물이 아닌 배수관, 에어컨 실외기, 비상계단 등 전 세계 도시의 일상 건축이 가진 투박한 아름다움을 담아낸 베니스 건축 비엔날레 화제작."
+      },
+      {
+        "title_kr": "정물화 (아스트로 크루스토)",
+        "title_en": "Astro Crusto",
+        "year": 2012,
+        "medium_kr": "잉크젯 프린트, 바닷가재 껍질과 담배꽁초 정물",
+        "medium_en": "Inkjet print on paper",
+        "gallery_or_location": "Fondation Beyeler Basel",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "친구들과 식사를 마친 식탁 위에 남겨진 랍스터 껍질, 와인잔, 담배꽁초를 통해 현대인의 바니타스(인생무상) 정물화를 완성합니다."
+      },
+      {
+        "title_kr": "주름 (팔텐부르프)",
+        "title_en": "Faltenwurf",
+        "year": 2001,
+        "medium_kr": "빨래 건조대에 널린 청바지와 티셔츠의 주름 디테일 C-프린트",
+        "medium_en": "C-print, fabric and clothing folds",
+        "gallery_or_location": "Museum Ludwig Cologne",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "방 한구석에 무심하게 벗어놓은 옷가지와 섬유 주름의 굴곡을 고전 르네상스 조각의 옷 주름처럼 우아하고 신비롭게 비춘 사진."
+      },
+      {
+        "title_kr": "공항 시리즈 (게이트)",
+        "title_en": "Gate",
+        "year": 2007,
+        "medium_kr": "C-프린트, 비행기 탑승구의 유리창과 빛",
+        "medium_en": "C-print on metallic paper",
+        "gallery_or_location": "MoMA Collection New York",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wolfgang_Tillmans_MoMA_Installation.jpg/1280px-Wolfgang_Tillmans_MoMA_Installation.jpg",
+        "caption": "현대 유목민들이 머무는 공항 게이트의 투명 유리창과 그 너머로 어슴푸레 떠오르는 새벽빛을 통해 떠남과 기다림의 서정성을 담아냅니다."
+      }
+    ]
+  },
+  {
+    "id": "maurizio-cattelan",
+    "name_kr": "마우리치오 카텔란",
+    "name_en": "Maurizio Cattelan",
+    "nationality": "이탈리아 (Italy)",
+    "birth_year": 1960,
+    "category": "도발적 개념 조각 / 극사실주의 공간 설치 (Hyperrealist Installation & Satire)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1993, 1997, 1999, 2001, 2011년 베니스 비엔날레 다수 초청 작가",
+      "2011년 뉴욕 구겐하임 미술관 전관 회고전 'All'",
+      "2019년 아트바젤 마이애미 비치 'Comedian(바나나)' 전 세계적 신드롬",
+      "2023년 서울 리움미술관 역대 최다 관람객 기록 개인전 'WE'"
+    ],
+    "philosophy": "마우리치오 카텔란은 미술계의 악동이자 가장 예리한 유머와 도발로 권위와 금기를 해체하는 세계적인 현대미술가입니다. 정규 미술 교육을 받지 않고 영안실 시신 안치원, 정원사 등으로 일했던 독특한 이력을 지닌 그는 종교, 정치, 죽음, 그리고 미술 시장 자체의 허영심을 극사실주의 밀랍 인형과 박제 동물 조각으로 신랄하게 풍자합니다. 그의 위트는 단순한 장난에 머무르지 않고, 우리 사회가 애써 외면해온 부조리와 인간 실존의 비극적 민낯을 웃음 뒤에 날카롭게 숨겨놓습니다.",
+    "style_features": "벽에 은색 덕트 테이프로 실제 생 바나나를 붙여놓거나, 18K 순금으로 만든 실제 작동하는 변기, 무릎 꿇고 기도하는 어린아이 체구의 히틀러 밀랍 인형 등 관람객의 고정관념을 일거에 뒤흔드는 블랙유머와 도발적인 장소특정성이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/mauriziocattelan",
+      "official_website": "https://perrotin.com/artists/Maurizio_Cattelan"
+    },
+    "galleries": [
+      "Galerie Perrotin (파리, 뉴욕, 도쿄, 서울)",
+      "Marian Goodman Gallery (뉴욕, 파리)"
+    ],
+    "sources": [
+      "Solomon R. Guggenheim Museum New York",
+      "Leeum Museum of Art Seoul",
+      "Pinault Collection Paris",
+      "Ullens Center for Contemporary Art"
+    ],
+    "artworks": [
+      {
+        "title_kr": "코미디언 (벽에 붙은 바나나)",
+        "title_en": "Comedian",
+        "year": 2019,
+        "medium_kr": "진짜 바나나, 회색 덕트 테이프 벽면 부착 설치",
+        "medium_en": "Fresh banana, duct tape on white wall",
+        "gallery_or_location": "2019 Art Basel Miami Beach (Perrotin 부스) / 구겐하임 미술관 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Maurizio_Cattelan_Comedian_Miami.jpg/1280px-Maurizio_Cattelan_Comedian_Miami.jpg",
+        "caption": "아트바젤 마이애미에서 1억 4천만 원(12만 달러)에 팔리고 다른 작가가 떼어먹는 해프닝으로 전 세계 뉴스를 도배하며 현대미술 시장의 가치와 허상을 풍자한 세기의 화제작."
+      },
+      {
+        "title_kr": "아메리카 (18K 황금 변기)",
+        "title_en": "America",
+        "year": 2016,
+        "medium_kr": "18캐럿 순금 주조, 실제 배관 연결 수세식 변기 (무게 103kg)",
+        "medium_en": "18-karat solid cast gold, fully functional plumbing",
+        "gallery_or_location": "Guggenheim Museum New York 5층 화장실 (관람객 누구나 사용 가능)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Maurizio_Cattelan_America_Gold_Toilet.jpg/1280px-Maurizio_Cattelan_America_Gold_Toilet.jpg",
+        "caption": "구겐하임 화장실에 설치되어 누구나 순금 변기에 용변을 볼 수 있게 함으로써 부의 불평등과 아메리칸 드림의 배설적 이면을 조롱한 파격의 조각."
+      },
+      {
+        "title_kr": "그 (히틀러의 무릎 꿇음)",
+        "title_en": "Him",
+        "year": 2001,
+        "medium_kr": "폴리에스테르 수지, 밀랍, 인모, 맞춤 정장, 미니어처 인형 조각",
+        "medium_en": "Wax, polyester resin, human hair, wool suit",
+        "gallery_or_location": "바르샤바 게토 유대인 지구 옛 수용소 터 설치 / Pinault Collection",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Maurizio_Cattelan_Comedian_Miami.jpg/1280px-Maurizio_Cattelan_Comedian_Miami.jpg",
+        "caption": "뒤에서 보면 경건하게 무릎 꿇고 기도하는 가련한 소년의 뒷모습이지만, 앞으로 돌아가 마주하는 순간 인류 역사상 최악의 학살자 아돌프 히틀러의 얼굴이 드러나는 전율의 조각."
+      },
+      {
+        "title_kr": "아홉 번째 시간 (운석 맞은 교황)",
+        "title_en": "La Nona Ora",
+        "year": 1999,
+        "medium_kr": "밀랍 인형, 교황 의복, 운석 암석, 깨진 유리 파편, 붉은 카펫 바닥",
+        "medium_en": "Wax figure of Pope John Paul II, meteor, red carpet, shattered glass",
+        "gallery_or_location": "Royal Academy of Arts London & Kunsthalle Basel",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Maurizio_Cattelan_America_Gold_Toilet.jpg/1280px-Maurizio_Cattelan_America_Gold_Toilet.jpg",
+        "caption": "천장을 뚫고 떨어진 거대한 운석에 맞아 바닥에 쓰러진 채 십자가를 쥐고 고통스러워하는 교황 요한 바오로 2세. 신의 침묵과 종교적 권위의 무력함을 폭로합니다."
+      },
+      {
+        "title_kr": "모두 (구겐하임 전관 회고전)",
+        "title_en": "All",
+        "year": 2011,
+        "medium_kr": "작가의 평생 전작 128점의 조각들을 로프로 구겐하임 로툰다 천장에 매단 설치",
+        "medium_en": "128 artworks suspended from the center of the Guggenheim rotunda",
+        "gallery_or_location": "Solomon R. Guggenheim Museum New York",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Maurizio_Cattelan_Comedian_Miami.jpg/1280px-Maurizio_Cattelan_Comedian_Miami.jpg",
+        "caption": "벽면에 걸어야 할 회고전 작품들을 모조리 밧줄에 묶어 천장 공중에 교수형에 처하듯 주렁주렁 매달아놓은 유례없는 미술관 설치."
+      },
+      {
+        "title_kr": "L.O.V.E. (밀라노 증권거래소 손가락)",
+        "title_en": "L.O.V.E.",
+        "year": 2010,
+        "medium_kr": "카라라 대리석 거대 조각 (높이 11m 야외 설치)",
+        "medium_en": "Carrara marble sculpture, height 11 meters",
+        "gallery_or_location": "Piazza degli Affari (밀라노 증권거래소 앞 광장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Maurizio_Cattelan_America_Gold_Toilet.jpg/1280px-Maurizio_Cattelan_America_Gold_Toilet.jpg",
+        "caption": "밀라노 금융가 증권거래소 정면에 다른 모든 손가락은 잘려 나간 채 가운데 손가락만 하늘을 향해 우뚝 솟아 있는 거대한 대리석 조각으로 자본주의 금융 권력을 통타."
+      },
+      {
+        "title_kr": "무제 (벽을 뚫고 나온 박제 말)",
+        "title_en": "Untitled (Taxidermy Horse)",
+        "year": 2007,
+        "medium_kr": "실제 박제 말, 미술관 벽면 관통 설치",
+        "medium_en": "Taxidermy horse suspended high on museum wall",
+        "gallery_or_location": "Fondation Beyeler Basel & 리움미술관 'WE'",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Maurizio_Cattelan_Comedian_Miami.jpg/1280px-Maurizio_Cattelan_Comedian_Miami.jpg",
+        "caption": "미술관 높은 벽면에 머리를 처박고 허공에 뒷다리를 늘어뜨린 채 정지해 있는 박제 말. 영웅주의적 기마상의 비극적 해체."
+      },
+      {
+        "title_kr": "비디비도비디부 (자살한 다람쥐)",
+        "title_en": "Bidibidobidiboo",
+        "year": 1996,
+        "medium_kr": "박제 다람쥐, 미니어처 주방 테이블, 작은 권총",
+        "medium_en": "Taxidermy squirrel, ceramic sink, wooden table, miniature revolver",
+        "gallery_or_location": "Fondazione Sandretto Re Rebaudengo Turin",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Maurizio_Cattelan_America_Gold_Toilet.jpg/1280px-Maurizio_Cattelan_America_Gold_Toilet.jpg",
+        "caption": "초라한 서민 아파트 주방 식탁에 엎드려 작은 권총으로 스스로 목숨을 끊은 박제 다람쥐. 가난과 절망의 비극을 동화적 이미지로 역설합니다."
+      },
+      {
+        "title_kr": "우리 (WE)",
+        "title_en": "WE",
+        "year": 2010,
+        "medium_kr": "침대 위에 나란히 누워 있는 작가 자신의 똑같은 밀랍 시신 2구",
+        "medium_en": "Two wax self-portraits, funeral bed, matching suits",
+        "gallery_or_location": "Leeum Museum of Art & Deste Foundation",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Maurizio_Cattelan_Comedian_Miami.jpg/1280px-Maurizio_Cattelan_Comedian_Miami.jpg",
+        "caption": "영안실 침대 위에 똑같은 정장을 입고 눈을 감은 채 누워 있는 작가 자신의 복제 시신. 죽음 앞에서의 고독과 정체성의 해체를 응시합니다."
+      },
+      {
+        "title_kr": "찰리는 서핑을 하지 않는다",
+        "title_en": "Charlie Don't Surf",
+        "year": 1997,
+        "medium_kr": "초등학교 책걸상, 양손에 연필이 꽂힌 채 벽을 보고 앉은 소년 인형",
+        "medium_en": "School desk, mannequin, two pencils piercing the hands",
+        "gallery_or_location": "Castello di Rivoli Turin",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Maurizio_Cattelan_America_Gold_Toilet.jpg/1280px-Maurizio_Cattelan_America_Gold_Toilet.jpg",
+        "caption": "책상에 앉아 벽을 보고 벌을 서고 있는 어린 소년의 양손이 연필에 꿰뚫려 책상에 고정된 충격적인 형상으로 제도 교육의 억압을 고발합니다."
+      }
+    ]
+  },
+  {
+    "id": "nam-june-paik",
+    "name_kr": "백남준",
+    "name_en": "Nam June Paik",
+    "nationality": "대한민국 / 글로벌 (South Korea / Global)",
+    "birth_year": 1932,
+    "category": "미디어아트의 개척자 / 비디오 조각 및 대규모 공간 설치 (Pioneer of Media Art)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1993년 제45회 베니스 비엔날레 최고 영예 '황금사자상 (Golden Lion)' 독일관 수상",
+      "1998년 교토상 (Kyoto Prize) 예술 및 철학 부문 수상",
+      "타임지 선정 '20세기 가장 영향력 있는 100인' 예술가",
+      "국립현대미술관 1,003대 브라운관 기념비적 미디어 타워 '다다익선'"
+    ],
+    "philosophy": "백남준은 텔레비전이라는 일방향적 대중 매체를 예술의 영역으로 끌어들여 쌍방향 소통과 놀이의 장으로 전복시킨 '미디어아트의 아버지'입니다. 그는 '인터넷'이라는 단어가 생기기도 전인 1974년에 이미 '전자 초고속도로(Electronic Superhighway)'라는 개념을 창안하며 전 세계가 정보 네트워크로 실시간 연결될 미래를 예견했습니다. 동양의 선(Zen) 불교 철학과 서구의 첨단 기술을 융합하여 기계를 인간화하고, 예술을 통해 국경과 이념을 초월한 범지구적 축제를 열었습니다.",
+    "style_features": "수백 대의 모니터를 쌓아 올린 거대한 비디오 건축물, TV 모니터를 바라보며 명상에 잠긴 석가모니 불상, 모니터와 식물이 어우러진 전자 정원 등 기술 문명과 동양 철학의 유쾌한 융합이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/namjunepaik_artcenter",
+      "official_website": "https://njp.ggcf.kr"
+    },
+    "galleries": [
+      "Gagosian Gallery (뉴욕, 런던, 파리)",
+      "Gallery Hyundai (서울)"
+    ],
+    "sources": [
+      "Nam June Paik Art Center (백남준아트센터)",
+      "National Museum of Modern and Contemporary Art, Korea (MMCA)",
+      "Smithsonian American Art Museum",
+      "Tate Modern Collection"
+    ],
+    "artworks": [
+      {
+        "title_kr": "다다익선 (국립현대미술관 상징탑)",
+        "title_en": "The More, The Better",
+        "year": 1988,
+        "medium_kr": "1,003대의 컬러 CRT 브라운관 모니터, 강철 원형 타워 (높이 18.5m)",
+        "medium_en": "1,003 CRT monitors, steel structure, multi-channel video",
+        "gallery_or_location": "MMCA 국립현대미술관 과천관 중앙 로툰다",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nam_June_Paik_The_More_The_Better.jpg/1280px-Nam_June_Paik_The_More_The_Better.jpg",
+        "caption": "10월 3일 개천절을 상징하는 1,003대의 모니터를 거대한 바벨탑처럼 18.5m 높이로 쌓아 올린 전 세계 미디어아트 역사상 최대 규모의 기념비적 설치."
+      },
+      {
+        "title_kr": "전자 초고속도로: 미국 대륙",
+        "title_en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii",
+        "year": 1995,
+        "medium_kr": "336대의 모니터, 50개 주의 네온 윤곽선 윤곽, 50채널 비디오",
+        "medium_en": "336 televisions, neon tubing, 575 feet of multi-color neon, 50-channel video",
+        "gallery_or_location": "Smithsonian American Art Museum (워싱턴 스미소니언 미국미술관)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Electronic_Superhighway.jpg/1280px-Electronic_Superhighway.jpg",
+        "caption": "미국 50개 주의 국경선을 화려한 네온사인으로 그리고 주마다 각 지역의 상징 영상들을 상영하며 정보화 고속도로 시대를 예언한 압도적 대작."
+      },
+      {
+        "title_kr": "TV 부처",
+        "title_en": "TV Buddha",
+        "year": 1974,
+        "medium_kr": "18세기 석가모니 청동 불상, 폐쇄회로(CCTV) 카메라, 소형 CRT 모니터",
+        "medium_en": "Bronze Buddha statue, CCTV camera, monitor",
+        "gallery_or_location": "Stedelijk Museum Amsterdam & 백남준아트센터",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nam_June_Paik_The_More_The_Better.jpg/1280px-Nam_June_Paik_The_More_The_Better.jpg",
+        "caption": "카메라가 비추는 자신의 실시간 모습을 화면을 통해 지긋이 바라보는 부처상. 동양의 참선(Zen)과 현대 미디어의 자기 반영성이 완벽한 침묵으로 만나는 순간."
+      },
+      {
+        "title_kr": "TV 정원",
+        "title_en": "TV Garden",
+        "year": 1974,
+        "medium_kr": "수십 대의 TV 모니터, 살아있는 열대 생화 식물 군집, 싱크 비디오",
+        "medium_en": "Video monitors, live tropical plants, Global Groove video sync",
+        "gallery_or_location": "Guggenheim Museum New York & 백남준아트센터",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Electronic_Superhighway.jpg/1280px-Electronic_Superhighway.jpg",
+        "caption": "무성한 열대 식물 덤불 속에 마치 활짝 핀 꽃봉오리처럼 TV 모니터들이 하늘을 향해 누워 영상을 뿜어내는 생태와 전자의 환상적인 정원."
+      },
+      {
+        "title_kr": "굿모닝 미스터 오웰 (위성 방송 생중계)",
+        "title_en": "Good Morning, Mr. Orwell",
+        "year": 1984,
+        "medium_kr": "국제 통신 위성 생중계 인터랙티브 비디오 퍼포먼스 (뉴욕-파리 실시간 연결)",
+        "medium_en": "Live international satellite installation and broadcast, 60 min",
+        "gallery_or_location": "WNET New York & Centre Pompidou Paris",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nam_June_Paik_The_More_The_Better.jpg/1280px-Nam_June_Paik_The_More_The_Better.jpg",
+        "caption": "조지 오웰이 '1984'에서 예언한 빅브라더의 암울한 통제 대신, 위성 통신으로 전 세계 예술가들이 함께 춤추고 연주하는 유쾌한 축제를 전 세계 2,500만 명에게 중계한 프로젝트."
+      },
+      {
+        "title_kr": "TV 첼로",
+        "title_en": "TV Cello",
+        "year": 1971,
+        "medium_kr": "CRT 모니터 3대를 첼로 형태로 조립, 샬럿 무어먼 연주용 활과 현",
+        "medium_en": "Plexiglass boxes, three television picture tubes, cello strings",
+        "gallery_or_location": "Walker Art Center & Whitney Museum of American Art",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Electronic_Superhighway.jpg/1280px-Electronic_Superhighway.jpg",
+        "caption": "모니터로 만든 첼로를 여성 첼리스트 샬럿 무어먼이 활로 켤 때마다 화면에 연주자의 모습과 영상이 변환되는 음악과 조각의 결합."
+      },
+      {
+        "title_kr": "자석 TV",
+        "title_en": "Magnet TV",
+        "year": 1965,
+        "medium_kr": "흑백 CRT 모니터, 강력한 대형 말굽 자석 (관객 참여)",
+        "medium_en": "Black-and-white television set, horseshoe magnet",
+        "gallery_or_location": "Whitney Museum of American Art (뉴욕 휘트니 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nam_June_Paik_The_More_The_Better.jpg/1280px-Nam_June_Paik_The_More_The_Better.jpg",
+        "caption": "TV 위에 올려둔 자석을 관람객이 움직일 때마다 방송 전파의 전자빔이 일그러지며 추상적인 빛의 무늬를 만들어내는 최초의 인터랙티브 미디어아트."
+      },
+      {
+        "title_kr": "달은 가장 오래된 TV다",
+        "title_en": "Moon is the Oldest TV",
+        "year": 1965,
+        "medium_kr": "12대의 흑백 모니터에 자석 회로를 조작해 만든 달의 12가지 위상",
+        "medium_en": "12 modified black-and-white televisions showing phases of the moon",
+        "gallery_or_location": "Centre Pompidou Paris & 백남준아트센터",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Electronic_Superhighway.jpg/1280px-Electronic_Superhighway.jpg",
+        "caption": "인류가 수만 년 전부터 밤하늘을 올려다보며 이야기를 상상했던 '달'이야말로 인류 최초의 TV 화면이었음을 시적으로 통찰한 12개의 모니터 연작."
+      },
+      {
+        "title_kr": "베니스 비엔날레 황금사자상 (칭기즈칸의 복권)",
+        "title_en": "Marco Polo / Genghis Khan",
+        "year": 1993,
+        "medium_kr": "자전거, 잠수 헬멧, 네온 튜브, 모니터 로봇 조각",
+        "medium_en": "Bicycle, television monitors, neon, metal armor",
+        "gallery_or_location": "1993 Venice Biennale German Pavilion (황금사자상 수상작)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nam_June_Paik_The_More_The_Better.jpg/1280px-Nam_June_Paik_The_More_The_Better.jpg",
+        "caption": "동서양 문명의 충돌과 소통을 로봇 조각과 전자 모니터로 형상화하여 독일 국가관 대표로 참가해 최고상인 황금사자상을 품에 안은 불멸의 작품."
+      },
+      {
+        "title_kr": "글로벌 그루브",
+        "title_en": "Global Groove",
+        "year": 1973,
+        "medium_kr": "컬러 싱글채널 비디오, 신시사이저 이미지 조작 (28분 30초)",
+        "medium_en": "Single-channel color video, Paik-Abe video synthesizer, 28 min",
+        "gallery_or_location": "Electronic Arts Intermix (EAI) & MoMA 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Electronic_Superhighway.jpg/1280px-Electronic_Superhighway.jpg",
+        "caption": "한국의 부채춤, 미국 록밴드 음악, 탭댄스, 첼로 연주가 환각적인 전자 그래픽으로 교차하며 21세기 유튜브와 틱톡의 등장을 정확히 50년 앞서 보여준 선구적 영상."
+      }
+    ]
+  },
+  {
+    "id": "bill-viola",
+    "name_kr": "빌 비올라",
+    "name_en": "Bill Viola",
+    "nationality": "미국 (USA)",
+    "birth_year": 1951,
+    "category": "비디오 아트 / 시간과 영혼의 영상 공간 설치 (Spiritual Video Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1995년 제46회 베니스 비엔날레 미국관 대표 작가",
+      "1989년 맥아더 펠로우십(천재상) 수상",
+      "2009년 카탈루냐 국제상 수상",
+      "런던 세인트 폴 대성당(St Paul's Cathedral) 역사상 최초 영구 소장 미디어아트 '순교자들(Martyrs)'"
+    ],
+    "philosophy": "빌 비올라는 비디오 매체를 통해 탄생과 죽음, 의식과 영혼, 인간 실존의 깊은 내면을 탐구하는 '비디오 아트의 시인'입니다. 그는 극단적인 초고속 카메라 슬로모션 기법을 사용하여, 물과 불이 신체를 덮치는 격렬한 순간마저도 장엄하고 고요한 종교적 정화의 의식으로 승화시킵니다. 중세 르네상스 제단화의 양식을 현대의 벽면 플라스마 스크린으로 옮겨와, 관람객이 웅장한 시간의 흐름 속에서 자신의 생명과 찰나의 소중함을 경건하게 성찰하도록 이끕니다.",
+    "style_features": "물이 쏟아지거나 불길이 치솟는 초슬로모션 대형 비디오 프로젝션, 어두운 암실 공간에 울려 퍼지는 물방울 소리와 숨소리, 르네상스 명화의 구도를 현대인의 감정 변화로 재현한 고요한 시간성이 압도적입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/bill.viola",
+      "official_website": "https://billviola.com"
+    },
+    "galleries": [
+      "Blain|Southern",
+      "Kukje Gallery (서울)",
+      "James Cohan Gallery (뉴욕)"
+    ],
+    "sources": [
+      "Tate Modern Collection",
+      "Guggenheim Bilbao",
+      "St Paul's Cathedral London",
+      "Whitney Museum of American Art"
+    ],
+    "artworks": [
+      {
+        "title_kr": "교차 (더 크로싱)",
+        "title_en": "The Crossing",
+        "year": 1996,
+        "medium_kr": "양면 대형 비디오 프로젝션 스크린, 4채널 음향 (불과 물)",
+        "medium_en": "Two-channel color video projection on opposite sides of a large screen",
+        "gallery_or_location": "Whitney Museum & Guggenheim Bilbao 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "한쪽 스크린에서는 발끝부터 타오르는 불길이 인간을 집어삼키고, 반대쪽에서는 머리 위로 쏟아지는 거대한 물폭포가 인간을 씻어내며 소멸과 부활의 순간을 극대화한 최고 걸작."
+      },
+      {
+        "title_kr": "순교자들 (대지, 공기, 불, 물)",
+        "title_en": "Martyrs (Earth, Air, Fire, Water)",
+        "year": 2014,
+        "medium_kr": "세로형 플라스마 스크린 4채널 영구 설치 (영국 국교회 성당)",
+        "medium_en": "Four color vertical plasma displays, permanent cathedral installation",
+        "gallery_or_location": "St Paul's Cathedral (런던 세인트 폴 대성당 남쪽 익랑 영구 설치)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "흙, 바람, 불, 물이라는 4대 원소의 가혹한 시련 앞에서도 고요하게 영혼의 숭고함을 지켜내는 네 명의 순교자를 담아 세인트 폴 대성당에 영구 봉헌된 미디어 제단화."
+      },
+      {
+        "title_kr": "해안 없는 바다",
+        "title_en": "Ocean Without a Shore",
+        "year": 2007,
+        "medium_kr": "베니스 산 갈로 성당의 세 제단 위에 설치된 고화질 플라스마 스크린 3개",
+        "medium_en": "Three-screen video installation at church altars, cold water wall",
+        "gallery_or_location": "San Gallo Church (2007 베니스 비엔날레 공식 출품작)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "어두운 저승에서 걸어 나온 흑백의 영혼들이 보이지 않는 투명한 물의 벽을 뚫고 통과하는 순간 생생한 컬러의 현실 육신으로 변환되는 경이로운 영적 체험."
+      },
+      {
+        "title_kr": "뗏목 (더 래프트)",
+        "title_en": "The Raft",
+        "year": 2004,
+        "medium_kr": "초고속 고화질 비디오 프로젝션, 서라운드 음향 (아테네 올림픽 커미션)",
+        "medium_en": "Color high-definition video projection, 5.1 surround sound",
+        "gallery_or_location": "National Museum of Contemporary Art Athens & Pinault Collection",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "다양한 인종의 남녀 19명이 서 있는 곳에 갑자기 강력한 물대포가 쏟아져 모두가 쓰러진 뒤, 물이 잦아들자 서로를 부축하며 일으켜 세우는 인간 연대의 숭고한 드라마."
+      },
+      {
+        "title_kr": "낭트 삼형제화",
+        "title_en": "Nantes Triptych",
+        "year": 1992,
+        "medium_kr": "3채널 비디오 프로젝션 (출산, 잠수, 임종의 세 화면)",
+        "medium_en": "Three-channel video installation, birth, floating figure, dying mother",
+        "gallery_or_location": "Tate Collection (런던 테이트 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "왼쪽 화면에는 실제 아기의 출생 고통이, 오른쪽 화면에는 작가의 친어머니가 임종을 맞는 순간이, 가운데에는 물속에 부유하는 인간이 나란히 영사되는 생과 사의 삼면화."
+      },
+      {
+        "title_kr": "트리스탄의 승천",
+        "title_en": "Tristan's Ascension (The Sound of a Mountain Under a Waterfall)",
+        "year": 2005,
+        "medium_kr": "초대형 세로 스크린 비디오 프로젝션 (높이 10m 이상), 서라운드 사운드",
+        "medium_en": "Monumental vertical video projection, audio by sound designer",
+        "gallery_or_location": "Guggenheim Museum Bilbao & Met Opera",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "돌판 위에 누워 있던 사내가 거꾸로 하늘을 향해 치솟아 올라가는 물줄기를 타고 중력을 거슬러 빛 속으로 승천하는 경이로운 광경."
+      },
+      {
+        "title_kr": "반영하는 웅덩이",
+        "title_en": "The Reflecting Pool",
+        "year": 1979,
+        "medium_kr": "컬러 비디오 테이프, 시간 분할 아날로그 편집 (초기 대표작)",
+        "medium_en": "Color videotape, synchronized time-freeze edit, 7 min",
+        "gallery_or_location": "MoMA Collection New York",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "깊은 숲속 수영장을 향해 뛰어오른 남자가 공중에 박제된 채 정지하고, 물속 수면에서는 계절과 그림자가 홀로 흘러가는 초기 비디오 아트의 시간 실험 걸작."
+      },
+      {
+        "title_kr": "밀레니엄을 위한 다섯 천사",
+        "title_en": "Five Angels for the Millennium",
+        "year": 2001,
+        "medium_kr": "5채널 비디오 프로젝션 암실 파빌리온",
+        "medium_en": "Five-screen video installation in large darkened room",
+        "gallery_or_location": "Centre Pompidou Paris & Whitney Museum",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "어두운 5면의 방에서 물속으로 뛰어들거나 물 밖으로 솟구쳐 오르는 다섯 빛의 천사들이 각각 탄생, 하강, 빛, 창조, 떠남을 상징하는 공간."
+      },
+      {
+        "title_kr": "출현 (에머전스)",
+        "title_en": "Emergence",
+        "year": 2002,
+        "medium_kr": "플라스마 모니터 고해상도 비디오 (마솔리노의 프레스코화 오마주)",
+        "medium_en": "Color high-definition video on plasma display, rear projection",
+        "gallery_or_location": "J. Paul Getty Museum (LA 게티 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "대리석 우물 속에서 물에 젖은 청년의 육신이 서서히 솟아오르고 두 여인이 그를 안아 수의로 감싸는 고전 회화의 현대적 재해석."
+      },
+      {
+        "title_kr": "캐서린의 방",
+        "title_en": "Catherine's Room",
+        "year": 2001,
+        "medium_kr": "가로로 나란히 놓인 5개의 작은 LCD 스크린 연작",
+        "medium_en": "Color video on five LCD flat panels",
+        "gallery_or_location": "Tate Collection London",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bill_Viola_The_Crossing.jpg/1280px-Bill_Viola_The_Crossing.jpg",
+        "caption": "한 여인이 방 안에서 요가를 하고, 바느질을 하고, 책을 읽고, 촛불을 끄고 잠자리에 드는 하루의 일상을 계절의 변화와 중첩한 고요한 5폭화."
+      }
+    ]
+  },
+  {
+    "id": "rachel-whiteread",
+    "name_kr": "레이첼 화이트리드",
+    "name_en": "Rachel Whiteread",
+    "nationality": "영국 (UK)",
+    "birth_year": 1963,
+    "category": "공간 조각 / 음각 캐스팅 설치 (Spatial Sculpture & Negative Space Architecture)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1993년 영국 최고 권위 현대미술상 '터너상 (Turner Prize)' 여성 최초 수상",
+      "1997년 제47회 베니스 비엔날레 영국관 대표 작가 및 최고 젊은 예술가상 수상",
+      "2000년 오스트리아 비엔나 유대인 학살 추모 기념관 '무명의 서재' 완성",
+      "2019년 대영제국 사령관 훈장(DBE) 서임"
+    ],
+    "philosophy": "레이첼 화이트리드는 가구의 아랫부분, 방의 내부, 책장의 틈새처럼 사물과 공간이 비워둔 '음각의 공기(Negative Space)'에 액체 콘크리트, 석고, 레진을 부어 굳혀내는 조각가입니다. 그녀는 철거를 앞둔 3층 연립주택 전체 내부를 통째로 콘크리트로 채워 넣은 뒤 외벽을 허물어 방들의 빈 공간 자체를 단단한 기념비로 형상화했습니다. 보이지 않는 공간 속에 퇴적된 인간의 기억, 숨결, 상실의 역사를 만질 수 있는 고체로 박제하는 조각적 시학을 보여줍니다.",
+    "style_features": "수천 권의 책들이 책등이 아닌 책 안쪽 면을 향해 굳어진 거대한 도서관 조각, 매트리스 아래의 빈 공간, 반투명한 유백색 레진으로 캐스팅한 문과 창문 등 비어 있던 허공이 물질이 되는 역전의 미학이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/rachelwhitereadofficial",
+      "official_website": "https://gagosian.com/artists/rachel-whiteread"
+    },
+    "galleries": [
+      "Gagosian Gallery (런던, 뉴욕, 파리)",
+      "Luhring Augustine (뉴욕)"
+    ],
+    "sources": [
+      "Tate Britain Collection",
+      "Museum of Modern Art (MoMA 뉴욕)",
+      "Judenplatz Holocaust Memorial Vienna",
+      "National Gallery of Art Washington"
+    ],
+    "artworks": [
+      {
+        "title_kr": "집 (하우스)",
+        "title_en": "House",
+        "year": 1993,
+        "medium_kr": "철거 예정 3층 빅토리아 양식 연립주택 내부 전체 콘크리트 주조 조각",
+        "medium_en": "Concrete cast of the interior of an entire three-story Victorian terraced house",
+        "gallery_or_location": "Grove Road, Bow, London (1993 터너상 수상작)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "런던 빈민가의 3층 주택 실내 공간을 통째로 콘크리트로 채워 굳힌 뒤 벽돌을 벗겨내어 공기와 기억을 거대한 비석으로 바꾼 현대미술사의 전설적 사건."
+      },
+      {
+        "title_kr": "무명의 서재 (비엔나 홀로코스트 추모 기념비)",
+        "title_en": "Nameless Library (Judenplatz Holocaust Memorial)",
+        "year": 2000,
+        "medium_kr": "철근 콘크리트 주조, 수천 권의 책 페이지가 바깥을 향한 도서관 (높이 3.8m)",
+        "medium_en": "Cast concrete library, endless shelves of books with spines turned inward",
+        "gallery_or_location": "Judenplatz (오스트리아 빈 유덴플라츠 광장 영구 설치)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "나치에 희생된 6만 5천 명의 오스트리아 유대인을 기리기 위해 책등이 안쪽으로 숨겨져 결코 읽을 수 없는 영원한 침묵의 콘크리트 서재를 광장에 세운 걸작."
+      },
+      {
+        "title_kr": "유령 (고스트)",
+        "title_en": "Ghost",
+        "year": 1990,
+        "medium_kr": "빅토리아 시대 거실 방 내부 전체 석고 캐스팅 블록 조각",
+        "medium_en": "Plaster cast of the interior of a room, steel framework",
+        "gallery_or_location": "National Gallery of Art (워싱턴 국립미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "거실의 창문 틀, 벽난로의 그을음, 벽지의 흔적이 고스란히 묻어난 석고 덩어리. 방의 내부에 갇혀 있던 공기를 관람객이 바깥에서 바라보게 만든 작품."
+      },
+      {
+        "title_kr": "제방 (엠뱅크먼트)",
+        "title_en": "Embankment",
+        "year": 2005,
+        "medium_kr": "반투명 흰색 폴리에틸렌 캐스팅 상자 14,000개로 쌓아 올린 설산",
+        "medium_en": "14,000 translucent white polyethylene boxes cast from cardboard cartons",
+        "gallery_or_location": "Tate Modern Turbine Hall (테이트 모던 유니레버 시리즈)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "어머니의 유품을 정리하던 상자에서 영감을 얻어 14,000개의 하얀 상자 조각들을 터빈홀에 빙하와 산맥처럼 거대하게 쌓아 올린 애도의 공간."
+      },
+      {
+        "title_kr": "물탱크 (워터 타워)",
+        "title_en": "Water Tower",
+        "year": 1998,
+        "medium_kr": "뉴욕 소호 건물 옥상 목조 물탱크 내부 반투명 합성수지 캐스팅 (무게 11톤)",
+        "medium_en": "Translucent cast resin rooftop water tower, public art commission",
+        "gallery_or_location": "Public Art Fund NY & MoMA New York 옥상 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "뉴욕 빌딩 옥상의 상징인 물탱크 내부의 투명한 물 공간을 보석 같은 반투명 레진으로 떠내어 맨해튼 하늘 위에 띄운 공공 조각."
+      },
+      {
+        "title_kr": "무제 (바닥)",
+        "title_en": "Untitled (Floor)",
+        "year": 1994,
+        "medium_kr": "마룻바닥 아래 틈새 공간을 캐스팅한 고무 및 폴리우레탄 블록",
+        "medium_en": "Cast rubber and polystyrene floor tiles",
+        "gallery_or_location": "Tate Collection London",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "우리가 밟고 서 있는 마룻바닥 아래의 어두운 빈틈을 앰버빛 고무로 캐스팅하여 바닥에 펼쳐놓은 촉각적 공간."
+      },
+      {
+        "title_kr": "얕은 숨 (샬로우 브레스)",
+        "title_en": "Shallow Breath",
+        "year": 1988,
+        "medium_kr": "침대 매트리스 밑의 빈 공간을 캐스팅한 석고와 폴리스티렌 조각",
+        "medium_en": "Plaster and polystyrene cast of the space underneath a bed",
+        "gallery_or_location": "Tate Collection (런던 테이트 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "작가가 처음으로 만든 기념비적 조각. 침대 밑에서 숨 쉬고 꿈꾸던 인간의 신체적 부재를 단단한 석고 판으로 일으켜 세웠습니다."
+      },
+      {
+        "title_kr": "벽장 (클로짓)",
+        "title_en": "Closet",
+        "year": 1988,
+        "medium_kr": "옷장 내부 공간 석고 캐스팅, 검은 펠트 천 마감",
+        "medium_en": "Plaster, felt, wood cast of a wardrobe interior",
+        "gallery_or_location": "Private Collection London",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "어린 시절 숨바꼭질하며 옷장 안에 숨어 느꼈던 어둠과 안락함의 기억을 검은 펠트 천으로 감싼 묵직한 석고 덩어리로 시각화."
+      },
+      {
+        "title_kr": "오두막 (캐빈)",
+        "title_en": "Cabin",
+        "year": 2015,
+        "medium_kr": "외딴 숲속 목조 오두막 내부 콘크리트 캐스팅",
+        "medium_en": "Cast concrete structure, Governors Island New York",
+        "gallery_or_location": "Governors Island (뉴욕 거버너스 아일랜드 공원)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "헨리 데이비드 소로의 '월든' 속 소박한 오두막처럼 뉴욕 항구가 내려다보이는 언덕 위에 고요히 자리 잡은 콘크리트 명상의 집."
+      },
+      {
+        "title_kr": "선 (라인 업)",
+        "title_en": "Line Up",
+        "year": 2007,
+        "medium_kr": "다양한 크기의 판지 상자 내부를 캐스팅한 석고 조각 열",
+        "medium_en": "Plaster casts of internal cardboard box spaces",
+        "gallery_or_location": "Whitechapel Gallery London",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg/1280px-Rachel_Whiteread_Holocaust_Memorial_Vienna.jpg",
+        "caption": "선반 위에 가지런히 놓인 작은 석고 상자 블록들. 평범한 물건들의 내부가 미니멀리즘 조각의 엄숙한 리듬으로 재탄생합니다."
+      }
+    ]
+  },
+  {
+    "id": "teamlab",
+    "name_kr": "팀랩",
+    "name_en": "teamLab",
+    "nationality": "일본 / 글로벌 (Japan / Global)",
+    "birth_year": 2001,
+    "category": "인터랙티브 몰입형 미디어아트 (Immersive Digital Art Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "2018년 도쿄 '팀랩 보더리스(teamLab Borderless)' 개관 첫해 230만 명 방문 (단일 예술가 미술관 세계 최다 기네스 기록)",
+      "타임지 선정 '세계 최고의 장소 100선(World's Greatest Places)' 선정",
+      "싱가포르 국립미술관, 베니스 비엔날레 연계 전시, 파리 라 빌레트 초대형 개인전",
+      "예술가, 프로그래머, 엔지니어, CG 애니메이터, 수학자, 건축가 집단"
+    ],
+    "philosophy": "팀랩은 디지털 기술을 통해 예술과 관람객, 인간과 자연 사이의 '경계(Border)'를 완전히 허무는 세계적인 인터랙티브 미디어아트 컬렉티브입니다. 그들의 작품은 미리 녹화된 비디오를 재생하는 것이 아니라, 컴퓨터 알고리즘 프로그램에 의해 실시간(Real-time)으로 영구히 생성되고 변화합니다. 관람객이 손을 대면 꽃잎이 떨어지고, 발걸음을 옮기면 물고기들이 흩어지며 관람객 자신의 존재가 작품의 일부가 됩니다. 물리적 경계를 초월하여 다른 방으로 이동하고 다른 작품과 섞이는 '보더리스(Borderless)' 세계관을 구축합니다.",
+    "style_features": "무수한 크리스털 LED 빛줄기가 3차원 우주를 이루는 '크리스탈 유니버스', 사람의 움직임에 공명하여 빛을 전파하는 '램프의 숲', 거울 바닥과 폭포수 프로젝션이 어우러지는 환상적인 공감각적 공간이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/teamlab",
+      "official_website": "https://www.teamlab.art"
+    },
+    "galleries": [
+      "Pace Gallery (뉴욕, 런던, 제네바, 홍콩, 서울)"
+    ],
+    "sources": [
+      "teamLab Borderless Tokyo",
+      "teamLab Planets Tokyo",
+      "ArtScience Museum Singapore",
+      "Pace Gallery Archive"
+    ],
+    "artworks": [
+      {
+        "title_kr": "크리스탈 유니버스",
+        "title_en": "The Infinite Crystal Universe",
+        "year": 2018,
+        "medium_kr": "천장에서 쏟아지는 수만 개의 LED 조명 스트링, 거울 바닥, 스마트폰 인터랙션",
+        "medium_en": "Interactive digital installation, light points, mirrors, sound, smartphone app",
+        "gallery_or_location": "teamLab Planets (도쿄 토요스) & teamLab Borderless",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "수만 개의 빛의 점들이 3차원 공간에서 유기적으로 움직이며 성운과 은하계를 빚어내고, 관람객이 스마트폰으로 별을 던져 빛을 변화시키는 무한의 우주."
+      },
+      {
+        "title_kr": "공명하는 램프의 숲",
+        "title_en": "Forest of Resonating Lamps",
+        "year": 2016,
+        "medium_kr": "사면 거울 방, 무라노 유리 램프 수백 개, 센서 인터랙티브 시스템",
+        "medium_en": "Interactive digital installation, Murano glass, LED, sound",
+        "gallery_or_location": "teamLab Borderless Azabudai Hills (도쿄 아자부다이 힐스)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "관람객이 램프 가까이 다가가 서면 램프가 강하게 빛나며 가장 가까운 램프들로 빛을 연쇄 전달하여 방 전체가 따스한 빛의 물결로 공명하는 숲."
+      },
+      {
+        "title_kr": "사람들이 모여드는 바위 위의 물 입자 우주",
+        "title_en": "Universe of Water Particles on a Rock where People Gather",
+        "year": 2018,
+        "medium_kr": "거대 인공 바위 구조물, 폭포수 디지털 프로젝션 매핑, 인터랙티브 센서",
+        "medium_en": "Digital waterfall projection on giant rock, real-time calculation",
+        "gallery_or_location": "teamLab Borderless Tokyo",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "바위 위로 쏟아지는 거대한 가상의 물줄기. 관람객이 바위 위에 올라서거나 손을 대면 물줄기가 사람의 몸을 피해 갈라져 흐르는 생생한 디지털 자연."
+      },
+      {
+        "title_kr": "떨어지는 꽃의 우주 속에 부유하다",
+        "title_en": "Floating in the Falling Universe of Flowers",
+        "year": 2018,
+        "medium_kr": "거대한 돔형 천장 프로젝션, 거울 바닥, 실시간 렌더링 꽃잎",
+        "medium_en": "Dome projection, mirrored floor, real-time algorithmic rendering",
+        "gallery_or_location": "teamLab Planets Tokyo",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "거울 바닥에 누워 돔 천장을 바라보면 사계절의 꽃들이 싹을 틔우고 피어나 흩날리며 끝없이 쏟아져 내려와 자신이 허공에 붕 뜬 듯한 착각을 줍니다."
+      },
+      {
+        "title_kr": "잉어와 사람의 춤이 그리는 수면의 드로잉",
+        "title_en": "Drawing on the Water Surface Created by the Dance of Koi and People",
+        "year": 2018,
+        "medium_kr": "무릎 높이의 실제 온수 수조, 수면 프로젝션 매핑, 사람 움직임 추적 센서",
+        "medium_en": "Interactive digital installation, shallow warm water pool, projection",
+        "gallery_or_location": "teamLab Planets Tokyo (맨발로 물속을 걷는 전시)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "바지를 걷고 따뜻한 물속으로 걸어 들어가면, 디지털 잉어들이 다리 사이로 헤엄치다 사람과 부딪히는 순간 형형색색의 꽃잎으로 폭발하며 흩어집니다."
+      },
+      {
+        "title_kr": "떠오르는 생명체의 입체적 공간",
+        "title_en": "Expanding Three-Dimensional Existence in Transforming Space",
+        "year": 2018,
+        "medium_kr": "천장과 바닥을 가득 메운 거대한 빛의 구체 군집, 충격 감지 색채 변화",
+        "medium_en": "Giant floating light spheres, wireless synchronization, audio",
+        "gallery_or_location": "teamLab Borderless Tokyo",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "사람 키보다 큰 빛나는 거대한 구체들을 손으로 밀며 헤치고 나아갈 때마다 구체들의 색이 변하며 신비로운 화음이 공간 전체로 메아리칩니다."
+      },
+      {
+        "title_kr": "지형의 기억",
+        "title_en": "Memory of Topography",
+        "year": 2018,
+        "medium_kr": "벼 이삭 높이의 원형 스크린 패널 수백 개, 사계절 농촌 풍경 매핑",
+        "medium_en": "Terraced disc screens at varying heights, interactive seasonal cycle",
+        "gallery_or_location": "teamLab Borderless Tokyo",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "계단식 논처럼 높낮이가 다른 원형 패널들 사이를 걸어가면 풀벌레 소리와 함께 봄의 새싹부터 가을의 황금빛 벼 이삭까지 자연의 순환이 발아래 펼쳐집니다."
+      },
+      {
+        "title_kr": "공명하는 마이크로코즘",
+        "title_en": "Resonating Microcosms in the Acorn Forest",
+        "year": 2020,
+        "medium_kr": "야외 도토리 숲속 은빛 난형체(Ovoid) 조각들, 바람과 촉각 반응 LED",
+        "medium_en": "Reflective ovoids in natural forest, interactive sound and light",
+        "gallery_or_location": "Kadokawa Musashino Museum Forest (사이타마 숲)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "낮에는 주변 숲의 나무들을 비추는 은빛 거울알 조각이었다가, 밤이 되면 사람의 손길이나 바람에 흔들릴 때마다 다채로운 빛과 소리를 내며 숲 전체를 깨웁니다."
+      },
+      {
+        "title_kr": "꽃과 사람, 통제할 수 없지만 함께 살아가는",
+        "title_en": "Flowers and People, Cannot be Controlled but Live Together",
+        "year": 2014,
+        "medium_kr": "인터랙티브 실시간 디지털 생성 렌더링 영상",
+        "medium_en": "Interactive digital work, 4K, endless loop, real-time calculation",
+        "gallery_or_location": "Pace Gallery & National Museum of Singapore",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "한 시간 동안 1년의 사계절 꽃들이 피고 지는 알고리즘. 사람이 가만히 서 있으면 꽃이 무성하게 피어나고, 만지면 시들어 사라지는 공존의 은유."
+      },
+      {
+        "title_kr": "차 마시는 잔 속의 무한한 우주 (엔 티 하우스)",
+        "title_en": "Tea in the Infinite Universe (EN TEA HOUSE)",
+        "year": 2018,
+        "medium_kr": "실제 찻잔 속 녹차 수면 프로젝션 매핑, 차를 마시면 꽃이 흩어짐",
+        "medium_en": "Interactive digital installation in tea cup, sensory taste & light",
+        "gallery_or_location": "teamLab Borderless EN Tea House",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/TeamLab_Planets_Crystal_Universe.jpg/1280px-TeamLab_Planets_Crystal_Universe.jpg",
+        "caption": "주문한 따뜻한 녹차 잔을 테이블에 내려놓는 순간 찻잔 속에 피어나는 디지털 꽃봉오리. 잔을 들어 마시면 꽃잎이 흩어져 테이블 위로 번져나갑니다."
+      }
+    ]
+  },
+  {
+    "id": "anselm-kiefer",
+    "name_kr": "안젤름 키퍼",
+    "name_en": "Anselm Kiefer",
+    "nationality": "독일 (Germany)",
+    "birth_year": 1945,
+    "category": "기념비적 물질 회화 및 콘크리트 공간 탑 설치 (Monumental Spatial Painting & Sculpture - 균형 선정작)",
+    "is_spatial_media": false,
+    "awards_and_biennales": [
+      "1980년 제39회 베니스 비엔날레 서독관 대표 작가 (세계적 명성 획득)",
+      "1990년 울프상 (Wolf Prize in Arts) 예술 부문 수상",
+      "1999년 일본 황실 수여 세계 최고 예술상 '프레미엄 임페리알레(Praemium Imperiale)' 수상",
+      "2007년 파리 루브르 박물관 역사상 생존 작가 최초 영구 설치 작품 제작"
+    ],
+    "philosophy": "안젤름 키퍼는 제2차 세계대전이 끝난 1945년 독일에서 태어나, 전후 독일 사회가 침묵하고 회피하려 했던 나치즘의 비극적 역사와 유대인 대학살(홀로코스트), 그리고 북유럽 신화와 유대교 신비주의 카발라(Kabbalah)를 정면으로 응시한 거장입니다. 그는 캔버스 위에 짚풀, 납(Lead), 재, 모래, 마른 해바라기 줄기, 깨진 도자기 등 무겁고 거친 물질들을 겹겹이 쌓아 올려 폐허 속에서 역사의 상처를 치유하고 재생을 모색합니다. 밀라노의 옛 공장에 세운 거대한 콘크리트 타워처럼, 그의 회화와 조각은 공간 전체를 집어삼키는 기념비적 무게감으로 다가옵니다.",
+    "style_features": "두껍게 굳은 납판과 지푸라기가 뒤엉킨 거대한 캔버스, 금방이라도 무너질 듯 위태롭게 쌓아 올린 수십 미터 콘크리트 타워 조각, 황폐한 지평선과 타버린 대지가 뿜어내는 압도적인 숭고미가 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/anselm_kiefer",
+      "official_website": "https://ropac.net/artists/48-anselm-kiefer"
+    },
+    "galleries": [
+      "Thaddaeus Ropac (파리, 런던, 잘츠부르크, 서울)",
+      "Gagosian Gallery (뉴욕, 런던, 파리)",
+      "White Cube (런던, 홍콩, 서울)"
+    ],
+    "sources": [
+      "Pirelli HangarBicocca Milan",
+      "Centre Pompidou Paris",
+      "Metropolitan Museum of Art New York",
+      "Louvre Museum Paris"
+    ],
+    "artworks": [
+      {
+        "title_kr": "일곱 개의 천상 궁전 (세븐 헤븐리 팰리스)",
+        "title_en": "The Seven Heavenly Palaces",
+        "year": 2004,
+        "medium_kr": "철근 콘크리트 컨테이너와 납판으로 쌓아 올린 7개의 거대 탑 (높이 14~18m)",
+        "medium_en": "Reinforced concrete, lead, seven monumental towers, 14-18 meters height",
+        "gallery_or_location": "Pirelli HangarBicocca (이탈리아 밀라노 피렐리 항가비코카 영구 설치)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "밀라노의 거대한 옛 기관차 공장 안에 콘크리트 블록과 납으로 위태롭게 쌓아 올린 7개의 바벨탑. 카발라 신비주의의 영적 상승과 문명의 폐허를 웅장하게 형상화한 기념비."
+      },
+      {
+        "title_kr": "마르가레테",
+        "title_en": "Margarethe",
+        "year": 1981,
+        "medium_kr": "캔버스에 유채, 짚풀, 아크릴 (대형 캔버스)",
+        "medium_en": "Oil, straw, acrylic on canvas",
+        "gallery_or_location": "Saatchi Collection & Guggenheim Museum New York",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "파울 첼란의 시 '죽음의 푸가'에 등장하는 금발의 아리아인 여인 마르가레테의 머리칼을 실제 노란 짚풀로 캔버스에 붙여 역사의 죄책감을 환기한 초기 걸작."
+      },
+      {
+        "title_kr": "술라미스",
+        "title_en": "Shulamith",
+        "year": 1983,
+        "medium_kr": "캔버스에 유채, 모래, 재, 숯, 셸락 (나치 추모 지하실 구조)",
+        "medium_en": "Oil, emulsion, woodcut, shellac, acrylic and straw on canvas",
+        "gallery_or_location": "Private Collection / Met Museum 대여",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "베를린 나치 영웅 기념관의 지하 아치를 유대인 희생자들을 위한 거대한 가마와 추모의 지하 묘소로 탈바꿈시킨 잿빛 캔버스."
+      },
+      {
+        "title_kr": "보헤미아는 바다 옆에 있다",
+        "title_en": "Bohemia Lies by the Sea",
+        "year": 1996,
+        "medium_kr": "캔버스에 유채, 유제, 셸락, 숯, 거친 흙 텍스처 (길이 5.6m 대작)",
+        "medium_en": "Oil, emulsion, shellac, charcoal on canvas, 5.6m width",
+        "gallery_or_location": "Metropolitan Museum of Art (메트로폴리탄 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "바다가 없는 내륙국 보헤미아에 바다가 있다는 역설의 시 구절처럼, 황량한 흙탕길 밭고랑 끝에 피어난 양귀비꽃을 통해 불가능한 희망을 노래한 초대형 회화."
+      },
+      {
+        "title_kr": "밤의 질서",
+        "title_en": "The Orders of the Night",
+        "year": 1996,
+        "medium_kr": "캔버스에 아크릴, 유제, 셸락, 마른 해바라기 씨앗",
+        "medium_en": "Acrylic, emulsion, shellac on canvas with dried sunflowers",
+        "gallery_or_location": "Seattle Art Museum (시애틀 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "까맣게 말라비틀어진 거대한 해바라기 밭 아래 바닥에 누워 있는 작가 자신의 모습. 우주의 밤하늘과 별자리, 흙의 미시 세계가 하나로 연결됩니다."
+      },
+      {
+        "title_kr": "오시리스와 이시스",
+        "title_en": "Osiris and Isis",
+        "year": 1985,
+        "medium_kr": "캔버스에 유화, 아크릴, 회로기판, 도자기 파편, 구리 전선",
+        "medium_en": "Oil, acrylic, emulsion, circuit board, porcelain shards, copper wires",
+        "gallery_or_location": "San Francisco Museum of Modern Art (SFMoMA 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "고대 이집트의 거대한 마스테바 피라미드 꼭대기에서 구리선들이 캔버스 아래 깨진 도자기 조각(오시리스의 찢긴 육신)들로 연결된 고대 신화와 현대 기술의 만남."
+      },
+      {
+        "title_kr": "종려주일 (성지주일)",
+        "title_en": "Palm Sunday",
+        "year": 2006,
+        "medium_kr": "39점의 식물 건조 패널, 전시장 바닥에 쓰러진 실제 거대한 종려나무",
+        "medium_en": "39 mixed-media panels, full-size uprooted palm tree on gallery floor",
+        "gallery_or_location": "Tate Modern & Art Gallery of New South Wales",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "예수의 예루살렘 입성을 상징하는 거대한 종려나무를 뿌리째 뽑아 전시장 바닥에 눕히고 벽면에 건조된 식물 화석 패널들을 둘러 생과 사의 순환을 엄숙하게 증언."
+      },
+      {
+        "title_kr": "파울 첼란을 위하여",
+        "title_en": "For Paul Celan",
+        "year": 2006,
+        "medium_kr": "캔버스에 납 책, 쇠갈퀴, 셸락, 유채",
+        "medium_en": "Oil, emulsion, lead book, rusty rake on canvas",
+        "gallery_or_location": "Centre Pompidou Paris",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "비극적인 생을 마감한 시인 파울 첼란에게 바치는 캔버스. 활자가 적히지 않은 무거운 납 책이 캔버스 위에 매달려 침묵의 무게를 웅변합니다."
+      },
+      {
+        "title_kr": "니그레도 (흑화)",
+        "title_en": "Nigredo",
+        "year": 1984,
+        "medium_kr": "유채, 아크릴, 유제, 짚풀, 사진 혼합 캔버스 (길이 5.5m)",
+        "medium_en": "Oil, emulsion, straw, woodcut on canvas",
+        "gallery_or_location": "Philadelphia Museum of Art (필라델피아 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "연금술에서 물질이 순수한 금으로 거듭나기 전 거치는 첫 단계인 '흑화(불태워 검게 만듦)'를 광활하게 탄 불모지의 밭으로 표현한 명작."
+      },
+      {
+        "title_kr": "예리코 (여리고)",
+        "title_en": "Jericho",
+        "year": 2006,
+        "medium_kr": "콘크리트 블록, 납 판, 와이어로 지은 2채의 거대 탑 조각",
+        "medium_en": "Two concrete and lead towers, Royal Academy of Arts",
+        "gallery_or_location": "Royal Academy of Arts London 뜰 설치",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg/1280px-Anselm_Kiefer_Seven_Heavenly_Palaces_Milan.jpg",
+        "caption": "나팔 소리에 무너져 내린 구약 성서 속 여리고 성벽의 비극을 현대 건축의 파편화된 콘크리트로 재현한 야외 기념비적 조각."
+      }
+    ]
+  },
+  {
+    "id": "kehinde-wiley",
+    "name_kr": "케힌데 와일리",
+    "name_en": "Kehinde Wiley",
+    "nationality": "미국 (USA)",
+    "birth_year": 1977,
+    "category": "동시대 인물 회화 / 고전 명화 구도의 현대 초상화 (Contemporary Portraiture - 균형 선정작)",
+    "is_spatial_media": false,
+    "awards_and_biennales": [
+      "2018년 미국 제44대 대통령 버락 오바마 (Barack Obama) 공식 백악관 초상화 화가",
+      "2015년 미국 국무부 예술훈장 (National Medal of Arts) 수훈",
+      "2021년 프랑스 예술문화훈장 슈발리에 서임",
+      "브루클린 미술관, 런던 내셔널 갤러리 단독 개인전"
+    ],
+    "philosophy": "케힌데 와일리는 루브르와 에르미타주 등 서구 유명 미술관의 고전 명화들 속에 흑인의 얼굴이 오직 하인이나 노예로만 배경에 등장해 왔다는 역사적 결핍을 정면으로 바로잡는 화가입니다. 그는 거리에서 만난 평범한 흑인 청년들을 티치아노, 루벤스, 다비드 등 거장들의 귀족 초상화와 기마상 포즈로 세우고 화려하고 장식적인 식물 패턴 배경 속에 당당하고 위엄 있는 주인공으로 그려냅니다. 역사 속에서 배제되었던 소외된 이들에게 황제와 영웅의 왕관을 씌워주는 회화적 치유이자 전복의 작업입니다.",
+    "style_features": "전통 유화의 정밀하고 매끄러운 붓질로 묘사된 흑인 인물의 생생한 피부 톤, 인물을 휘감으며 캔버스 앞으로 뻗어 나오는 윌리엄 모리스 풍의 화려한 꽃과 잎사귀 패턴, 초대형 캔버스가 주는 장엄한 권위감이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/kehindewiley",
+      "official_website": "https://kehindewiley.com"
+    },
+    "galleries": [
+      "Templon (파리, 브뤼셀, 뉴욕)",
+      "Sean Kelly Gallery (뉴욕, LA)",
+      "Roberts Projects (로스앤젤레스)"
+    ],
+    "sources": [
+      "Smithsonian National Portrait Gallery Washington",
+      "Brooklyn Museum New York",
+      "Virginia Museum of Fine Arts",
+      "National Gallery London"
+    ],
+    "artworks": [
+      {
+        "title_kr": "버락 오바마 공식 초상화",
+        "title_en": "Barack Obama",
+        "year": 2018,
+        "medium_kr": "캔버스에 유채, 녹색 잎사귀와 상징 꽃 패턴 배경",
+        "medium_en": "Oil on canvas, National Portrait Gallery commission",
+        "gallery_or_location": "National Portrait Gallery (스미소니언 국립초상화미술관 영구 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "팔짱을 낀 채 의자에 앉은 오바마 대통령 뒤로 고향 하와이의 재스민, 케냐의 푸른 백합, 시카고의 국화가 만발한 벽화가 어우러져 역사상 가장 파격적인 대통령 초상화."
+      },
+      {
+        "title_kr": "알프스를 넘는 나폴레옹",
+        "title_en": "Napoleon Leading the Army over the Alps",
+        "year": 2005,
+        "medium_kr": "캔버스에 유채, 금박 조각 액자 (2.7m x 2.7m 대작)",
+        "medium_en": "Oil on canvas, ornate gold leaf frame, 274 x 274 cm",
+        "gallery_or_location": "Brooklyn Museum (뉴욕 브루클린 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "자크 루이 다비드의 나폴레옹 기마상 자리에 팀버랜드 부츠와 위장 카모플라주 바지를 입은 젊은 흑인 청년을 올린 전복적 유머의 대표작."
+      },
+      {
+        "title_kr": "전쟁의 소문 (거대 기마상)",
+        "title_en": "Rumors of War",
+        "year": 2019,
+        "medium_kr": "청동 주조 기마상 조각, 돌 좌대 (높이 8.2m 야외 설치)",
+        "medium_en": "Monumental bronze equestrian statue on limestone plinth, 8.2m",
+        "gallery_or_location": "Virginia Museum of Fine Arts & 타임스스퀘어 최초 제막",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "남부연합 노예제 장군들의 동상이 즐비했던 리치먼드 거리에 찢어진 청바지와 후드티를 입고 드레드락 머리를 흩날리는 흑인 청년의 당당한 8미터 기마상을 세운 역사적 사건."
+      },
+      {
+        "title_kr": "유디트와 홀로페르네스",
+        "title_en": "Judith and Holofernes",
+        "year": 2012,
+        "medium_kr": "캔버스에 유채 (대형 여성 초상화)",
+        "medium_en": "Oil on linen",
+        "gallery_or_location": "North Carolina Museum of Art (노스캐롤라이나 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "카라바조와 아르테미시아 젠틸레스키의 명화 구도를 차용하여, 현대적인 드레스를 입은 흑인 여성이 칼을 쥐고 적장의 머리를 든 강인한 주체로 등장합니다."
+      },
+      {
+        "title_kr": "펠리페 2세의 기마 초상",
+        "title_en": "Equestrian Portrait of King Philip II",
+        "year": 2009,
+        "medium_kr": "캔버스에 유채 (루벤스 원작 오마주)",
+        "medium_en": "Oil on canvas, after Peter Paul Rubens",
+        "gallery_or_location": "Private Collection / 런던 내셔널 갤러리 전시",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "루벤스가 그린 스페인 국왕의 위풍당당한 말 위에 현대 힙합 패션의 청년을 올려놓아 고전 명화의 제국주의적 권위를 유쾌하게 탈구축합니다."
+      },
+      {
+        "title_kr": "두 자매",
+        "title_en": "The Two Sisters",
+        "year": 2012,
+        "medium_kr": "캔버스에 유채, 화려한 로코코 꽃무늬 배경",
+        "medium_en": "Oil on canvas, after Théodore Chassériau",
+        "gallery_or_location": "Brooklyn Museum Exhibition",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "우아한 이브닝드레스를 차려입고 당당한 눈빛으로 관람객을 꿰뚫어 보는 두 흑인 여성의 눈부신 아름다움과 연대를 담아낸 대작."
+      },
+      {
+        "title_kr": "잠 (슬립)",
+        "title_en": "Sleep",
+        "year": 2008,
+        "medium_kr": "캔버스에 유채, 금박 액자 (고전 누드화 오마주)",
+        "medium_en": "Oil on canvas, classical recumbent figure",
+        "gallery_or_location": "West Collection",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "하얀 천 위에 누워 평화롭게 잠든 청년의 신체. 서양 미술사에서 여성의 전유물이었던 관능적 와상 구도를 남성 신체의 부드러운 취약성으로 재해석."
+      },
+      {
+        "title_kr": "뱀에 물린 여인",
+        "title_en": "Femme piquée par un serpent",
+        "year": 2008,
+        "medium_kr": "캔버스에 유채 (오귀스트 클레장제 조각 오마주)",
+        "medium_en": "Oil on canvas, after Auguste Clésinger",
+        "gallery_or_location": "Sean Kelly Gallery & Private Collection",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "19세기 프랑스 살롱을 발칵 뒤집어놓았던 관능적인 조각의 포즈를 야구 모자를 쓴 청년의 몸짓으로 변환하여 성별과 인종의 고정관념을 해체."
+      },
+      {
+        "title_kr": "샤를 르 브룅의 말 탄 대법관 세기에",
+        "title_en": "The Chancellor Seguier on Horseback",
+        "year": 2005,
+        "medium_kr": "캔버스에 유채, 화려한 문양 패턴",
+        "medium_en": "Oil on canvas, 270 x 270 cm",
+        "gallery_or_location": "루브르 박물관 오마주 프로젝트",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "루브르의 최고 보물 중 하나인 프랑스 대법관의 의전 행렬을 현대적인 우산과 나이키 운동화를 신은 인물들로 재구성한 캔버스."
+      },
+      {
+        "title_kr": "메리 리틀의 초상",
+        "title_en": "Portrait of Mary Little, Countess of Salisbury",
+        "year": 2012,
+        "medium_kr": "캔버스에 유채 (조슈아 레이놀즈 오마주)",
+        "medium_en": "Oil on linen, custom designed gilt frame",
+        "gallery_or_location": "North Carolina Museum of Art",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barack_Obama_presidential_portrait.jpg/1280px-Barack_Obama_presidential_portrait.jpg",
+        "caption": "영국 귀족 백작 부인의 초상화 구도에 현대 흑인 여성을 배치하여, 미술사적 권위의 공간에 유색인종의 서사를 당당히 각인시킨 걸작."
+      }
+    ]
+  },
+  {
+    "id": "kara-walker",
+    "name_kr": "카라 워커",
+    "name_en": "Kara Walker",
+    "nationality": "미국 (USA)",
+    "birth_year": 1969,
+    "category": "실루엣 공간 설치 / 기념비적 설탕 스핑크스 (Silhouette & Monumental Spatial Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "1997년 27세 최연소 맥아더 펠로우십 (MacArthur Fellowship) 수상",
+      "2007년 제52회 베니스 비엔날레 미국관 참가 작가",
+      "2019년 테이트 모던 터빈홀 현대 커미션 '폰스 아메리카누스(Fons Americanus)'",
+      "2014년 뉴욕 도미노 설탕공장 폐허 거대 설탕 스핑크스 'A Subtlety' 전시"
+    ],
+    "philosophy": "카라 워커는 18~19세기 서양 귀족들의 장식적 오락이었던 '검은 종이 실루엣(Silhouette) 컷아웃' 기법을 가져와, 그 속에 미국 남부 노예제 역사의 폭력, 성적 착취, 인종적 모순의 트라우마를 거대하고 도발적인 공간 파노라마로 펼쳐내는 설치미술가입니다. 그녀의 그림자 실루엣들은 아름답고 동화처럼 보이지만, 가까이 다가갈수록 참혹하고 기괴한 역사적 현실을 드러냅니다. 거대한 설탕 조각이나 대형 분수 설치를 통해 관람객이 역사의 단면을 마주하며 불편한 진실을 스스로 질문하게 만듭니다.",
+    "style_features": "미술관 흰 벽면 전체를 360도로 두르는 검은 종이 실루엣 벽화, 80톤의 설탕으로 빚어낸 10미터 높이의 거대 스핑크스, 증기 기관 오르간 사운드와 함께 움직이는 마차 등 장소특정적 스케일과 역사 비판의 조화가 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/kara_walker_official",
+      "official_website": "https://www.karawalkerstudio.com"
+    },
+    "galleries": [
+      "Sikkema Jenkins & Co. (뉴욕)",
+      "Sprüth Magers (런던, 베를린, LA)"
+    ],
+    "sources": [
+      "Tate Modern Collection",
+      "Museum of Modern Art (MoMA 뉴욕)",
+      "Whitney Museum of American Art",
+      "Creative Time New York"
+    ],
+    "artworks": [
+      {
+        "title_kr": "미묘함, 혹은 놀라운 설탕 아기",
+        "title_en": "A Subtlety, or the Marvelous Sugar Baby",
+        "year": 2014,
+        "medium_kr": "80톤의 흰 설탕, 사탕수수 시럽, 폴리스티렌 뼈대 (길이 23m, 높이 10m)",
+        "medium_en": "80 tons of refined white sugar, sugar syrup, polystyrene, Domino Sugar Factory",
+        "gallery_or_location": "Domino Sugar Factory (브루클린 옛 설탕정제공장 폐허 커미션)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "철거 직전의 거대한 옛 설탕공장 안에 80톤의 흰 설탕으로 빚어낸 거대한 흑인 여성 스핑크스. 설탕 무역 뒤에 가려진 노예 노동의 역사를 응시한 21세기 최고의 공공 설치."
+      },
+      {
+        "title_kr": "폰스 아메리카누스 (미국의 분수)",
+        "title_en": "Fons Americanus",
+        "year": 2019,
+        "medium_kr": "물 분수, 친환경 시멘트 복합체, 코팅 목재 (높이 13m 거대 기념비)",
+        "medium_en": "Recyclable non-toxic acrylic, cement, wood, working water fountain, 13m",
+        "gallery_or_location": "Tate Modern Turbine Hall (테이트 모던 터빈홀 커미션)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "버킹엄 궁전 앞 빅토리아 여왕 기념비 분수를 풍자하여, 대서양 노예무역의 비극과 죽음을 물을 뿜는 거대한 13미터 4단 분수 조각으로 구현한 터빈홀 프로젝트."
+      },
+      {
+        "title_kr": "사라지다 (바람과 함께 사라지다의 역사 로맨스)",
+        "title_en": "Gone: An Historical Romance of a Civil War...",
+        "year": 1994,
+        "medium_kr": "검은 종이 컷아웃 벽면 부착 실루엣 설치 (길이 15m)",
+        "medium_en": "Cut paper on wall, 3.9 x 15.2 meters",
+        "gallery_or_location": "Museum of Modern Art (MoMA 뉴욕 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "소설 '바람과 함께 사라지다'의 낭만주의를 뒤집어, 달밤 아래 흑인과 백인의 욕망과 폭력이 교차하는 장면들을 그림자 실루엣으로 벽면에 펼친 작가의 출세작."
+      },
+      {
+        "title_kr": "다키타운의 반란",
+        "title_en": "Darkytown Rebellion",
+        "year": 2001,
+        "medium_kr": "벽면 컷아웃 실루엣, 컬러 프로젝터 조명 (관람객의 그림자가 겹침)",
+        "medium_en": "Cut paper and overhead projection light on wall",
+        "gallery_or_location": "Musée d'Art Moderne Grand-Duc Jean & Whitney Museum",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "천장의 컬러 프로젝터 빛이 관람객의 실제 그림자를 벽면의 흑백 실루엣 캐릭터들 사이에 강제로 투영하여, 관람객 스스로가 역사의 공모자가 되는 몰입형 설치."
+      },
+      {
+        "title_kr": "대재앙의 캐러밴",
+        "title_en": "The Katastwóf Karavan",
+        "year": 2017,
+        "medium_kr": "강철 케이지 왜건, 32음 스팀 칼리오페(증기 오르간) 사운드 설치",
+        "medium_en": "Steam powered calliope organ enclosed in a custom steel wagon",
+        "gallery_or_location": "Prospect.4 Triennial New Orleans (뉴올리언스 트리엔날레)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "미시시피 강변에 증기 오르간 마차를 설치하고 노예들의 저항 음악과 비명을 증기 파이프 소리로 연주하여 역사적 기억을 소리로 부활시킨 공공 예술."
+      },
+      {
+        "title_kr": "폭동! (인서렉션)",
+        "title_en": "Insurrection! (Our Tools Were Rudimentary, Yet We Pressed On)",
+        "year": 2000,
+        "medium_kr": "컷 종이 실루엣, 조명 슬라이드 영사기 투사",
+        "medium_en": "Cut paper silhouettes and light projections on wall",
+        "gallery_or_location": "Guggenheim Museum New York (구겐하임 미술관 소장)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "노예들의 반란과 탈출의 긴박한 순간들을 실루엣과 유색 빛의 레이어로 겹쳐내어 긴박감 넘치는 서사를 전시장 벽면 전체에 펼친 수작."
+      },
+      {
+        "title_kr": "설탕 소년들",
+        "title_en": "Sugar Boys",
+        "year": 2014,
+        "medium_kr": "설탕 사탕수수 당밀로 주조한 소년 조각 군집",
+        "medium_en": "Cast resin and molasses sugar statues",
+        "gallery_or_location": "Creative Time & Sikkema Jenkins",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "녹아내리는 갈색 당밀로 만든 어린 바구니 든 소년 조각상들이 전시장 바닥에서 서서히 부패하며 달콤함 이면에 숨은 역사적 잔혹성을 증언합니다."
+      },
+      {
+        "title_kr": "폐허와 노후의 순교자들",
+        "title_en": "The Jubilant Martyrs of Obsolescence and Ruin",
+        "year": 2015,
+        "medium_kr": "대형 흑백 종이 실루엣 컷아웃 설치",
+        "medium_en": "Cut paper silhouettes on wall, 4.2 x 18 m",
+        "gallery_or_location": "Venice Biennale 2015 All the World's Futures",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "오쿠이 엔위저가 기획한 2015 베니스 비엔날레 본전시장에 18미터 길이로 설치되어 전 세계 관람객을 압도한 대형 실루엣 서사시."
+      },
+      {
+        "title_kr": "환희에 찬 노예제",
+        "title_en": "Slavery! Slavery!",
+        "year": 1997,
+        "medium_kr": "원형 파노라마 벽면 컷아웃 설치",
+        "medium_en": "Cut paper on wall, 360-degree cyclical installation",
+        "gallery_or_location": "Whitney Biennial 1997 / Walker Art Center",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "19세기 원형 파노라마 전시장의 형식을 빌려와 관람객이 서 있는 중앙을 360도로 에워싸며 노예제의 실상을 마주하게 한 초기 대표작."
+      },
+      {
+        "title_kr": "부활의 놋뱀",
+        "title_en": "Resurrection",
+        "year": 2017,
+        "medium_kr": "흑연, 목탄, 종이에 수채 드로잉 대작",
+        "medium_en": "Charcoal, sumi ink, watercolor on paper, framed panel",
+        "gallery_or_location": "Cleveland Museum of Art",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg/1280px-Kara_Walker_A_Subtlety_Sugar_Sphinx.jpg",
+        "caption": "종이 위에 먹과 목탄으로 거칠게 휘몰아치는 선들을 중첩하여 흑인 신체와 영혼의 불멸성을 성서적 서사와 결합한 드로잉 명작."
+      }
+    ]
+  },
+  {
+    "id": "ai-weiwei",
+    "name_kr": "아이웨이웨이",
+    "name_en": "Ai Weiwei",
+    "nationality": "중국 (China)",
+    "birth_year": 1957,
+    "category": "정치적 개념 설치 / 대규모 도자·목재 프로젝트 (Political Conceptual Installation)",
+    "is_spatial_media": true,
+    "awards_and_biennales": [
+      "2007년 독일 카셀 도큐멘타 12 (dOCUMENTA 12) 초대형 프로젝트 '동화(Fairytale)'",
+      "2010년 런던 테이트 모던 터빈홀 '1억 개의 해바라기씨' 유니레버 커미션",
+      "2013년 제55회 베니스 비엔날레 독일관 대표 작가",
+      "2011년 영국 아트리뷰(ArtReview) 선정 '세계 미술계에서 가장 영향력 있는 인물 1위'"
+    ],
+    "philosophy": "아이웨이웨이는 예술을 개인의 미적 유희에 가두지 않고, 국가 권력의 검열과 억압, 인권과 난민 위기 등 동시대 인류가 직면한 가장 첨예한 정치·사회적 문제를 고발하는 무기로 사용하는 세계적 행동주의 예술가입니다. 그는 수천 년 된 중국 고대 도자기를 산산조각 내거나, 쓰촨성 대지진으로 숨진 아이들의 가방으로 미술관 외벽을 채우고, 1억 개의 도자기 해바라기씨를 손으로 구워내 테이트 모던 바닥에 깔았습니다. 전통과 현대, 개인과 집단, 진실과 침묵 사이의 충돌을 압도적인 물질적 스케일로 폭로합니다.",
+    "style_features": "수만, 수억 개의 도자기와 자전거, 난민 구명조끼 등을 거대하게 집적하는 기념비적 설치, 청나라 시대 고목 가구들을 해체해 재조합하는 건축적 조각, SNS와 다큐멘터리 영상을 결합한 행동주의 예술이 특징입니다.",
+    "sns": {
+      "instagram": "https://www.instagram.com/aiww",
+      "official_website": "https://www.aiweiwei.com"
+    },
+    "galleries": [
+      "Lisson Gallery (런던, 뉴욕, 상하이)",
+      "Galleria Continua (이탈리아, 파리, 베이징)",
+      "neugerriemschneider (베를린)"
+    ],
+    "sources": [
+      "Tate Modern Collection",
+      "Hirshhorn Museum Washington",
+      "Guggenheim Museum New York",
+      "Haus der Kunst Munich"
+    ],
+    "artworks": [
+      {
+        "title_kr": "해바라기씨 (1억 개의 도자기 씨앗)",
+        "title_en": "Sunflower Seeds",
+        "year": 2010,
+        "medium_kr": "1억 개의 수제 채색 도자기 해바라기씨, 터빈홀 바닥 전면 설치 (무게 100톤)",
+        "medium_en": "100 million individually hand-painted porcelain seeds, 100 tons",
+        "gallery_or_location": "Tate Modern Turbine Hall (런던 테이트 모던 유니레버 시리즈)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "징더전 도자기 장인 1,600명이 2년 반 동안 손으로 하나하나 빚어 구운 1억 개의 도자기 해바라기씨로 1,000평 터빈홀 바닥을 10cm 두께로 채운 현대미술사의 대걸작."
+      },
+      {
+        "title_kr": "기억하기 (9천 개의 책가방 외벽 설치)",
+        "title_en": "Remembering",
+        "year": 2009,
+        "medium_kr": "9,000개의 어린이 책가방으로 미술관 외벽에 모자이크한 한자 문장",
+        "medium_en": "9,000 children's backpacks on the facade of Haus der Kunst Munich",
+        "gallery_or_location": "Haus der Kunst (독일 뮌헨 하우스 데어 쿤스트 파사드)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "쓰촨성 대지진 당시 부실 공사로 숨진 수천 명의 아이들을 추모하며 한 어머니의 말 '그녀는 이 세상에서 7년 동안 행복하게 살았다'를 9천 개의 가방으로 미술관 벽에 새긴 고발."
+      },
+      {
+        "title_kr": "한나라 도자기 깨뜨리기",
+        "title_en": "Dropping a Han Dynasty Urn",
+        "year": 1995,
+        "medium_kr": "2,000년 된 실제 한나라 도자기를 바닥에 떨어뜨려 깨는 순간의 3폭 흑백 사진",
+        "medium_en": "Triptych of gelatin silver prints, breaking 2,000-year-old antique urn",
+        "gallery_or_location": "Guggenheim Museum & Tate Collection 소장",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "기원전 2,000년 된 귀중한 골동품 유물을 손에서 놓아 산산조각 내는 3장의 연속 사진. 과거의 낡은 가치를 부수지 않고서는 새로운 창조가 불가능함을 보여준 충격작."
+      },
+      {
+        "title_kr": "영원한 자전거 (포에버 바이시클)",
+        "title_en": "Forever Bicycles",
+        "year": 2011,
+        "medium_kr": "스테인리스 스틸 자전거 1,254대를 조립한 거대 기하학적 미로 건축",
+        "medium_en": "1,254 interconnected steel bicycles, monumental spatial installation",
+        "gallery_or_location": "Taipei Fine Arts Museum, Toronto, Venice",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "중국 서민들의 대표적 이동 수단이었던 '영구(Forever)' 브랜드 자전거 수천 대를 바퀴와 프레임으로 정밀하게 맞물려 쌓아 올린 장엄한 3차원 착시의 공간."
+      },
+      {
+        "title_kr": "곧게 펴기 (스트레이트)",
+        "title_en": "Straight",
+        "year": 2012,
+        "medium_kr": "쓰촨성 붕괴 학교 건물에서 수거한 150톤의 휘어진 철근을 수작업으로 곧게 펴 정렬",
+        "medium_en": "150 tons of straightened steel reinforcement bars from collapsed schools",
+        "gallery_or_location": "2013 Venice Biennale & Royal Academy of Arts London",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "지진으로 엿가락처럼 휜 부실 공사 철근 150톤을 망치질로 하나하나 곧게 펴서 전시장 바닥에 물결처럼 가지런히 눕혀놓은 묵직한 침묵의 고발."
+      },
+      {
+        "title_kr": "안전한 통로 (구명조끼 기둥 설치)",
+        "title_en": "Safe Passage",
+        "year": 2016,
+        "medium_kr": "레스보스 섬 난민들이 입었던 14,000개의 실제 주황색 구명조끼로 감싼 기둥들",
+        "medium_en": "14,000 discarded refugee life jackets wrapped around Konzerthaus columns",
+        "gallery_or_location": "Konzerthaus Berlin (독일 베를린 콘체르트하우스 기둥 설치)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "지중해를 건너다 버려진 시리아 난민들의 주황색 구명조끼 만여 개를 베를린 클래식 음악당 기둥마다 칭칭 감아 유럽 한복판에 난민 위기의 긴급성을 일깨운 설치."
+      },
+      {
+        "title_kr": "채색된 항아리",
+        "title_en": "Colored Vases",
+        "year": 2006,
+        "medium_kr": "신석기 시대 한나라 토기 50여 점을 현대 공업용 원색 페인트 통에 담가 적신 조각",
+        "medium_en": "Han dynasty vases (206 BC - 220 AD) dipped in industrial paint",
+        "gallery_or_location": "Hirshhorn Museum & Studio Ai Weiwei",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "기원전 고대 유물 위에 캔디 컬러의 알록달록한 페인트를 무자비하게 담갔다 빼냄으로써 박물관의 권위와 현대 소비문화의 피상성을 조롱한 연작."
+      },
+      {
+        "title_kr": "여정의 법칙 (거대한 검은 난민선)",
+        "title_en": "Law of the Journey",
+        "year": 2017,
+        "medium_kr": "검은색 고무보트 풍선 조각 (길이 70m), 258명의 얼굴 없는 고무 인물 군상",
+        "medium_en": "70-meter inflatable refugee dinghy with 258 faceless passenger figures",
+        "gallery_or_location": "National Gallery in Prague (프라하 국립미술관 본관 로비)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "미술관 천장에 매달린 70미터 길이의 거대한 검은 난민 보트와 250여 명의 난민 인형들. 인류의 연대와 거주 이전의 자유를 묻는 묵시록적 공간."
+      },
+      {
+        "title_kr": "십이지신 동물 머리",
+        "title_en": "Circle of Animals / Zodiac Heads",
+        "year": 2010,
+        "medium_kr": "베이징 원명원 분수대를 재현한 대형 청동 12지신 조각 기둥",
+        "medium_en": "Monumental bronze animal heads on bronze columns, 12 pieces",
+        "gallery_or_location": "Central Park NY, Somerset House London, Grand Palais",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "1860년 서구 열강에 약탈당했던 원명원 해시계 분수대의 동물 머리를 재제작하여 전 세계 도시 광장을 순회하며 문화재 반환과 민족주의 담론을 환기."
+      },
+      {
+        "title_kr": "동화 (카셀 도큐멘타 12)",
+        "title_en": "Fairytale",
+        "year": 2007,
+        "medium_kr": "1,001명의 중국 평범한 시민들을 독일 카셀로 초대해 여행시킨 사회적 조각",
+        "medium_en": "Social sculpture, 1,001 Chinese citizens traveling to Kassel, Germany",
+        "gallery_or_location": "dOCUMENTA 12 (독일 카셀 도큐멘타)",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg/1280px-Sunflower_Seeds_by_Ai_Weiwei_at_Tate_Modern.jpg",
+        "caption": "여권을 한 번도 가져본 적 없던 중국 전역의 농부, 노동자, 학생 1,001명을 선발해 비자를 발급받아 독일 미술제로 여행시킨 기적 같은 사회적 참여 예술."
+      }
+    ]
+  }
+]
