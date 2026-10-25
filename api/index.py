@@ -129,8 +129,18 @@ def get_keyboard_buttons(artist: dict) -> dict:
     }
 
 
-def format_docent_card(artist: dict, is_today: bool = True) -> str:
-    """Generates a complete, polite Korean docent card."""
+def format_docent_card(artist: dict, is_today: bool = True, raw_wiki: str = "") -> str:
+    """Generates an authoritative docent card via Gemini AI, with fallback to verified catalog."""
+    # 1. Attempt Gemini 2.5 Flash real-time fact-checking & curator critique
+    try:
+        from gemini_curator import enrich_and_critique_artist
+        gemini_card = enrich_and_critique_artist(artist, raw_wiki_text=raw_wiki)
+        if gemini_card and len(gemini_card) > 100:
+            return gemini_card
+    except Exception as e:
+        logger.warning(f"Gemini AI enrichment skipped/failed, falling back: {e}")
+
+    # 2. Curated fallback template
     name_kr = artist.get("name_kr", "")
     name_en = artist.get("name_en", "")
     nationality = artist.get("nationality", "")
