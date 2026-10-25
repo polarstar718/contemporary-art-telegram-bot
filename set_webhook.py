@@ -18,7 +18,16 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8928648585:AAEDJvB9K-GRSCdGNI6-_EwCMQgS1SI_1gs").strip()
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
+if not TOKEN:
+    env_file = os.path.join(os.path.dirname(__file__), ".env")
+    if os.path.exists(env_file):
+        with open(env_file, "r", encoding="utf-8") as f:
+            for line in f:
+                if line.startswith("TELEGRAM_BOT_TOKEN="):
+                    TOKEN = line.split("=", 1)[1].strip()
+if not TOKEN:
+    TOKEN = "8928648585:AAEDJvB9K-GRSCdGNI6-_EwCMQgS1SI_1gs"
 
 def check_status():
     url = f"https://api.telegram.org/bot{TOKEN}/getWebhookInfo"
