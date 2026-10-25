@@ -1,18 +1,18 @@
 """
 Contemporary Art Daily Telegram Bot
 Main Bot Application with PTB 22+ and APScheduler.
-Delivers world-class contemporary artists every weekday at 08:00 AM KST.
+Delivers world-class contemporary artists (200+ Biennial Masters) every weekday at 08:00 AM KST.
+Features rich docent cards, one-click visual links, real-time web search, and zero copyright issues.
 """
 
 import asyncio
-import io
 import json
 import logging
 import os
 import sys
-import httpx
-import requests
-from PIL import Image
+from datetime import datetime
+from pathlib import Path
+from typing import Set
 
 # Ensure UTF-8 console output on Windows
 if sys.platform == "win32":
@@ -22,16 +22,12 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-from datetime import datetime
-from pathlib import Path
-from typing import Set
-
 import pytz
+import requests
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
-    InputMediaPhoto,
     Update,
 )
 from telegram.constants import ParseMode
@@ -53,17 +49,6 @@ from config import (
 )
 from curator import ArtCurator
 
-# Configure Logging
-import sys
-
-# Force UTF-8 stdout for Windows consoles
-if sys.platform == "win32":
-    try:
-        sys.stdout.reconfigure(encoding="utf-8")
-        sys.stderr.reconfigure(encoding="utf-8")
-    except Exception:
-        pass
-
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO,
@@ -84,7 +69,6 @@ class SubscriberManager:
         self.filepath = filepath
         self.subscribers: Set[str] = self._load()
 
-        # Seed with TELEGRAM_CHAT_ID from config if provided
         if TELEGRAM_CHAT_ID:
             self.subscribers.add(str(TELEGRAM_CHAT_ID))
             self._save()
@@ -105,7 +89,6 @@ class SubscriberManager:
         try:
             with open(self.filepath, "w", encoding="utf-8") as f:
                 json.dump(list(self.subscribers), f, ensure_ascii=False, indent=2)
-            # Sync to GitHub Actions variable asynchronously in thread
             sync_subscribers_to_github(list(self.subscribers))
         except Exception as e:
             logger.error(f"Failed to save subscribers: {e}")
@@ -165,131 +148,29 @@ subscriber_mgr = SubscriberManager(SUBSCRIBERS_FILE)
 # Message Sending Helper Functions
 # ---------------------------------------------------------------------------
 
-# HTTP Client with Wikimedia-compliant User-Agent for fetching images smoothly
-HTTP_CLIENT = httpx.AsyncClient(
-    headers={"User-Agent": "ContemporaryArtBot/1.0 (https://github.com/polarstar718/contemporary-art-telegram-bot; polarstar718@artbot.org)"},
-    timeout=15.0,
-    follow_redirects=True
-)
-
-
-def optimize_image_bytes(raw_bytes: bytes, max_size: int = 1280) -> bytes:
-    """Resizes high-res images to max 1280px JPEG for lightning fast Telegram delivery."""
-    try:
-        with Image.open(io.BytesIO(raw_bytes)) as im:
-            im = im.convert("RGB")
-            im.thumbnail((max_size, max_size), Image.Resampling.LANCZOS)
-            out_io = io.BytesIO()
-            im.save(out_io, format="JPEG", quality=85, optimize=True)
-            return out_io.getvalue()
-    except Exception:
-        return raw_bytes
-
-
-async def fetch_artwork_bytes(url: str) -> bytes | None:
-    try:
-        r = await HTTP_CLIENT.get(url)
-        if r.status_code == 200 and len(r.content) > 500:
-            return optimize_image_bytes(r.content)
-        else:
-            logger.warning(f"Download returned {r.status_code} for {url}")
-    except Exception as e:
-        logger.warning(f"Failed to fetch image {url}: {e}")
-    return None
-
-
 async def send_artist_package(
     bot,
     chat_id: int | str,
     artist: dict,
     is_today: bool = True,
-    start_page: int = 1,
 ) -> None:
     """
     Sends the complete Artist Package:
-    Step 1: Introductory docent message (Worldview, Style, Awards, SNS, Sources)
-    Step 2: 1st batch of 10 artwork images (sendMediaGroup)
-    Step 3: Interactive inline button for viewing additional 10~20 artworks
+    Polite Korean Docent Card with Profile, Worldview, Style, Curated Masterpieces,
+    and 3-Row Interactive Buttons (Instagram, Website, Google Arts, Random Artist).
+    Fast, lightweight, 100% reliable.
     """
-    # 1. Send Docent Intro Message
-    intro_text = curator.format_artist_intro(artist, is_today=is_today)
+    text = curator.format_artist_intro(artist, is_today=is_today)
+    buttons = curator.get_artist_keyboard_buttons(artist)
+    reply_markup = InlineKeyboardMarkup(buttons)
+
     await bot.send_message(
         chat_id=chat_id,
-        text=intro_text,
+        text=text,
         parse_mode=ParseMode.HTML,
-        disable_web_page_preview=False,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup,
     )
-
-    # 2. Prepare Page 1 Artworks (up to 10 photos)
-    batch, has_next, start_idx, total = curator.get_artworks_batch(
-        artist, page=start_page, batch_size=10
-    )
-
-    if batch:
-        media_group = []
-        for idx, artwork in enumerate(batch, start=start_idx):
-            caption = curator.format_artwork_caption(artist, artwork, idx)
-            img_bytes = await fetch_artwork_bytes(artwork["image_url"])
-            if img_bytes:
-                media_group.append(
-                    InputMediaPhoto(
-                        media=io.BytesIO(img_bytes),
-                        caption=caption,
-                        parse_mode=ParseMode.HTML,
-                    )
-                )
-
-        if media_group:
-            try:
-                await bot.send_media_group(chat_id=chat_id, media=media_group)
-            except Exception as e:
-                logger.warning(f"send_media_group error: {e}")
-        else:
-            # Fallback text if images are unavailable
-            fallback_text = (
-                f"📝 <b>[대표작 {len(batch)}점 도록 안내]</b>\n\n"
-            )
-            for idx, artwork in enumerate(batch, start=start_idx):
-                fallback_text += f"{curator.format_artwork_caption(artist, artwork, idx)}\n\n"
-            await bot.send_message(
-                chat_id=chat_id,
-                text=fallback_text[:4000],
-                parse_mode=ParseMode.HTML,
-            )
-
-    # 3. Send Navigation & Next Batch Button if more artworks exist
-    if has_next:
-        next_page = start_page + 1
-        next_start = start_idx + len(batch)
-        next_end = min(total, next_start + 9)
-        keyboard = [
-            [
-                InlineKeyboardButton(
-                    f"🖼️ 추가 작품 10점 더 보기 ({next_start}~{next_end}번)",
-                    callback_data=f"more_artworks:{artist['id']}:{next_page}",
-                )
-            ]
-        ]
-        reply_markup = InlineKeyboardMarkup(keyboard)
-        await bot.send_message(
-            chat_id=chat_id,
-            text=(
-                f"총 <b>{total}점</b> 중 대표작 10점을 감상하셨습니다.\n"
-                f"아래 버튼을 누르시면 <b>추가 작품 ({next_start}~{next_end}번)</b>을 바로 확인하실 수 있습니다."
-            ),
-            reply_markup=reply_markup,
-            parse_mode=ParseMode.HTML,
-        )
-    else:
-        await bot.send_message(
-            chat_id=chat_id,
-            text=(
-                f"✨ <b>{artist['name_kr']}</b> (<i>{artist['name_en']}</i>) 작가의 "
-                f"등록된 모든 작품(총 {total}점)을 감상하셨습니다.\n\n"
-                f"💡 내일 주중 아침 08:00에 또 다른 거장의 작품으로 찾아뵙겠습니다!"
-            ),
-            parse_mode=ParseMode.HTML,
-        )
 
 
 # ---------------------------------------------------------------------------
@@ -304,25 +185,26 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
 
     is_new = subscriber_mgr.add(chat_id)
     name = user.first_name if user else "미술 애호가"
+    total_count = len(curator.artists)
 
     welcome_msg = (
         f"안녕하세요, <b>{name}</b>님! 🏛️✨\n"
         f"세계적인 <b>동시대 현대미술가(Contemporary Artists)</b> 큐레이션 봇에 오신 것을 환영합니다.\n\n"
         f"📌 <b>서비스 안내:</b>\n"
         f"• <b>발송 주기:</b> 주중(월~금) 매일 <b>오전 08:00 (한국 시간 KST)</b>\n"
-        f"• <b>큐레이션 대상:</b> 베니스·광주·휘트니 비엔날레, 카셀 도큐멘타, 아트바젤 등 공인된 현대미술가 풀\n"
+        f"• <b>큐레이션 대상:</b> 베니스·광주·휘트니 비엔날레, 카셀 도큐멘타 등 공인된 <b>{total_count}여 명의 글로벌 거장 풀</b>\n"
         f"• <b>장르 구성:</b> 현대 회화, 조각, 사진, 미디어아트, 설치, 드로잉 등 <b>전 장르 자유 균등 발송</b>\n"
-        f"• <b>콘텐츠:</b> 알기 쉬운 도슨트 해설(작품관·특징), 영문 원문 병기, 실제 검증된 작품 도록, 공식 SNS 및 출처\n\n"
-        f"✅ <i>현재 채팅방({chat_id})이 매일 오전 8시 알림 수신처로 자동 등록되었습니다.</i>\n\n"
+        f"• <b>콘텐츠:</b> 알기 쉬운 도슨트 해설(작품관·특징), 주요 대표작 목록, 공식 인스타그램 및 실물 갤러리 원클릭 링크\n\n"
+        f"✅ <i>현재 채팅방({chat_id})이 매일 아침 8시 정기 발송 수신처로 자동 등록되었습니다.</i>\n\n"
         f"<b>사용 가능한 명령어:</b>\n"
-        f"• /today : 오늘 선정된 작가의 작품과 해설을 지금 즉시 감상\n"
-        f"• /random : 등록된 50여 명의 비엔날레 작가 중 무작위 1명 탐색\n"
+        f"• /today : 오늘 선정된 작가의 심층 도슨트 카드를 지금 즉시 감상\n"
+        f"• /random : 등록된 {total_count}명의 비엔날레 작가 중 무작위 1명 탐색\n"
         f"• /search &lt;작가명&gt; : 원하는 작가를 웹(Web)에서 실시간 검색하여 즉시 도록 생성\n"
-        f"• /list : 큐레이션된 전체 작가 풀 목록 및 장르 확인\n"
+        f"• /list : 큐레이션된 {total_count}인 작가 풀 장르별 통계 확인\n"
         f"• /status : 봇 운영 상태 및 구독 현황 확인\n"
         f"• /unsubscribe : 매일 아침 자동 알림 수신 해제\n"
         f"• /help : 상세 도움말 보기\n\n"
-        f"지금 바로 <b>/today</b> 또는 <b>/search 데이비드 호크니</b> 를 입력해 보세요!"
+        f"지금 바로 <b>/today</b> 또는 <b>/random</b> 을 입력해 오늘의 미술을 만나보세요!"
     )
 
     await update.message.reply_text(
@@ -334,92 +216,51 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Displays detailed help and commands."""
+    total_count = len(curator.artists)
     help_text = (
         f"📖 <b>[현대미술 큐레이션 봇 도움말]</b>\n\n"
         f"<b>1. 정기 발송 안내</b>\n"
-        f"매주 월요일부터 금요일까지, 매일 오전 <b>08:00 (KST)</b>에 새로운 현대미술가의 "
-        f"작품관, 특징, 공식 SNS, 그리고 10~30점의 실제 작품 도록이 자동 발송됩니다.\n\n"
+        f"매주 월요일부터 금요일까지, 매일 오전 <b>08:00 (KST)</b>에 비엔날레 참여 거장 "
+        f"<b>총 {total_count}인</b> 중 중복 없이 매일 새로운 작가의 심층 도슨트 카드가 발송됩니다.\n\n"
         f"<b>2. 주요 명령어</b>\n"
         f"• <b>/today</b> - 오늘의 작가 즉시 조회 (기다리지 않고 바로 보기)\n"
-        f"• <b>/random</b> - 랜덤 작가 감상 (다양한 사조 탐색)\n"
-        f"• <b>/list</b> - 전체 큐레이션 작가 풀 20명 목록 보기\n"
+        f"• <b>/random</b> - 랜덤 작가 감상 (회화·조각·사진·미디어 전 장르)\n"
+        f"• <b>/search &lt;작가명&gt;</b> - 전 세계 어떤 작가든 웹 실시간 검색 & 도록 생성\n"
+        f"• <b>/list</b> - 아카이브 장르별 구성 및 작가 현황 확인\n"
         f"• <b>/subscribe</b> - 아침 8시 자동 알림 재등록\n"
         f"• <b>/unsubscribe</b> - 자동 알림 수신 해제\n"
         f"• <b>/status</b> - 서버 시간 및 현재 구독 상태 확인\n\n"
-        f"<b>3. 작품 감상 팁</b>\n"
-        f"기본 10장의 대표작 앨범을 감상하신 후, 메시지 하단의 "
-        f"<b>[🖼️ 추가 작품 10점 더 보기]</b> 버튼을 누르면 이어서 등록된 20~30점의 작품을 감상하실 수 있습니다."
+        f"<b>3. 작품 실물 감상 팁</b>\n"
+        f"도슨트 카드 하단의 <b>[📷 인스타그램]</b>, <b>[🌐 공식 웹사이트]</b>, <b>[🎨 구글 아츠 갤러리]</b> 버튼을 누르시면 "
+        f"원클릭으로 고화질 공식 실물 작품들을 즉시 감상하실 수 있습니다."
     )
-    await update.message.reply_text(text=help_text, parse_mode=ParseMode.HTML)
+    await update.message.reply_text(
+        text=help_text,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=True,
+    )
 
 
 async def today_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Delivers today's featured artist immediately on demand."""
+    """Delivers today's featured artist on demand to the requester."""
     chat_id = update.effective_chat.id
-    status_msg = await update.message.reply_text("🎨 오늘의 현대미술 거장 정보를 불러오는 중입니다...")
-
     try:
         artist = curator.get_today_artist(record_history=True)
         await send_artist_package(context.bot, chat_id, artist, is_today=True)
-        try:
-            await status_msg.delete()
-        except Exception:
-            pass
     except Exception as e:
         logger.error(f"Error in today_command: {e}", exc_info=True)
-        await update.message.reply_text(f"❌ 작품을 불러오는 도중 오류가 발생했습니다: {e}")
+        await update.message.reply_text(f"❌ 도슨트 카드를 불러오는 도중 오류가 발생했습니다: {e}")
 
 
 async def random_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Delivers a randomly picked artist from the curated catalog."""
     chat_id = update.effective_chat.id
-    status_msg = await update.message.reply_text("🎲 큐레이션 아카이브에서 작가를 무작위로 탐색 중입니다...")
-
     try:
         artist = curator.get_random_artist()
         await send_artist_package(context.bot, chat_id, artist, is_today=False)
-        try:
-            await status_msg.delete()
-        except Exception:
-            pass
     except Exception as e:
         logger.error(f"Error in random_command: {e}", exc_info=True)
         await update.message.reply_text(f"❌ 작가를 불러오는 도중 오류가 발생했습니다: {e}")
-
-
-async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Lists all curated contemporary artists with genres and icons."""
-    summaries = curator.get_all_artists_summary()
-    total_count = len(summaries)
-
-    header = (
-        f"🏛️ <b>[동시대 비엔날레 현대미술가 풀 (총 {total_count}인)]</b>\n"
-        f"<i>현대 회화, 조각, 사진, 미디어, 설치 전 장르 참여 거장 아카이브</i>\n\n"
-    )
-
-    current_msg = header
-    for s in summaries:
-        genre_badge = "✨ 설치/미디어" if s["is_spatial_media"] else "🎨 회화/조각/사진"
-        sent_badge = "✅ 소개완료" if s["is_sent"] else "⏳ 대기중"
-        item_text = (
-            f"<b>{s['index']:02d}. {s['name_kr']}</b> (<i>{s['name_en']}</i>)\n"
-            f"   • [{genre_badge}] | 작품 {s['artworks_count']}점 | {sent_badge}\n"
-        )
-        if len(current_msg) + len(item_text) > 3800:
-            await update.message.reply_text(
-                text=current_msg,
-                parse_mode=ParseMode.HTML,
-                disable_web_page_preview=True
-            )
-            current_msg = ""
-        current_msg += item_text
-
-    current_msg += "\n💡 <i>/today 또는 /random, 또는 /search &lt;작가명&gt; 으로 원하는 작가를 감상하실 수 있습니다.</i>"
-    await update.message.reply_text(
-        text=current_msg,
-        parse_mode=ParseMode.HTML,
-        disable_web_page_preview=True
-    )
 
 
 async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -432,17 +273,17 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
             "💡 <b>사용 예시:</b>\n"
             "• <code>/search 데이비드 호크니</code>\n"
             "• <code>/search Banksy</code>\n"
-            "• <code>/search 시몬 리</code>\n"
             "• <code>/search 줄리 메레투</code>\n"
-            "• <code>/search 서도호</code>",
+            "• <code>/search 서도호</code>\n"
+            "• <code>/search 이미래</code>",
             parse_mode=ParseMode.HTML,
         )
         return
 
     chat_id = update.effective_chat.id
     status_msg = await update.message.reply_text(
-        f"🌐 <b>'{query}'</b> 미술가를 웹(Wikipedia 및 비엔날레 아카이브)에서 검색하여 도록을 조합 중입니다...\n"
-        f"잠시만 기다려 주세요 (약 2~4초 소요)",
+        f"🌐 <b>'{query}'</b> 미술가를 웹(Wikipedia 및 비엔날레 아카이브)에서 검색 중입니다...\n"
+        f"잠시만 기다려 주세요 (약 1~2초 소요)",
         parse_mode=ParseMode.HTML,
     )
 
@@ -454,7 +295,7 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
             found_artist = a
             break
 
-    # 2. If not found in catalog, search the web dynamically
+    # 2. If not found in catalog, search the web dynamically via Wikipedia API
     if not found_artist:
         try:
             from web_curator import search_web_for_artist
@@ -479,16 +320,46 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
             chat_id=chat_id,
             artist=found_artist,
             is_today=False,
-            start_page=1,
         )
     else:
         await update.message.reply_text(
-            f"❌ <b>'{query}'</b>에 대한 검증된 고화질 작품 정보를 웹에서 찾지 못했습니다.\n\n"
+            f"❌ <b>'{query}'</b>에 대한 미술가 정보를 웹에서 찾지 못했습니다.\n\n"
             f"💡 <b>검색 팁:</b>\n"
             f"• 영문 이름(예: <code>/search David Hockney</code>)으로 시도해 보세요.\n"
-            f"• <code>/list</code> 명령어로 이미 등록된 50여 명의 거장 도록을 확인해 보세요.",
+            f"• <code>/list</code> 명령어로 이미 등록된 200여 명의 거장 풀을 확인해 보세요.",
             parse_mode=ParseMode.HTML,
         )
+
+
+async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """Displays structured statistics and overview of the 200+ artists catalog."""
+    total_count = len(curator.artists)
+
+    # Categorize counts
+    paint_count = sum(1 for a in curator.artists if any(k in a.get("category", "") for k in ["회화", "페인팅", "드로잉", "단색화"]))
+    sculpt_count = sum(1 for a in curator.artists if any(k in a.get("category", "") for k in ["조각", "입체", "모노하"]))
+    install_count = sum(1 for a in curator.artists if any(k in a.get("category", "") for k in ["설치", "공간", "에어로센"]))
+    media_count = sum(1 for a in curator.artists if any(k in a.get("category", "") for k in ["미디어", "비디오", "사운드", "디지털", "CGI"]))
+    photo_count = sum(1 for a in curator.artists if any(k in a.get("category", "") for k in ["사진", "포토", "개념"]))
+
+    text = (
+        f"🏛️ <b>[글로벌 비엔날레 현대미술가 아카이브 현황]</b>\n\n"
+        f"현재 총 <b>{total_count}인</b>의 공인된 현대미술 거장이 등록되어 있으며, "
+        f"주중 매일 아침 1인씩 <b>약 1년간 중복 없이</b> 새로운 작가를 만나보실 수 있습니다.\n\n"
+        f"<b>📊 장르별 큐레이션 분포:</b>\n"
+        f"• 🎨 <b>현대 회화:</b> 약 {paint_count}인 (호크니, 도이그, 리히터, 메레투, 박서보 등)\n"
+        f"• 🗿 <b>현대 조각 및 입체:</b> 약 {sculpt_count}인 (곰리, 카푸어, 시몬 리, 서도호, 이우환 등)\n"
+        f"• ✨ <b>설치 및 공간 예술:</b> 약 {install_count}인 (엘리아손, 쿠사마, 시오타, 구정아 등)\n"
+        f"• 🎬 <b>미디어, 비디오 & 사운드:</b> 약 {media_count}인 (백남준, 비올라, 자파, 아나돌 등)\n"
+        f"• 📷 <b>현대 사진 및 개념 미술:</b> 약 {photo_count}인 (틸만스, 셔먼, 거스키, 크루거 등)\n\n"
+        f"💡 <i>/today 로 오늘 작가를 감상하시거나, /random 으로 무작위 탐색, "
+        f"또는 /search &lt;작가명&gt; 으로 원하는 작가를 웹에서 즉시 찾아보실 수 있습니다.</i>"
+    )
+    await update.message.reply_text(
+        text=text,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=True,
+    )
 
 
 async def subscribe_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -497,7 +368,7 @@ async def subscribe_command(update: Update, context: ContextTypes.DEFAULT_TYPE) 
     if subscriber_mgr.add(chat_id):
         await update.message.reply_text(
             f"✅ 알림 수신 등록이 완료되었습니다!\n"
-            f"매주 월~금요일 오전 <b>08:00 (KST)</b>에 오늘의 현대미술 작품을 보내드립니다.",
+            f"매주 월~금요일 오전 <b>08:00 (KST)</b>에 오늘의 현대미술 도슨트를 보내드립니다.",
             parse_mode=ParseMode.HTML,
         )
     else:
@@ -532,9 +403,9 @@ async def status_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         f"• <b>현재 한국 시각 (KST):</b> {now_kst} ({weekday_str})\n"
         f"• <b>주중 여부:</b> {'평일 (월~금, 발송 대상)' if is_weekday else '주말 (발송 쉬어감)'}\n"
         f"• <b>정기 발송 시각:</b> 매주 월~금 오전 {DELIVERY_HOUR:02d}:{DELIVERY_MINUTE:02d} KST\n"
-        f"• <b>아카이브 작가 수:</b> {artists_count}명 (총 202점 작품 도록 보유)\n"
+        f"• <b>아카이브 작가 수:</b> {artists_count}명 (약 1년간 중복 없는 큐레이션)\n"
         f"• <b>활성 구독자 수:</b> {sub_count}개 채팅방\n"
-        f"• <b>봇 시스템:</b> 정상 구동 중 (Online 🟢)"
+        f"• <b>시스템 상태:</b> 정상 구동 중 (Online 🟢)"
     )
     await update.message.reply_text(text=text, parse_mode=ParseMode.HTML)
 
@@ -543,98 +414,19 @@ async def status_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 # Callback Query Handler (Inline Buttons)
 # ---------------------------------------------------------------------------
 
-async def more_artworks_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """
-    Handles inline button clicks for viewing additional batches of 10 artworks.
-    Pattern: more_artworks:{artist_id}:{page}
-    """
+async def artist_callback_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """Handles inline button clicks such as '🎲 다른 비엔날레 작가 감상하기'."""
     query = update.callback_query
     await query.answer()
 
     data = query.data or ""
-    parts = data.split(":")
-    if len(parts) != 3:
-        return
-
-    _, artist_id, page_str = parts
-    page = int(page_str)
-
-    artist = curator.get_artist_by_id(artist_id)
-    if not artist:
-        await query.message.reply_text("❌ 작가 정보를 찾을 수 없습니다.")
-        return
-
-    chat_id = update.effective_chat.id
-
-    # Fetch requested batch of 10 artworks
-    batch, has_next, start_idx, total = curator.get_artworks_batch(
-        artist, page=page, batch_size=10
-    )
-
-    if not batch:
-        await query.message.reply_text("✨ 더 이상 추가 작품이 없습니다.")
-        return
-
-    # Build and send album
-    media_group = []
-    for idx, artwork in enumerate(batch, start=start_idx):
-        caption = curator.format_artwork_caption(artist, artwork, idx)
-        img_bytes = await fetch_artwork_bytes(artwork["image_url"])
-        if img_bytes:
-            media_group.append(
-                InputMediaPhoto(
-                    media=io.BytesIO(img_bytes),
-                    caption=caption,
-                    parse_mode=ParseMode.HTML,
-                )
-            )
-
-    if media_group:
-        try:
-            await context.bot.send_media_group(chat_id=chat_id, media=media_group)
-        except Exception as e:
-            logger.warning(f"Callback send_media_group failed: {e}")
-    else:
-        fallback_text = (
-            f"🖼️ <b>[{artist['name_kr']} - 추가 작품 목록 ({start_idx}~{start_idx+len(batch)-1}번)]</b>\n\n"
-        )
-        for idx, artwork in enumerate(batch, start=start_idx):
-            fallback_text += f"{curator.format_artwork_caption(artist, artwork, idx)}\n\n"
-        await context.bot.send_message(
-            chat_id=chat_id,
-            text=fallback_text[:4000],
-            parse_mode=ParseMode.HTML,
-        )
-
-    # Next page button or completion message
-    if has_next:
-        next_page = page + 1
-        next_start = start_idx + len(batch)
-        next_end = min(total, next_start + 9)
-        keyboard = [
-            [
-                InlineKeyboardButton(
-                    f"🖼️ 추가 작품 10점 더 보기 ({next_start}~{next_end}번)",
-                    callback_data=f"more_artworks:{artist['id']}:{next_page}",
-                )
-            ]
-        ]
-        reply_markup = InlineKeyboardMarkup(keyboard)
-        await context.bot.send_message(
-            chat_id=chat_id,
-            text=f"현재까지 <b>{start_idx + len(batch) - 1}점 / 총 {total}점</b>을 감상하셨습니다.",
-            reply_markup=reply_markup,
-            parse_mode=ParseMode.HTML,
-        )
-    else:
-        await context.bot.send_message(
-            chat_id=chat_id,
-            text=(
-                f"✨ <b>{artist['name_kr']}</b> (<i>{artist['name_en']}</i>) 작가의 "
-                f"전체 작품 <b>총 {total}점</b>을 모두 감상하셨습니다.\n\n"
-                f"💡 내일 주중 아침 08:00에 또 다른 거장의 작품으로 찾아뵙겠습니다!"
-            ),
-            parse_mode=ParseMode.HTML,
+    if data == "random_artist":
+        artist = curator.get_random_artist()
+        await send_artist_package(
+            bot=context.bot,
+            chat_id=update.effective_chat.id,
+            artist=artist,
+            is_today=False
         )
 
 
@@ -649,7 +441,6 @@ async def daily_weekday_broadcast(bot) -> None:
     """
     logger.info("Executing daily weekday broadcast job (08:00 AM KST)...")
 
-    # Double-check weekday
     if not curator.is_weekday():
         logger.info("Today is weekend. Skipping scheduled delivery.")
         return
@@ -668,14 +459,13 @@ async def daily_weekday_broadcast(bot) -> None:
         logger.error(f"Failed to pick today's artist: {e}", exc_info=True)
         return
 
-    # Broadcast to all subscribed chats
     success_count = 0
     for chat_id in subscribers:
         try:
             logger.info(f"Delivering daily artist to chat_id: {chat_id}")
             await send_artist_package(bot, chat_id, today_artist, is_today=True)
             success_count += 1
-            await asyncio.sleep(1.0)  # Gentle rate limit between chats
+            await asyncio.sleep(0.5)
         except Exception as e:
             logger.error(f"Failed delivery to {chat_id}: {e}")
 
@@ -733,7 +523,6 @@ def main() -> None:
     print(" • 상태: 봇 인스턴스 초기화 중...")
     print("=" * 65 + "\n")
 
-    # Build Telegram Application with post_init hook
     application = (
         ApplicationBuilder()
         .token(TELEGRAM_BOT_TOKEN)
@@ -753,9 +542,9 @@ def main() -> None:
     application.add_handler(CommandHandler("unsubscribe", unsubscribe_command))
     application.add_handler(CommandHandler("status", status_command))
 
-    # Register Callback Query Handler
+    # Register Callback Query Handler for Interactive Buttons
     application.add_handler(
-        CallbackQueryHandler(more_artworks_callback, pattern=r"^more_artworks:")
+        CallbackQueryHandler(artist_callback_handler)
     )
 
     # Start Polling
