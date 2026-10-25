@@ -18,6 +18,7 @@ from config import ARTISTS_FILE, HISTORY_FILE, TIMEZONE
 class ArtCurator:
     def __init__(self):
         self.tz = pytz.timezone(TIMEZONE)
+        self.filepath = ARTISTS_FILE
         self.artists = self._load_artists()
         self.history = self._load_history()
 
@@ -82,23 +83,8 @@ class ArtCurator:
             # All artists have been featured once! Start a fresh cycle
             unsent_artists = list(self.artists)
 
-        # Decide whether today should be installation/spatial/media or painting/photo/sculpture
-        # Weekday 0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri
-        current_weekday = datetime.now(self.tz).weekday()
-        # Wednesdays (2) and Fridays (4) are great for balanced painting/photography/sculpture
-        prefer_balanced_painting = current_weekday in (2, 4)
-
-        candidate = None
-        if prefer_balanced_painting:
-            # Look for non-spatial/media artist first
-            for a in unsent_artists:
-                if not a.get("is_spatial_media", True):
-                    candidate = a
-                    break
-
-        if not candidate:
-            # Default or fallback: pick first available installation/spatial/media artist
-            candidate = unsent_artists[0]
+        # Completely free and diverse random selection across all genres (painting, sculpture, media, photo, installation)
+        candidate = random.choice(unsent_artists)
 
         if record_history:
             self.history.append({
