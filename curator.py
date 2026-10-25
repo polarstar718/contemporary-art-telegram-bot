@@ -1,15 +1,15 @@
 """
-Contemporary Art Curator Engine
+Contemporary Art Curator Engine.
 Handles artist rotation, history tracking, weekday scheduling,
-and formatted docent messages for Telegram.
+and rich docent text cards with interactive links for Telegram.
 """
 
 import json
 import random
+import urllib.parse
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Any, List, Optional, Tuple
-
+from typing import Dict, Any, List, Optional
 import pytz
 
 from config import ARTISTS_FILE, HISTORY_FILE, TIMEZONE
@@ -23,9 +23,9 @@ class ArtCurator:
         self.history = self._load_history()
 
     def _load_artists(self) -> List[Dict[str, Any]]:
-        if not ARTISTS_FILE.exists():
+        if not self.filepath.exists():
             return []
-        with open(ARTISTS_FILE, "r", encoding="utf-8") as f:
+        with open(self.filepath, "r", encoding="utf-8") as f:
             return json.load(f)
 
     def _load_history(self) -> List[Dict[str, Any]]:
@@ -49,41 +49,43 @@ class ArtCurator:
     def get_current_date_str(self) -> str:
         return datetime.now(self.tz).strftime("%Y-%m-%d")
 
-    def is_weekday(self) -> bool:
-        """Returns True if today is Monday (0) through Friday (4) in Korea Time."""
-        now = datetime.now(self.tz)
-        return now.weekday() < 5
-
     def get_weekday_korean(self) -> str:
         weekdays = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
         return weekdays[datetime.now(self.tz).weekday()]
 
+    def is_weekday(self) -> bool:
+        # Monday=0 ... Friday=4, Saturday=5, Sunday=6
+        return datetime.now(self.tz).weekday() < 5
+
     def get_today_artist(self, record_history: bool = True) -> Dict[str, Any]:
         """
-        Retrieves today's featured artist.
-        If already assigned for today's date, returns that artist.
-        Otherwise, selects the next unsent artist in sequence, prioritizing the weekly genre balance.
+        Picks today's featured artist from the 200+ pool.
+        Ensures diverse, non-repeating daily weekday delivery across all genres.
         """
         self.reload()
+        if not self.artists:
+            raise ValueError("No artists found in catalog.")
+
         today_str = self.get_current_date_str()
 
-        # Check if already sent today
+        # Check if already picked today
         for entry in reversed(self.history):
             if entry.get("date") == today_str:
-                artist_id = entry.get("artist_id")
-                artist = self.get_artist_by_id(artist_id)
+                artist = self.get_artist_by_id(entry.get("artist_id", ""))
                 if artist:
                     return artist
 
-        # Find unsent artists in current cycle
-        sent_ids = {entry.get("artist_id") for entry in self.history}
-        unsent_artists = [a for a in self.artists if a["id"] not in sent_ids]
+        # Filter out previously sent artists in this cycle
+        sent_artist_ids = {entry.get("artist_id") for entry in self.history}
+        unsent_artists = [a for a in self.artists if a["id"] not in sent_artist_ids]
 
         if not unsent_artists:
-            # All artists have been featured once! Start a fresh cycle
+            # All artists in catalog have been shown once! Reset history to start fresh cycle
+            self.history = []
+            self._save_history()
             unsent_artists = list(self.artists)
 
-        # Completely free and diverse random selection across all genres (painting, sculpture, media, photo, installation)
+        # Free and unbiased random selection across all contemporary genres
         candidate = random.choice(unsent_artists)
 
         if record_history:
@@ -130,42 +132,49 @@ class ArtCurator:
 
     def format_artist_intro(self, artist: Dict[str, Any], is_today: bool = True) -> str:
         """
-        Formats a friendly, smooth Korean docent introductory text with English original names.
-        Complies with user request:
-        - 100% natural, polite Korean docent commentary
-        - English original names for Artist Name, Artwork Titles, and Gallery Names
-        - Worldview (작품관), Characteristics (작품 특징), Awards/Biennales, SNS, Sources
+        Formats a polite, comprehensive Korean docent card with:
+        - Profile (Korean/English name, Nationality, Birth, Genre)
+        - Key Biennales & Major Exhibitions
+        - Artistic Worldview (작품관)
+        - Stylistic Features & Visual Elements (작품 특징)
+        - Curated Masterpiece List (대표작 3~6점)
+        - Gallery & Archives
         """
         name_kr = artist["name_kr"]
         name_en = artist["name_en"]
         nationality = artist.get("nationality", "")
         birth_year = artist.get("birth_year", "")
-        category = artist.get("category", "")
+        category = artist.get("category", "동시대 현대미술")
         philosophy = artist.get("philosophy", "")
         features = artist.get("style_features", "")
         awards = artist.get("awards_and_biennales", [])
-        sns = artist.get("sns", {})
         galleries = artist.get("galleries", [])
         sources = artist.get("sources", [])
-        total_works = len(artist.get("artworks", []))
+        artworks = artist.get("artworks", [])
 
-        header = "🏛️ [오늘의 현대미술 도슨트]" if is_today else "🎨 [현대미술 작가 아카이브]"
+        header = "🏛️ [오늘의 현대미술 도슨트]" if is_today else "🎨 [비엔날레 현대미술가 아카이브]"
         today_date = datetime.now(self.tz).strftime("%Y년 %m월 %d일")
         weekday_kr = self.get_weekday_korean()
 
-        awards_text = "\n".join([f"  • {item}" for item in awards[:4]])
-        galleries_text = ", ".join(galleries) if galleries else "글로벌 유수 갤러리"
-        sources_text = ", ".join(sources[:3]) if sources else "공식 아카이브"
+        awards_text = "\n".join([f"  • {item}" for item in awards[:3]])
+        galleries_text = ", ".join(galleries[:3]) if galleries else "글로벌 대표 현대 갤러리"
+        sources_text = ", ".join(sources[:2]) if sources else "국제 비엔날레 아카이브"
 
-        instagram_url = sns.get("instagram", "")
-        website_url = sns.get("official_website", "")
-
-        links = []
-        if instagram_url:
-            links.append(f"<a href='{instagram_url}'>📸 인스타그램 공식 계정</a>")
-        if website_url:
-            links.append(f"<a href='{website_url}'>🌐 공식 웹사이트</a>")
-        links_text = " | ".join(links) if links else "공식 SNS 준비 중"
+        # Format representative artworks list
+        artworks_lines = []
+        for idx, w in enumerate(artworks[:5], start=1):
+            t_kr = w.get("title_kr", "무제")
+            t_en = w.get("title_en", "Untitled")
+            yr = w.get("year", "연도 미상")
+            med = w.get("medium_kr", "")
+            loc = w.get("gallery_or_location", "")
+            cap = w.get("caption", "")
+            artworks_lines.append(
+                f"<b>{idx}. {t_kr}</b> (<i>{t_en}</i>), {yr}\n"
+                f"   • <b>재료:</b> {med} | <b>소장:</b> {loc}\n"
+                f"   • <i>{cap}</i>"
+            )
+        artworks_section = "\n\n".join(artworks_lines) if artworks_lines else "대표작 아카이브 정리 중"
 
         msg = (
             f"<b>{header}</b>\n"
@@ -173,60 +182,49 @@ class ArtCurator:
             f"━━━━━━━━━━━━━━━━━━\n"
             f"👤 <b>작가:</b> <b>{name_kr}</b> (<i>{name_en}</i>)\n"
             f"🌍 <b>국적 / 출생:</b> {nationality} (b. {birth_year})\n"
-            f"🏷️ <b>주요 매체:</b> {category}\n"
-            f"🖼️ <b>등록 작품 수:</b> 총 {total_works}점 (대표작 10점 우선 감상)\n"
+            f"🏷️ <b>대표 장르:</b> {category}\n"
             f"━━━━━━━━━━━━━━━━━━\n\n"
             f"💡 <b>작품관 (Artistic Worldview)</b>\n"
             f"{philosophy}\n\n"
             f"✨ <b>작품 특징 및 시각적 요소</b>\n"
             f"{features}\n\n"
-            f"🏆 <b>주요 비엔날레 & 수상 이력</b>\n"
+            f"🏆 <b>주요 비엔날레 & 전시 이력</b>\n"
             f"{awards_text}\n\n"
-            f"🏛️ <b>소속 갤러리 (Gallery):</b> {galleries_text}\n"
-            f"📚 <b>출처 및 소장처:</b> {sources_text}\n"
-            f"🔗 <b>공식 채널:</b> {links_text}\n\n"
-            f"👇 <i>아래로 대표작 10점의 실제 작품 도록이 이어집니다.</i>"
+            f"🖼️ <b>주요 대표작 도록 (Masterpieces)</b>\n"
+            f"{artworks_section}\n\n"
+            f"🏛️ <b>소속 갤러리:</b> {galleries_text}\n"
+            f"📚 <b>아카이브 출처:</b> {sources_text}\n\n"
+            f"👇 <i>아래 원클릭 버튼을 누르시면 공식 인스타그램과 고화질 갤러리에서 실제 작품 실물을 바로 감상하실 수 있습니다.</i>"
         )
         return msg
 
-    def get_artworks_batch(
-        self, artist: Dict[str, Any], page: int = 1, batch_size: int = 10
-    ) -> Tuple[List[Dict[str, Any]], bool, int, int]:
+    def get_artist_keyboard_buttons(self, artist: Dict[str, Any]) -> list:
         """
-        Returns (batch_artworks, has_next_page, current_start_index, total_artworks)
-        page 1 -> items 0..9 (start=1, end=10)
-        page 2 -> items 10..19 (start=11, end=20)
+        Builds the 3-row interactive inline keyboard for Telegram:
+        Row 1: [📷 인스타그램] | [🌐 공식 웹사이트]
+        Row 2: [🎨 구글 아츠 갤러리 실물 보기]
+        Row 3: [🎲 다른 작가 감상하기]
         """
-        artworks = artist.get("artworks", [])
-        total = len(artworks)
-        start_idx = (page - 1) * batch_size
-        end_idx = start_idx + batch_size
+        from telegram import InlineKeyboardButton
 
-        batch = artworks[start_idx:end_idx]
-        has_next = end_idx < total
-        return batch, has_next, start_idx + 1, total
+        sns = artist.get("sns", {})
+        name_en = artist.get("name_en", "")
+        encoded_name = urllib.parse.quote(name_en)
 
-    def format_artwork_caption(
-        self, artist: Dict[str, Any], artwork: Dict[str, Any], item_number: int
-    ) -> str:
-        """
-        Formats a clean, informative caption for an individual artwork photo.
-        Max Telegram caption length is 1024 characters.
-        """
-        title_kr = artwork.get("title_kr", "무제")
-        title_en = artwork.get("title_en", "Untitled")
-        year = artwork.get("year", "연도 미상")
-        medium_kr = artwork.get("medium_kr", "")
-        gallery = artwork.get("gallery_or_location", "")
-        caption = artwork.get("caption", "")
+        instagram_url = sns.get("instagram") or f"https://www.instagram.com/explore/tags/{artist['id'].replace('-', '')}/"
+        website_url = sns.get("official_website") or f"https://en.wikipedia.org/wiki/{encoded_name}"
+        arts_culture_url = sns.get("arts_culture") or f"https://artsandculture.google.com/search?q={encoded_name}"
 
-        text = (
-            f"[{item_number}] <b>{title_kr}</b> (<i>{title_en}</i>), {year}\n"
-            f"• <b>재료/기법:</b> {medium_kr}\n"
-            f"• <b>소장/위치:</b> {gallery}\n"
-            f"📝 <i>{caption}</i>"
-        )
-        # Safe truncate if overly long
-        if len(text) > 1000:
-            text = text[:990] + "..."
-        return text
+        keyboard = [
+            [
+                InlineKeyboardButton("📷 인스타그램 바로가기", url=instagram_url),
+                InlineKeyboardButton("🌐 공식 웹사이트 / 위키", url=website_url),
+            ],
+            [
+                InlineKeyboardButton("🎨 구글 아츠 갤러리 실물 보기", url=arts_culture_url),
+            ],
+            [
+                InlineKeyboardButton("🎲 다른 비엔날레 작가 감상하기", callback_data="random_artist"),
+            ]
+        ]
+        return keyboard
