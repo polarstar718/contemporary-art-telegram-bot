@@ -310,18 +310,19 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         f"세계적인 <b>동시대 현대미술가(Contemporary Artists)</b> 큐레이션 봇에 오신 것을 환영합니다.\n\n"
         f"📌 <b>서비스 안내:</b>\n"
         f"• <b>발송 주기:</b> 주중(월~금) 매일 <b>오전 08:00 (한국 시간 KST)</b>\n"
-        f"• <b>큐레이션 대상:</b> 베니스 비엔날레, 터너상, 카셀 도큐멘타, 아트바젤 등 공인된 세계 최고 작가\n"
-        f"• <b>장르 구성:</b> 설치미술, 공간 예술, 미디어아트 위주(주 3~4회) + 회화/조각/사진 균형(주 1~2회)\n"
-        f"• <b>콘텐츠:</b> 알기 쉬운 도슨트 해설(작품관·특징), 영문 원문 병기, 실제 작품 도록 10~30점, 인스타그램 및 출처\n\n"
+        f"• <b>큐레이션 대상:</b> 베니스·광주·휘트니 비엔날레, 카셀 도큐멘타, 아트바젤 등 공인된 현대미술가 풀\n"
+        f"• <b>장르 구성:</b> 현대 회화, 조각, 사진, 미디어아트, 설치, 드로잉 등 <b>전 장르 자유 균등 발송</b>\n"
+        f"• <b>콘텐츠:</b> 알기 쉬운 도슨트 해설(작품관·특징), 영문 원문 병기, 실제 검증된 작품 도록, 공식 SNS 및 출처\n\n"
         f"✅ <i>현재 채팅방({chat_id})이 매일 오전 8시 알림 수신처로 자동 등록되었습니다.</i>\n\n"
         f"<b>사용 가능한 명령어:</b>\n"
         f"• /today : 오늘 선정된 작가의 작품과 해설을 지금 즉시 감상\n"
-        f"• /random : 20명의 현대미술 거장 중 무작위 작가 1명 탐색\n"
+        f"• /random : 등록된 50여 명의 비엔날레 작가 중 무작위 1명 탐색\n"
+        f"• /search &lt;작가명&gt; : 원하는 작가를 웹(Web)에서 실시간 검색하여 즉시 도록 생성\n"
         f"• /list : 큐레이션된 전체 작가 풀 목록 및 장르 확인\n"
         f"• /status : 봇 운영 상태 및 구독 현황 확인\n"
         f"• /unsubscribe : 매일 아침 자동 알림 수신 해제\n"
         f"• /help : 상세 도움말 보기\n\n"
-        f"지금 바로 <b>/today</b> 를 입력해 오늘의 작가를 만나보세요!"
+        f"지금 바로 <b>/today</b> 또는 <b>/search 데이비드 호크니</b> 를 입력해 보세요!"
     )
 
     await update.message.reply_text(
@@ -387,28 +388,107 @@ async def random_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 
 async def list_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Lists all 20 curated contemporary artists with genres and icons."""
+    """Lists all curated contemporary artists with genres and icons."""
     summaries = curator.get_all_artists_summary()
+    total_count = len(summaries)
 
-    lines = ["🏛️ <b>[현대미술 큐레이션 작가 풀 (총 20인)]</b>\n"]
-    lines.append("<i>설치·공간·미디어아트 75% + 현대 회화·사진·조각 25% 균형 구성</i>\n")
-
-    for s in summaries:
-        genre_badge = "✨ 설치/미디어" if s["is_spatial_media"] else "🎨 회화/사진"
-        sent_badge = "✅ 소개완료" if s["is_sent"] else "⏳ 대기중"
-        lines.append(
-            f"<b>{s['index']:02d}. {s['name_kr']}</b> (<i>{s['name_en']}</i>)\n"
-            f"   • [{genre_badge}] | 등록 작품: {s['artworks_count']}점 | {sent_badge}"
-        )
-
-    lines.append("\n💡 <i>/today 또는 /random 명령어로 원하는 작가의 전체 도록을 감상하실 수 있습니다.</i>")
-
-    full_text = "\n".join(lines)
-    await update.message.reply_text(
-        text=full_text,
-        parse_mode=ParseMode.HTML,
-        disable_web_page_preview=True,
+    header = (
+        f"🏛️ <b>[동시대 비엔날레 현대미술가 풀 (총 {total_count}인)]</b>\n"
+        f"<i>현대 회화, 조각, 사진, 미디어, 설치 전 장르 참여 거장 아카이브</i>\n\n"
     )
+
+    current_msg = header
+    for s in summaries:
+        genre_badge = "✨ 설치/미디어" if s["is_spatial_media"] else "🎨 회화/조각/사진"
+        sent_badge = "✅ 소개완료" if s["is_sent"] else "⏳ 대기중"
+        item_text = (
+            f"<b>{s['index']:02d}. {s['name_kr']}</b> (<i>{s['name_en']}</i>)\n"
+            f"   • [{genre_badge}] | 작품 {s['artworks_count']}점 | {sent_badge}\n"
+        )
+        if len(current_msg) + len(item_text) > 3800:
+            await update.message.reply_text(
+                text=current_msg,
+                parse_mode=ParseMode.HTML,
+                disable_web_page_preview=True
+            )
+            current_msg = ""
+        current_msg += item_text
+
+    current_msg += "\n💡 <i>/today 또는 /random, 또는 /search &lt;작가명&gt; 으로 원하는 작가를 감상하실 수 있습니다.</i>"
+    await update.message.reply_text(
+        text=current_msg,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=True
+    )
+
+
+async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """Searches for an artist in the catalog or queries the web in real-time."""
+    query = " ".join(context.args).strip() if context.args else ""
+    if not query:
+        await update.message.reply_text(
+            "🔍 <b>[웹 실시간 미술가 검색]</b>\n\n"
+            "찾고 싶으신 미술가의 이름을 함께 입력해 주세요.\n\n"
+            "💡 <b>사용 예시:</b>\n"
+            "• <code>/search 데이비드 호크니</code>\n"
+            "• <code>/search Banksy</code>\n"
+            "• <code>/search 시몬 리</code>\n"
+            "• <code>/search 줄리 메레투</code>\n"
+            "• <code>/search 서도호</code>",
+            parse_mode=ParseMode.HTML,
+        )
+        return
+
+    chat_id = update.effective_chat.id
+    status_msg = await update.message.reply_text(
+        f"🌐 <b>'{query}'</b> 미술가를 웹(Wikipedia 및 비엔날레 아카이브)에서 검색하여 도록을 조합 중입니다...\n"
+        f"잠시만 기다려 주세요 (약 2~4초 소요)",
+        parse_mode=ParseMode.HTML,
+    )
+
+    # 1. Search in existing catalog first
+    q_low = query.lower()
+    found_artist = None
+    for a in curator.artists:
+        if q_low in a.get("name_kr", "").lower() or q_low in a.get("name_en", "").lower() or q_low in a.get("id", "").lower():
+            found_artist = a
+            break
+
+    # 2. If not found in catalog, search the web dynamically
+    if not found_artist:
+        try:
+            from web_curator import search_web_for_artist
+            found_artist = await asyncio.to_thread(search_web_for_artist, query)
+            if found_artist:
+                curator.artists.append(found_artist)
+                with open(curator.filepath, "w", encoding="utf-8") as f:
+                    json.dump(curator.artists, f, ensure_ascii=False, indent=2)
+                curator.reload()
+                logger.info(f"Live web search successfully added new artist '{found_artist['name_kr']}'")
+        except Exception as e:
+            logger.error(f"Dynamic web search error for '{query}': {e}")
+
+    try:
+        await status_msg.delete()
+    except Exception:
+        pass
+
+    if found_artist:
+        await send_artist_package(
+            bot=context.bot,
+            chat_id=chat_id,
+            artist=found_artist,
+            is_today=False,
+            start_page=1,
+        )
+    else:
+        await update.message.reply_text(
+            f"❌ <b>'{query}'</b>에 대한 검증된 고화질 작품 정보를 웹에서 찾지 못했습니다.\n\n"
+            f"💡 <b>검색 팁:</b>\n"
+            f"• 영문 이름(예: <code>/search David Hockney</code>)으로 시도해 보세요.\n"
+            f"• <code>/list</code> 명령어로 이미 등록된 50여 명의 거장 도록을 확인해 보세요.",
+            parse_mode=ParseMode.HTML,
+        )
 
 
 async def subscribe_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -649,7 +729,7 @@ def main() -> None:
     print(" 🏛️ [동시대 현대미술 큐레이션 텔레그램 봇]")
     print(f" • 운영 시간대: {TIMEZONE} (한국 시간)")
     print(f" • 정기 발송 시간: 매주 월~금요일 오전 {DELIVERY_HOUR:02d}:{DELIVERY_MINUTE:02d}")
-    print(f" • 큐레이션 풀: 20인 거장 (총 202점 고화질 도록 보유)")
+    print(f" • 큐레이션 풀: {len(curator.artists)}인 거장 (비엔날레 전 장르 아카이브)")
     print(" • 상태: 봇 인스턴스 초기화 중...")
     print("=" * 65 + "\n")
 
@@ -667,6 +747,7 @@ def main() -> None:
     application.add_handler(CommandHandler("help", help_command))
     application.add_handler(CommandHandler("today", today_command))
     application.add_handler(CommandHandler("random", random_command))
+    application.add_handler(CommandHandler("search", search_command))
     application.add_handler(CommandHandler("list", list_command))
     application.add_handler(CommandHandler("subscribe", subscribe_command))
     application.add_handler(CommandHandler("unsubscribe", unsubscribe_command))
