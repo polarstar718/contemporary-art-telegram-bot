@@ -1,19 +1,18 @@
 """
 Standalone Daily Art Dispatcher for GitHub Actions, Scheduled Cron, and Testing.
-Sends Today's Artist Docent Card + 10 Artwork Photos directly to Telegram.
-Supports broadcasting to all registered subscribers or isolated testing.
+Delivers Today's Artist Docent Card with direct links to Telegram subscribers.
+Fast, lightweight, 100% reliable, zero copyright/payload issues.
 """
 
 import os
 import sys
 import json
 import logging
-import io
 import time
+import urllib.parse
 from datetime import datetime
 from pathlib import Path
 import requests
-from PIL import Image
 
 # Ensure UTF-8 output on Windows
 if sys.platform == "win32":
@@ -47,103 +46,49 @@ if not BOT_TOKEN:
             elif line.startswith("TELEGRAM_SUBSCRIBER_CHAT_IDS="):
                 SUBSCRIBER_IDS_ENV = line.split("=", 1)[1].strip()
 
-# Strictly compliant User-Agent for Wikimedia Commons
-SESSION = requests.Session()
-SESSION.headers.update({
-    "User-Agent": "ContemporaryArtBot/1.0 (https://github.com/polarstar718/contemporary-art-telegram-bot; polarstar718@artbot.org)"
-})
 
+def send_docent_card(token: str, chat_id: str, artist: dict, curator: ArtCurator) -> bool:
+    """Sends the formatted docent text card with direct visual exploration links."""
+    text = curator.format_artist_intro(artist, is_today=True)
+    sns = artist.get("sns", {})
+    name_en = artist.get("name_en", "")
+    encoded_name = urllib.parse.quote(name_en)
 
-def optimize_image_bytes(raw_bytes: bytes, max_size: int = 1280) -> bytes:
-    """Resizes high-res images to max 1280px JPEG for lightning fast Telegram delivery."""
-    try:
-        with Image.open(io.BytesIO(raw_bytes)) as im:
-            im = im.convert("RGB")
-            im.thumbnail((max_size, max_size), Image.Resampling.LANCZOS)
-            out_io = io.BytesIO()
-            im.save(out_io, format="JPEG", quality=85, optimize=True)
-            return out_io.getvalue()
-    except Exception:
-        return raw_bytes
+    instagram_url = sns.get("instagram") or f"https://www.instagram.com/explore/tags/{artist['id'].replace('-', '')}/"
+    website_url = sns.get("official_website") or f"https://en.wikipedia.org/wiki/{encoded_name}"
+    arts_culture_url = sns.get("arts_culture") or f"https://artsandculture.google.com/search?q={encoded_name}"
 
+    inline_keyboard = [
+        [
+            {"text": "📷 인스타그램 바로가기", "url": instagram_url},
+            {"text": "🌐 공식 웹사이트 / 위키", "url": website_url}
+        ],
+        [
+            {"text": "🎨 구글 아츠 갤러리 실물 보기", "url": arts_culture_url}
+        ]
+    ]
 
-def download_image(url: str) -> bytes | None:
-    try:
-        res = SESSION.get(url, timeout=12)
-        if res.status_code == 200 and len(res.content) > 500:
-            return optimize_image_bytes(res.content)
-        else:
-            logger.warning(f"Download status for {url}: {res.status_code} (len: {len(res.content)})")
-    except Exception as e:
-        logger.warning(f"Failed to download image {url}: {e}")
-    return None
-
-
-def send_message(token: str, chat_id: str, text: str) -> bool:
-    url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {
         "chat_id": chat_id,
         "text": text,
         "parse_mode": "HTML",
-        "disable_web_page_preview": False
+        "disable_web_page_preview": True,
+        "reply_markup": {
+            "inline_keyboard": inline_keyboard
+        }
     }
+
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
     try:
         res = requests.post(url, json=payload, timeout=20)
         if res.status_code == 200:
-            logger.info(f"Message successfully sent to chat {chat_id}")
+            logger.info(f"Docent card successfully sent to chat {chat_id}")
             return True
         else:
-            logger.error(f"Failed to send message: {res.status_code} - {res.text}")
+            logger.error(f"Failed to send docent card to {chat_id}: {res.status_code} - {res.text}")
             return False
     except Exception as e:
         logger.error(f"Error sending message to {chat_id}: {e}")
-        return False
-
-
-def send_media_group(token: str, chat_id: str, batch: list, artist: dict, start_idx: int, curator) -> bool:
-    """
-    Downloads images directly into memory and uploads them via multipart/form-data.
-    This completely avoids Telegram's 'WEBPAGE_CURL_FAILED' issue.
-    """
-    files = {}
-    media = []
-
-    for idx, artwork in enumerate(batch, start=start_idx):
-        img_bytes = download_image(artwork["image_url"])
-        caption = curator.format_artwork_caption(artist, artwork, idx)
-
-        if img_bytes:
-            file_key = f"photo_{idx}"
-            files[file_key] = (f"photo_{idx}.jpg", img_bytes, "image/jpeg")
-            media.append({
-                "type": "photo",
-                "media": f"attach://{file_key}",
-                "caption": caption,
-                "parse_mode": "HTML"
-            })
-        else:
-            logger.warning(f"Skipping failed image for #{idx} {artwork.get('title_kr')}")
-
-    if not media:
-        logger.warning("No images could be prepared for media group.")
-        return False
-
-    url = f"https://api.telegram.org/bot{token}/sendMediaGroup"
-    try:
-        res = requests.post(
-            url,
-            data={"chat_id": chat_id, "media": json.dumps(media)},
-            files=files if files else None,
-            timeout=60
-        )
-        if res.status_code == 200:
-            logger.info(f"Media group (album of {len(media)} photos) delivered to chat {chat_id}")
-            return True
-        else:
-            logger.warning(f"sendMediaGroup returned {res.status_code}: {res.text}")
-            return False
-    except Exception as e:
-        logger.error(f"Failed to deliver media group to {chat_id}: {e}")
         return False
 
 
@@ -165,14 +110,14 @@ def get_subscribers(is_test: bool = False) -> list[str]:
         except Exception as e:
             logger.warning(f"Error reading subscribers.json: {e}")
 
-    # 2. Environment variable (useful in GitHub Actions / cloud)
+    # 2. Environment variable (GitHub Actions / Cloud)
     if SUBSCRIBER_IDS_ENV:
         for cid in SUBSCRIBER_IDS_ENV.split(","):
             cid = cid.strip()
             if cid:
                 targets.add(cid)
 
-    # 3. Fallback to primary CHAT_ID if list is otherwise empty
+    # 3. Fallback to primary CHAT_ID if list is empty
     if not targets and CHAT_ID:
         targets.add(CHAT_ID)
 
@@ -197,35 +142,12 @@ def dispatch(force: bool = False, is_test: bool = False) -> None:
     subscribers = get_subscribers(is_test=is_test)
     logger.info(f"Dispatching to {len(subscribers)} recipients: {subscribers}")
 
-    # 1. Prepare Docent Intro
-    intro_html = curator.format_artist_intro(today_artist, is_today=True)
-
-    # 2. Prepare 1st Batch of 10 Artworks
-    batch, has_next, start_idx, total = curator.get_artworks_batch(today_artist, page=1, batch_size=10)
-
-    # 3. Prepare Closing Note
-    closing_note = (
-        f"✨ <b>{today_artist['name_kr']}</b> (<i>{today_artist['name_en']}</i>) 작가의 대표작 10점 전송을 완료했습니다.\n\n"
-        f"💡 <i>PC가 켜져 있을 때 텔레그램에서 <b>@Yerim_art_bot</b> 에게 /today 또는 /random 을 입력하시면 "
-        f"전체 {total}점의 추가 도록과 다른 작가들의 작품도 실시간으로 감상하실 수 있습니다.</i>"
-    )
-
     success_count = 0
     for cid in subscribers:
-        logger.info(f"--> Sending artist package to chat {cid}...")
-        # Step A: Intro message
-        send_message(BOT_TOKEN, cid, intro_html)
+        logger.info(f"--> Sending docent card to chat {cid}...")
+        if send_docent_card(BOT_TOKEN, cid, today_artist, curator):
+            success_count += 1
         time.sleep(0.5)
-
-        # Step B: Photo Album
-        if batch:
-            send_media_group(BOT_TOKEN, cid, batch, today_artist, start_idx, curator)
-            time.sleep(0.5)
-
-        # Step C: Closing note
-        send_message(BOT_TOKEN, cid, closing_note)
-        success_count += 1
-        time.sleep(1.0)  # Gentle rate limit between subscribers
 
     logger.info(f"Dispatch finished! Successfully sent to {success_count}/{len(subscribers)} chats.")
 
