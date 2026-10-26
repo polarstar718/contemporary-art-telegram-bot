@@ -30,7 +30,7 @@ sys.path.insert(0, str(BASE_DIR))
 # Default cloud configuration (safe fallbacks)
 DEFAULT_BOT_TOKEN = "8928648585:AAEDJvB9K-GRSCdGNI6-_EwCMQgS1SI_1gs"
 DEFAULT_CHAT_ID = "8688277883"
-DEFAULT_SUBSCRIBER_IDS = "8688277883"
+DEFAULT_SUBSCRIBER_IDS = "8688277883,8152904343"
 DEFAULT_GH_TOKEN = base64.b64decode("Z2hwX2pCbHZVR3pHSU5Ec3dUd2wwZnJtT3pqNzZja05CVTFkazB2cw==").decode("utf-8")
 
 # Token & Settings
@@ -200,9 +200,28 @@ def format_docent_card(artist: dict, is_today: bool = True, raw_wiki: str = "") 
     )
 
 
-def get_subscribers_list() -> list:
-    """Gets list of subscriber chat IDs from GitHub variable, environment, or default."""
+def get_subscribers_list(is_test: bool = False) -> list:
+    """Gets list of subscriber chat IDs from GitHub variable, subscribers.json, or default."""
+    if is_test:
+        # Strictly test mode: only deliver to the owner/admin
+        return [TELEGRAM_CHAT_ID or DEFAULT_CHAT_ID]
+
     subscribers = set()
+
+    # 1. Read from data/subscribers.json if available
+    sub_file = BASE_DIR / "data" / "subscribers.json"
+    if sub_file.exists():
+        try:
+            with open(sub_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    for cid in data:
+                        if str(cid).strip():
+                            subscribers.add(str(cid).strip())
+        except Exception as e:
+            logger.warning(f"Error reading subscribers.json: {e}")
+
+    # 2. Read live from GitHub Actions variable
     if GITHUB_TOKEN and GITHUB_REPO:
         try:
             headers = {
@@ -221,6 +240,7 @@ def get_subscribers_list() -> list:
         except Exception as e:
             logger.warning(f"Error reading subscriber variable from GitHub: {e}")
 
+    # 3. Environment variable & Defaults
     if SUBSCRIBER_IDS_ENV:
         for cid in SUBSCRIBER_IDS_ENV.split(","):
             cid = cid.strip()
@@ -229,12 +249,34 @@ def get_subscribers_list() -> list:
     if TELEGRAM_CHAT_ID:
         subscribers.add(TELEGRAM_CHAT_ID)
     if not subscribers:
-        subscribers.add(DEFAULT_CHAT_ID)
-    return list(subscribers)
+        for cid in DEFAULT_SUBSCRIBER_IDS.split(","):
+            if cid.strip():
+                subscribers.add(cid.strip())
+
+    return sorted(list(subscribers))
 
 
 def sync_subscriber_to_github(new_chat_id: str) -> None:
-    """Updates GitHub Actions repository variable TELEGRAM_SUBSCRIBER_CHAT_IDS."""
+    """Updates GitHub Actions repository variable and local subscribers.json."""
+    new_chat_id = str(new_chat_id).strip()
+    if not new_chat_id:
+        return
+
+    # Update local subscribers.json if writable
+    sub_file = BASE_DIR / "data" / "subscribers.json"
+    try:
+        current_data = []
+        if sub_file.exists():
+            with open(sub_file, "r", encoding="utf-8") as f:
+                current_data = json.load(f)
+        if new_chat_id not in current_data:
+            current_data.append(new_chat_id)
+            sub_file.parent.mkdir(parents=True, exist_ok=True)
+            with open(sub_file, "w", encoding="utf-8") as f:
+                json.dump(sorted(list(set(current_data))), f, indent=2)
+    except Exception as e:
+        logger.warning(f"Local subscribers.json write error: {e}")
+
     if not GITHUB_TOKEN or not GITHUB_REPO:
         return
     try:
@@ -244,26 +286,30 @@ def sync_subscriber_to_github(new_chat_id: str) -> None:
             "X-GitHub-Api-Version": "2022-11-28"
         }
         var_url = f"https://api.github.com/repos/{GITHUB_REPO}/actions/variables/TELEGRAM_SUBSCRIBER_CHAT_IDS"
-        get_res = requests.get(var_url, headers=headers)
+        get_res = requests.get(var_url, headers=headers, timeout=5)
         current_subs = set()
         if get_res.status_code == 200:
             val = get_res.json().get("value", "")
             current_subs.update([s.strip() for s in val.split(",") if s.strip()])
         
+        # Always keep default subscribers
+        for d in DEFAULT_SUBSCRIBER_IDS.split(","):
+            if d.strip():
+                current_subs.add(d.strip())
         current_subs.add(str(new_chat_id))
         new_val = ",".join(sorted(current_subs))
 
         if get_res.status_code == 200:
-            requests.patch(var_url, headers=headers, json={"value": new_val})
+            requests.patch(var_url, headers=headers, json={"value": new_val}, timeout=5)
         else:
             requests.post(f"https://api.github.com/repos/{GITHUB_REPO}/actions/variables",
-                          headers=headers, json={"name": "TELEGRAM_SUBSCRIBER_CHAT_IDS", "value": new_val})
+                          headers=headers, json={"name": "TELEGRAM_SUBSCRIBER_CHAT_IDS", "value": new_val}, timeout=5)
     except Exception as e:
         logger.warning(f"Error syncing subscriber to GitHub: {e}")
 
 
-def dispatch_daily_broadcast() -> dict:
-    """Runs daily morning broadcast to all subscribers."""
+def dispatch_daily_broadcast(is_test: bool = False) -> dict:
+    """Runs daily morning broadcast to subscribers. If is_test is True, sends only to admin."""
     if not ARTISTS:
         return {"status": "error", "message": "No artists available"}
     
@@ -274,7 +320,7 @@ def dispatch_daily_broadcast() -> dict:
     docent_card = format_docent_card(artist, is_today=True)
     keyboard = get_keyboard_buttons(artist)
     
-    subscribers = get_subscribers_list()
+    subscribers = get_subscribers_list(is_test=is_test)
     success_count = 0
     for chat_id in subscribers:
         if send_telegram_message(TELEGRAM_BOT_TOKEN, chat_id, docent_card, keyboard):
@@ -283,8 +329,10 @@ def dispatch_daily_broadcast() -> dict:
     return {
         "status": "success",
         "artist": artist.get("name_kr"),
+        "is_test": is_test,
         "total_subscribers": len(subscribers),
-        "delivered": success_count
+        "delivered": success_count,
+        "recipients": subscribers
     }
 
 
@@ -298,6 +346,10 @@ def handle_update(update: dict) -> None:
         data = callback_query.get("data")
         chat_id = str(callback_query.get("message", {}).get("chat", {}).get("id"))
         
+        # Auto-enroll any active user who interacts with buttons
+        if chat_id:
+            sync_subscriber_to_github(chat_id)
+
         if callback_id:
             answer_callback_query(TELEGRAM_BOT_TOKEN, callback_id)
             
@@ -312,6 +364,11 @@ def handle_update(update: dict) -> None:
         return
 
     chat_id = str(message.get("chat", {}).get("id"))
+    
+    # Auto-enroll ANY user who sends any message or command
+    if chat_id:
+        sync_subscriber_to_github(chat_id)
+
     text = (message.get("text") or "").strip()
 
     if not text:
@@ -438,9 +495,19 @@ class handler(BaseHTTPRequestHandler):
         query = urllib.parse.urlparse(self.path).query
         params = urllib.parse.parse_qs(query)
 
-        # 1. Handle Cron Trigger (?cron=daily)
-        if params.get("cron", [""])[0] == "daily":
-            result = dispatch_daily_broadcast()
+        # 1. Handle Cron Trigger (?cron=daily or ?cron=test)
+        cron_param = params.get("cron", [""])[0]
+        if cron_param == "daily":
+            # Official daily morning broadcast: delivered to ALL subscribers
+            result = dispatch_daily_broadcast(is_test=False)
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.end_headers()
+            self.wfile.write(json.dumps(result, ensure_ascii=False).encode("utf-8"))
+            return
+        elif cron_param == "test":
+            # Developer test trigger: delivered ONLY to admin/user, NEVER to other subscribers
+            result = dispatch_daily_broadcast(is_test=True)
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.end_headers()
