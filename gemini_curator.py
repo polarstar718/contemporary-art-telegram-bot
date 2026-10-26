@@ -22,8 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent
 TIMEZONE = "Asia/Seoul"
 KST = pytz.timezone(TIMEZONE)
 
-# Primary models: gemini-3-flash-preview (ultra fast ~5s) with gemini-3.8-flash fallback
-CANDIDATE_MODELS = ["gemini-3-flash-preview", "gemini-3.8-flash"]
+# Primary model: gemini-3-flash-preview
+CANDIDATE_MODELS = ["gemini-3-flash-preview"]
 API_URL_TEMPLATE = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 DEFAULT_GEMINI_KEY = base64.b64decode("QVEuQWI4Uk42Sk4tN0RJYkoxOEk0NmpHazd4cGppTVk0UXIya0VWWVZVMzUwSDVoZFA2Umc=").decode("utf-8")
 
@@ -131,7 +131,7 @@ def enrich_and_critique_artist(artist_data: Dict[str, Any], raw_wiki_text: str =
     for model_name in CANDIDATE_MODELS:
         url = API_URL_TEMPLATE.format(model=model_name, key=api_key)
         try:
-            res = requests.post(url, json=payload, timeout=12)
+            res = requests.post(url, json=payload, timeout=30)
             if res.status_code == 200:
                 data = res.json()
                 candidates = data.get("candidates", [])
