@@ -75,7 +75,7 @@ if DATA_FILE.exists():
 
 
 def send_telegram_message(token: str, chat_id: str, text: str, reply_markup: dict = None) -> bool:
-    """Sends a Telegram message using standard requests."""
+    """Sends a Telegram message using standard requests with plain text fallback on HTML syntax error."""
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {
         "chat_id": chat_id,
@@ -86,8 +86,28 @@ def send_telegram_message(token: str, chat_id: str, text: str, reply_markup: dic
     if reply_markup:
         payload["reply_markup"] = reply_markup
     try:
-        res = requests.post(url, json=payload, timeout=10)
-        return res.status_code == 200
+        res = requests.post(url, json=payload, timeout=15)
+        if res.status_code == 200:
+            return True
+        logger.warning(f"Telegram send failed ({res.status_code}): {res.text}. Retrying with plain-text fallback...")
+        
+        # Fallback: Strip HTML tags and re-send as plain text
+        import re
+        plain_text = re.sub(r"<[^>]+>", "", text)
+        fallback_payload = {
+            "chat_id": chat_id,
+            "text": plain_text,
+            "disable_web_page_preview": True
+        }
+        if reply_markup:
+            fallback_payload["reply_markup"] = reply_markup
+        fb_res = requests.post(url, json=fallback_payload, timeout=15)
+        if fb_res.status_code == 200:
+            logger.info(f"Plain-text fallback succeeded for {chat_id}")
+            return True
+        else:
+            logger.error(f"Plain-text fallback failed for {chat_id}: {fb_res.status_code} - {fb_res.text}")
+            return False
     except Exception as e:
         logger.error(f"Failed to send telegram message to {chat_id}: {e}")
         return False
@@ -308,11 +328,64 @@ def sync_subscriber_to_github(new_chat_id: str) -> None:
         logger.warning(f"Error syncing subscriber to GitHub: {e}")
 
 
-def dispatch_daily_broadcast(is_test: bool = False) -> dict:
+def get_last_dispatch_date() -> str:
+    """Reads LAST_DISPATCH_DATE from GitHub Actions variables."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return ""
+    try:
+        headers = {
+            "Authorization": f"Bearer {GITHUB_TOKEN}",
+            "Accept": "application/vnd.github.v3+json",
+            "X-GitHub-Api-Version": "2022-11-28"
+        }
+        var_url = f"https://api.github.com/repos/{GITHUB_REPO}/actions/variables/LAST_DISPATCH_DATE"
+        res = requests.get(var_url, headers=headers, timeout=5)
+        if res.status_code == 200:
+            return res.json().get("value", "").strip()
+    except Exception as e:
+        logger.warning(f"Error reading LAST_DISPATCH_DATE from GitHub: {e}")
+    return ""
+
+
+def set_last_dispatch_date(date_str: str) -> None:
+    """Updates LAST_DISPATCH_DATE in GitHub Actions variables."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return
+    try:
+        headers = {
+            "Authorization": f"Bearer {GITHUB_TOKEN}",
+            "Accept": "application/vnd.github.v3+json",
+            "X-GitHub-Api-Version": "2022-11-28"
+        }
+        var_url = f"https://api.github.com/repos/{GITHUB_REPO}/actions/variables/LAST_DISPATCH_DATE"
+        get_res = requests.get(var_url, headers=headers, timeout=5)
+        if get_res.status_code == 200:
+            requests.patch(var_url, headers=headers, json={"value": date_str}, timeout=5)
+        else:
+            requests.post(f"https://api.github.com/repos/{GITHUB_REPO}/actions/variables",
+                          headers=headers, json={"name": "LAST_DISPATCH_DATE", "value": date_str}, timeout=5)
+    except Exception as e:
+        logger.warning(f"Error saving LAST_DISPATCH_DATE to GitHub: {e}")
+
+
+def dispatch_daily_broadcast(is_test: bool = False, force: bool = False) -> dict:
     """Runs daily morning broadcast to subscribers. If is_test is True, sends only to admin."""
     if not ARTISTS:
         return {"status": "error", "message": "No artists available"}
     
+    today_kst = datetime.now(KST).strftime("%Y-%m-%d")
+
+    # Deduplication check for production daily broadcast
+    if not is_test and not force:
+        last_date = get_last_dispatch_date()
+        if last_date == today_kst:
+            logger.info(f"Broadcast for {today_kst} already sent earlier. Skipping duplicate.")
+            return {
+                "status": "already_sent",
+                "message": f"Broadcast for {today_kst} already dispatched earlier today.",
+                "date": today_kst
+            }
+
     # Pick today's artist based on day of year for consistent daily rotation
     day_idx = datetime.now(KST).timetuple().tm_yday % len(ARTISTS)
     artist = ARTISTS[day_idx]
@@ -326,10 +399,14 @@ def dispatch_daily_broadcast(is_test: bool = False) -> dict:
         if send_telegram_message(TELEGRAM_BOT_TOKEN, chat_id, docent_card, keyboard):
             success_count += 1
             
+    if not is_test and success_count > 0:
+        set_last_dispatch_date(today_kst)
+
     return {
         "status": "success",
         "artist": artist.get("name_kr"),
         "is_test": is_test,
+        "date": today_kst,
         "total_subscribers": len(subscribers),
         "delivered": success_count,
         "recipients": subscribers
@@ -497,9 +574,10 @@ class handler(BaseHTTPRequestHandler):
 
         # 1. Handle Cron Trigger (?cron=daily or ?cron=test)
         cron_param = params.get("cron", [""])[0]
+        force_param = params.get("force", ["0"])[0] in ("1", "true", "True")
         if cron_param == "daily":
-            # Official daily morning broadcast: delivered to ALL subscribers
-            result = dispatch_daily_broadcast(is_test=False)
+            # Official daily morning broadcast: delivered to ALL subscribers (with deduplication check)
+            result = dispatch_daily_broadcast(is_test=False, force=force_param)
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.end_headers()
